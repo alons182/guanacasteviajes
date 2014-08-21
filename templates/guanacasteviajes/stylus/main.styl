@@ -1,6 +1,7 @@
 @import "nib"
 @import "normalize.styl"
 @import "icons.styl"
+@import "tables.styl"
 
 
 $naranja = #eeae11
@@ -474,6 +475,12 @@ header
 		list-style none
 		li 
 			margin 1em 0
+
+			a 
+				color cafe
+				text-decoration underline
+				&:hover
+					color #FFF
 	strong
 		color cafe
 .btn-book 
@@ -515,12 +522,14 @@ header
 	margin-right .5em
 	&:last-child
 		margin-right 0
+	strong
+		color cafe
 .fleet-title
 	background $verde
 	color #FFF
 	padding 0 .5em
 .fleet-image
-	position absolute
+	//position absolute
 	img 
 		width 100%
 		max-height 170px
@@ -535,6 +544,24 @@ header
 .fleet-features
 	margin 0
 	color #FFF	
+
+.shuttle-column
+	display inline-block
+	vertical-align top 
+	margin-right 4em 
+	//width 300px
+	&:last-child
+		margin-right 0
+.shuttle-destination
+	list-style none 
+
+	li 
+		background url("../img/list_arrow.png") left center no-repeat
+		padding-left 30px
+.shuttle-notes
+	list-style none
+	font-size 13px
+
 .inner
 	margin-right auto
 	margin-left auto
