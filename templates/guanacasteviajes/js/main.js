@@ -56,6 +56,12 @@
 
 
     $(".gallery-item").colorbox({rel:'gallery'});
+    $(".gallery-item .video").colorbox({
+		inline:true,
+		href:".inlinevideocontent",
+		width: "900px"
+	});
+  
 	
 
 })(jQuery);
