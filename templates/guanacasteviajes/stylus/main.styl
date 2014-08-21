@@ -1,0 +1,701 @@
+@import "nib"
+@import "normalize.styl"
+@import "icons.styl"
+
+
+$naranja = #eeae11
+$lima =  rgb(244, 255, 228)
+$verde = #99CC66
+$rojo = #EE4035
+cafe = #695C3E
+
+body
+	
+	font 14px Times New Roman, Arial, Helvetica, sans-serif
+	line-height 25px
+	color cafe
+p 
+	margin 0 0 25px;
+a 
+	color $verde
+	text-decoration none
+	/*&:hover
+		text-decoration underline*/	
+	
+h1 
+	margin-top 0
+	margin-bottom 10px
+	line-height 1.5em
+
+h2 
+	margin-top 0
+	margin-bottom 10px
+	line-height 1.5em
+
+		
+
+input[type="text"],
+input[type="email"]
+	background-color #fff
+	background-image:linear-gradient(#eee 1%, #fff 15%) !important
+	border 1px solid #AAA
+	box-shadow: 0 0 3px #fff inset,0 1px 1px rgba(0,0,0,0.1)
+	height 20px
+
+.chosen-single
+	border-radius 0 !important
+	background-color #fff !important
+	background-image linear-gradient(#eee 1%, #fff 15%) !important
+
+li.highlighted
+	background-image none !important
+	background-color $verde !important	
+.img 
+	border 1px solid #DBDBDB
+	border-radius 5px
+	padding .2em 
+
+.btn
+	box-shadow none
+	text-decoration none
+	display inline-block
+	padding 16px 17px 15px 18px
+	font 16px 'Tinos'
+	color #ffffff
+	background #f5c34c
+	border none
+	letter-spacing 0
+	text-transform uppercase
+	text-shadow none
+	text-decoration none !important
+	border-radius 0
+	border-bottom 1px solid #f5c34c
+	transition all 0.35s ease
+	
+	&:hover
+		background none
+		color #FFF
+		background $naranja
+		transition all 0.35s ease
+	
+
+.btn-primary
+	background #FFF
+	color $verde
+
+	&:hover
+		background none
+		color #FFF
+		background $naranja
+		transition all 0.35s ease
+.btn-success
+.btn-info
+	background $verde !important
+	color #fff
+
+	&:hover
+		background none
+		color $verde
+		background $lima
+		transition all 0.35s ease
+.border-colors
+	width 100%
+	height 8px
+	position absolute
+	background: url(../img/circulos.png) repeat-x;
+
+header
+	padding 0
+	position relative
+	background-color $verde
+	
+	.border-colors
+		bottom 0
+	.up-box
+		padding-bottom 25px
+		padding-top 15px
+		position relative
+		
+	.down-box
+		background-color #ffffff
+		padding-top 28px
+		padding-bottom 15px
+	.tel
+		font 16px 'Tinos'
+		color #ffffff
+		text-transform uppercase
+		margin 0
+		& > span
+			width 62px
+			display inline-block
+			color #ffffff
+	.login, .advisor
+		float right
+		margin-top -20px
+		margin-bottom 0
+	#logo 
+		display block
+		padding 0
+		float left
+		font-size 40px
+	#menu
+		float right
+		height 35px
+		
+		.parent
+			.nav-child
+			.sub-menu
+				.parent
+					&:after
+						content '°'
+						position absolute
+						right -10px
+						top 15px
+
+			
+
+			/*.parent
+			&:after
+				background red 
+				content '°'*/
+		
+		ul 
+			position relative
+			left 0
+			display block
+			float left
+			margin 0
+			padding 0
+
+			li 
+				position relative
+				display inline-block
+				margin 0
+				padding 0
+				float left
+				margin-left 12px
+				zoom: 1
+				padding 1px 10px 0 0
+				line-height 11px !important
+				border-right 1px solid #dbdbdb
+
+				.nav-header
+				a
+					position relative
+					padding 0
+					border-radius 0
+					margin 0
+					color #4a4a4a
+					box-shadow none !important
+					font 16px/16px 'Tinos', Times New Roman, Arial, Helvetica, sans-serif
+					text-shadow none
+					display inline-block
+					background none
+					text-transform uppercase
+					transition all 0.35s ease
+					cursor pointer
+
+				&:first-child + li + li + li + li + li + li + li
+					margin-right 0
+					padding-right 0
+					border-right none
+				&:hover 
+					.nav-header
+					a
+						color $verde
+				/*&:hover .sub-menu
+					display block*/
+
+				.nav-child
+				.sub-menu 
+					position absolute
+					display none
+					width 182px
+					left -22px
+					top 43px
+					padding 21px 20px 29px 20px
+					list-style none !important
+					zoom: 1
+					z-index 102
+					background #ffffff
+					margin 0
+					border-top 4px solid #f5c34c
+					box-shadow 0px 0px 5px rgba(0, 0, 0, .75)
+					
+					.nav-child
+					.sub-menu
+						left 205px
+						top 0px
+						
+
+
+					li 
+						background none
+						float none
+						margin 0
+						padding 0
+						border none
+						width 100%
+						text-align left
+						border-bottom 1px solid #ebebeb
+						height auto !important
+						overflow visible !important
+
+						.nav-header
+						a 
+							display block
+							padding 0
+							margin 0
+							font 16px/16px 'Tinos', Times New Roman, Arial, Helvetica, sans-serif
+							color #4a4a4a
+							display inline-block
+							background none
+							text-transform uppercase
+							padding 8px 0 7px 0
+							transition: all 0.35s ease
+							&:hover 
+								color $verde
+						/*&:hover 
+							display block*/
+			.active
+				a 
+					color $verde
+
+.btn-budget 
+	position absolute
+	top 50px
+	right 0
+	z-index 760
+	display block
+	padding 15px 0 15px 20px
+	width 125px
+	background none repeat scroll 0 0 #f5c34c
+	box-shadow 0 2px 5px 0 rgba(0, 0, 0, 0.47)
+	color #FFF
+	text-transform uppercase
+	//text-shadow 0 -1px 2px rgba(144, 15, 60, 0.76)
+	font-weight 700
+	&:hover
+		background $naranja
+		text-decoration none
+	.icon-book
+		font-size 1.5em
+		padding-right .5em
+		vertical-align  middle
+		color verde
+.cotizador
+	//display none
+	line-height 20px
+	position absolute
+	z-index 101
+	right 0px
+	top -450px
+	background #FFF
+	padding 1em
+	border-top 4px solid #f5c34c
+	width 300px
+	margin-bottom 1em
+	box-shadow 0px 0px 5px rgba(0, 0, 0, .75)
+	text-align center
+	transition all .2s ease
+
+	&.open
+		top 58px
+	.close
+		position absolute
+		right 15px
+		top 10px
+		cursor pointer
+		
+	#persons
+	#children
+		width 50px	
+
+	.service
+		display inline-block
+		vertical-align top
+		width 97px
+		margin .2em 0
+
+		input
+			width 40px
+	.notas
+		margin-top 1em
+		margin-bottom 1em
+		p
+			margin 2px 0
+	
+	
+
+	li.highlighted
+		background-image none !important
+		background-color $verde !important
+	
+	.chosen-container
+		width 230px !important
+	
+	input[type="radio"]
+		display none
+
+	p 
+		margin-top 0
+		margin-bottom 15px
+
+
+.forms-reservations
+	
+	position absolute
+	top 140px
+	left -194px
+	background #FFF
+	z-index 200
+	padding .5em
+	border-top 4px solid #f5c34c
+	box-shadow 0px 0px 5px rgba(0, 0, 0, .75)
+	width 180px
+	transition all .5s ease
+	line-height 20px
+	
+	&.open
+		left 0
+
+		.handle
+			&:after
+				content '<<'
+			
+
+	/*&.close
+		left -180px*/
+		
+	
+	.handle
+		border-right 10px solid rgba(0, 0, 0, 0)
+		border-left 35px solid #f5c34c
+		border-bottom 100px solid rgba(0, 0, 0, 0)
+		border-top 100px solid rgba(0, 0, 0, 0)
+		right -45px
+		top 30%
+		position absolute
+		cursor pointer
+		
+		&:after
+			content '>>'
+			position absolute
+			font-size 1em
+			color #FFF
+			right 15px
+			top -15px
+			font-weight bold
+			
+
+	.mCSB_dragger_bar
+		background $verde !important
+		
+	h2 
+		font-size 1.3em
+		margin 0
+	
+	#btn_book
+		float left
+
+	.total-container
+		background cafe
+		padding .44em
+		color #FFF
+		font-size 1em
+		float right
+		width 60px
+		
+		span
+			display block
+
+	input[type="text"],
+	input[type="email"]
+		width 93%
+
+
+	.notas
+		margin-top 1em
+		margin-bottom 1em
+		p
+			margin 2px 0
+
+		
+	.personal-info
+	.reservation-info
+		display inline-block
+		vertical-align top
+		//width 270px
+	p 
+		text-align left
+		margin-top 0
+		margin-bottom 15px
+	label
+		text-align left
+		margin-right 5px
+		width 75px
+		display inline-block
+		float left
+
+	label[for="personsR"],
+	label[for="childrenR"]
+		width 46px
+	label[for="childrenR"]
+		margin-left 5px
+	#personsR
+	#childrenR
+		width 25px
+	
+	.chosen-container
+		width 170px !important 
+
+	.no-float
+		float none !important
+	.botones
+		margin-top 10px
+		text-align center
+	
+.top-info	
+	background $verde
+.main 
+	position relative
+	
+.page-tourDetails
+	float right
+	background $verde
+	padding .5em
+	width 300px
+	margin-left 10px
+	color #FFF
+	.details 
+		margin 0
+		padding-left 5px
+		list-style none
+		li 
+			margin 1em 0
+	strong
+		color cafe
+.btn-book 
+	text-align center
+	display block
+.gallery-item
+	display inline-block
+	vertical-align top 
+	width 200px
+	
+	img 
+		width 100%
+
+.page-aboutDestinations
+	list-style none
+	margin 0 
+	padding 0
+	width 685px 
+
+	li 
+		margin 1em
+		border 4px solid #f5c34c
+		padding .5em 
+
+.fleet-item
+	display inline-block
+	vertical-align top 
+	width 300px
+	position relative
+	margin-right .5em
+	&:last-child
+		margin-right 0
+.fleet-title
+	background $verde
+	color #FFF
+	padding 0 .5em
+.fleet-image
+	position absolute
+	img 
+		width 100%
+		max-height 170px
+.fleet-description
+	position relative
+	background #f5c34c//rgba(149,202, 96,1)
+	left 0
+	right 0
+	bottom 8px
+	padding .5em
+
+.fleet-features
+	margin 0
+	color #FFF	
+.inner
+	margin-right auto
+	margin-left auto
+	width 940px
+	display table
+	position relative
+.item-page
+	padding 3em 0
+	min-height 600px
+
+	
+#slider
+	
+	.cycle-slideshow
+		width 100%
+		//height 570px
+
+		img
+			width 100% 
+			height auto
+
+.row
+	//margin-left -30px
+	display table
+.info-main
+	width 300px
+	position relative
+	display inline-block
+	vertical-align top
+	margin-right 10px
+	padding-bottom 35px
+
+	&:ntd-child(3)
+		margin-right 0
+
+	h2 
+		color #ffffff
+		font 66px 'Tinos', Times New Roman, Arial, Helvetica, sans-serif
+		margin 0
+		margin-bottom -21px
+		margin-top 45px
+		text-transform uppercase
+		letter-spacing -3px
+
+		span 
+			line-height 36px
+			position relative
+			font-size 36px
+			top -36px
+	p 
+		margin-bottom 32px
+		color #ffffff
+	
+
+
+.services-box
+	padding-top 0
+	background-color #ffffff
+
+	.service
+		width 300px
+		position relative
+		display inline-block
+		vertical-align top
+		margin-right 10px
+		padding-bottom 73px
+		
+		&:ntd-child(3)
+			margin-right 0
+		h2 
+			
+			font 55px 'Tinos', Times New Roman, Arial, Helvetica, sans-serif
+			margin 0
+			margin-bottom -21px
+			margin-top 45px
+			text-transform uppercase
+			letter-spacing -3px
+
+			span 
+				line-height 30px
+				position relative
+				font-size 30px
+				top -30px
+		h3
+			color $verde
+			font 24px/25px Times New Roman, Arial, Helvetica, sans-serif
+			margin 0
+			margin-bottom 25px
+		ul 
+			margin 0
+			padding 0
+			list-style none
+			margin-top 18px
+			margin-bottom 71px
+
+			li 
+				font-size 14px
+				line-height 20px
+				background url(../img/list_arrow.png) left center no-repeat
+				padding-left 30px
+				margin-bottom 20px
+
+				a 
+					color cafe 
+					
+					&:hover
+						text-decoration underline
+		
+					
+
+footer
+	background $verde
+	padding-bottom 20px
+	position relative
+	padding-top 30px
+	em 
+		position absolute
+		top 0
+		left 0
+		right 0
+		height 8px
+		background url(../img/circulos.png) 0 top repeat-x
+	p
+		margin 0
+		font 14px Times New Roman, Arial, Helvetica, sans-serif
+		line-height 20px
+		color #ffffff
+		text-transform uppercase
+
+	.copyright
+		float left
+	.redes
+		float right
+		color #ffffff
+
+		a 
+			text-transform uppercase
+			color #ffffff
+			&:hover 
+				color #695c3e
+				transition all 0.35s ease
+
+.b2jcontainer
+	border none !important
+	background none !important
+	margin-top 1.5em !important
+
+	h2 
+		background none !important
+		color cafe
+		font-size 2em
+		font-family "Times New Roman", Arial, Helvetica, sans-serif
+		font-weight bold
+		margin-bottom 10px !important
+.tripAdvisor-widget
+	float right
+	position relative
+	right 0
+	top -220px
+
+
+	.widSSPnarrow
+		width 256px !important
+.page-testimonialsTripAdvisor
+	.widSSP
+		width 100% !important
+	
+
+
+@import "responsive.styl"
+@import "mCustomScrollbar.styl"	
+
+
+				
