@@ -58,21 +58,21 @@ table{border-collapse:collapse;border-spacing:0}
 .icon-twitter:before{content:"\e602"}
 body{font:14px Times New Roman,Arial,Helvetica,sans-serif;line-height:25px;color:#695c3e}
 p{margin:0 0 25px}
-a{color:#9c6;text-decoration:none;}
+a{color:#f00;text-decoration:none;}
 h1{margin-top:0;margin-bottom:10px;line-height:1.5em}
 h2{margin-top:0;margin-bottom:10px;line-height:1.5em}
 input[type="text"],input[type="email"]{background-color:#fff;background-image:-webkit-linear-gradient(#eee 1%, #fff 15%) !important;background-image:-moz-linear-gradient(#eee 1%, #fff 15%) !important;background-image:-o-linear-gradient(#eee 1%, #fff 15%) !important;background-image:-ms-linear-gradient(#eee 1%, #fff 15%) !important;background-image:linear-gradient(#eee 1%, #fff 15%) !important;border:1px solid #aaa;-webkit-box-shadow:0 0 3px #fff inset,0 1px 1px rgba(0,0,0,0.1);box-shadow:0 0 3px #fff inset,0 1px 1px rgba(0,0,0,0.1);height:20px}
 .chosen-single{-webkit-border-radius:0 !important;border-radius:0 !important;background-color:#fff !important;background-image:-webkit-linear-gradient(#eee 1%, #fff 15%) !important;background-image:-moz-linear-gradient(#eee 1%, #fff 15%) !important;background-image:-o-linear-gradient(#eee 1%, #fff 15%) !important;background-image:-ms-linear-gradient(#eee 1%, #fff 15%) !important;background-image:linear-gradient(#eee 1%, #fff 15%) !important}
-li.highlighted{background-image:none !important;background-color:#9c6 !important}
+li.highlighted{background-image:none !important;background-color:#f00 !important}
 .img{border:1px solid #dbdbdb;-webkit-border-radius:5px;border-radius:5px;padding:.2em}
 .btn{-webkit-box-shadow:none;box-shadow:none;text-decoration:none;display:inline-block;padding:16px 17px 15px 18px;font:16px 'Tinos';color:#fff;background:#f5c34c;border:none;letter-spacing:0;text-transform:uppercase;text-shadow:none;text-decoration:none !important;-webkit-border-radius:0;border-radius:0;border-bottom:1px solid #f5c34c;-webkit-transition:all 0.35s ease;-moz-transition:all 0.35s ease;-o-transition:all 0.35s ease;-ms-transition:all 0.35s ease;transition:all 0.35s ease;}
 .btn:hover{background:none;color:#fff;background:#eeae11;-webkit-transition:all 0.35s ease;-moz-transition:all 0.35s ease;-o-transition:all 0.35s ease;-ms-transition:all 0.35s ease;transition:all 0.35s ease}
-.btn-primary{background:#fff;color:#9c6;}
+.btn-primary{background:#fff;color:#f00;}
 .btn-primary:hover{background:none;color:#fff;background:#eeae11;-webkit-transition:all 0.35s ease;-moz-transition:all 0.35s ease;-o-transition:all 0.35s ease;-ms-transition:all 0.35s ease;transition:all 0.35s ease}
-.btn-success,.btn-info{background:#9c6 !important;color:#fff;}
-.btn-success:hover,.btn-info:hover{background:none;color:#9c6;background:#f4ffe4;-webkit-transition:all 0.35s ease;-moz-transition:all 0.35s ease;-o-transition:all 0.35s ease;-ms-transition:all 0.35s ease;transition:all 0.35s ease}
+.btn-success,.btn-info{background:#f00 !important;color:#fff;}
+.btn-success:hover,.btn-info:hover{background:none;color:#f00;background:#f4ffe4;-webkit-transition:all 0.35s ease;-moz-transition:all 0.35s ease;-o-transition:all 0.35s ease;-ms-transition:all 0.35s ease;transition:all 0.35s ease}
 .border-colors{width:100%;height:8px;position:absolute;background:url("../img/circulos.png") repeat-x}
-header{padding:0;position:relative;background-color:#9c6;}
+header{padding:0;position:relative;background-color:#f00;}
 header .border-colors{bottom:0}
 header .up-box{padding-bottom:25px;padding-top:15px;position:relative}
 header .down-box{background-color:#fff;padding-top:28px;padding-bottom:15px}
@@ -86,13 +86,13 @@ header #menu ul{position:relative;left:0;display:block;float:left;margin:0;paddi
 header #menu ul li{position:relative;display:inline-block;margin:0;padding:0;float:left;margin-left:12px;zoom:1;padding:1px 10px 0 0;line-height:11px !important;border-right:1px solid #dbdbdb;}
 header #menu ul li .nav-header,header #menu ul li a{position:relative;padding:0;-webkit-border-radius:0;border-radius:0;margin:0;color:#4a4a4a;-webkit-box-shadow:none !important;box-shadow:none !important;font:16px/16px 'Tinos',Times New Roman,Arial,Helvetica,sans-serif;text-shadow:none;display:inline-block;background:none;text-transform:uppercase;-webkit-transition:all 0.35s ease;-moz-transition:all 0.35s ease;-o-transition:all 0.35s ease;-ms-transition:all 0.35s ease;transition:all 0.35s ease;cursor:pointer}
 header #menu ul li:first-child + li + li + li + li + li + li + li{margin-right:0;padding-right:0;border-right:none}
-header #menu ul li:hover .nav-header,header #menu ul li:hover a{color:#9c6}
+header #menu ul li:hover .nav-header,header #menu ul li:hover a{color:#f00}
 header #menu ul li .nav-child,header #menu ul li .sub-menu{position:absolute;display:none;width:182px;left:-22px;top:43px;padding:21px 20px 29px 20px;list-style:none !important;zoom:1;z-index:102;background:#fff;margin:0;border-top:4px solid #f5c34c;-webkit-box-shadow:0 0 5px rgba(0,0,0,0.75);box-shadow:0 0 5px rgba(0,0,0,0.75);}
 header #menu ul li .nav-child .nav-child,header #menu ul li .sub-menu .nav-child,header #menu ul li .nav-child .sub-menu,header #menu ul li .sub-menu .sub-menu{left:205px;top:0}
 header #menu ul li .nav-child li,header #menu ul li .sub-menu li{background:none;float:none;margin:0;padding:0;border:none;width:100%;text-align:left;border-bottom:1px solid #ebebeb;height:auto !important;overflow:visible !important;}
 header #menu ul li .nav-child li .nav-header,header #menu ul li .sub-menu li .nav-header,header #menu ul li .nav-child li a,header #menu ul li .sub-menu li a{display:block;padding:0;margin:0;font:16px/16px 'Tinos',Times New Roman,Arial,Helvetica,sans-serif;color:#4a4a4a;display:inline-block;background:none;text-transform:uppercase;padding:8px 0 7px 0;-webkit-transition:all 0.35s ease;-moz-transition:all 0.35s ease;-o-transition:all 0.35s ease;-ms-transition:all 0.35s ease;transition:all 0.35s ease;}
-header #menu ul li .nav-child li .nav-header:hover,header #menu ul li .sub-menu li .nav-header:hover,header #menu ul li .nav-child li a:hover,header #menu ul li .sub-menu li a:hover{color:#9c6}
-header #menu ul .active a{color:#9c6}
+header #menu ul li .nav-child li .nav-header:hover,header #menu ul li .sub-menu li .nav-header:hover,header #menu ul li .nav-child li a:hover,header #menu ul li .sub-menu li a:hover{color:#f00}
+header #menu ul .active a{color:#f00}
 .btn-budget{position:absolute;top:50px;right:0;z-index:760;display:block;padding:15px 0 15px 20px;width:125px;background:none repeat scroll 0 0 #f5c34c;-webkit-box-shadow:0 2px 5px 0 rgba(0,0,0,0.47);box-shadow:0 2px 5px 0 rgba(0,0,0,0.47);color:#fff;text-transform:uppercase;font-weight:700;}
 .btn-budget:hover{background:#eeae11;text-decoration:none}
 .btn-budget .icon-book{font-size:1.5em;padding-right:.5em;vertical-align:middle;color:verde}
@@ -104,7 +104,7 @@ header #menu ul .active a{color:#9c6}
 .cotizador .service input{width:40px}
 .cotizador .notas{margin-top:1em;margin-bottom:1em;}
 .cotizador .notas p{margin:2px 0}
-.cotizador li.highlighted{background-image:none !important;background-color:#9c6 !important}
+.cotizador li.highlighted{background-image:none !important;background-color:#f00 !important}
 .cotizador .chosen-container{width:230px !important}
 .cotizador input[type="radio"]{display:none}
 .cotizador p{margin-top:0;margin-bottom:15px}
@@ -113,7 +113,7 @@ header #menu ul .active a{color:#9c6}
 .forms-reservations.open .handle:after{content:'<<'}
 .forms-reservations .handle{border-right:10px solid rgba(0,0,0,0);border-left:35px solid #f5c34c;border-bottom:100px solid rgba(0,0,0,0);border-top:100px solid rgba(0,0,0,0);right:-45px;top:30%;position:absolute;cursor:pointer;}
 .forms-reservations .handle:after{content:'>>';position:absolute;font-size:1em;color:#fff;right:15px;top:-15px;font-weight:bold}
-.forms-reservations .mCSB_dragger_bar{background:#9c6 !important}
+.forms-reservations .mCSB_dragger_bar{background:#f00 !important}
 .forms-reservations h2{font-size:1.3em;margin:0}
 .forms-reservations #btn_book{float:left}
 .forms-reservations .total-container{background:#695c3e;padding:.44em;color:#fff;font-size:1em;float:right;width:60px;}
@@ -130,9 +130,9 @@ header #menu ul .active a{color:#9c6}
 .forms-reservations .chosen-container{width:170px !important}
 .forms-reservations .no-float{float:none !important}
 .forms-reservations .botones{margin-top:10px;text-align:center}
-.top-info{background:#9c6}
+.top-info{background:#f00}
 .main{position:relative}
-.page-tourDetails{float:right;background:#9c6;padding:.5em;width:300px;margin-left:10px;color:#fff;}
+.page-tourDetails{float:right;background:#f00;padding:.5em;width:300px;margin-left:10px;color:#fff;}
 .page-tourDetails .details{margin:0;padding-left:5px;list-style:none;}
 .page-tourDetails .details li{margin:1em 0}
 .page-tourDetails strong{color:#695c3e}
@@ -143,7 +143,7 @@ header #menu ul .active a{color:#9c6}
 .page-aboutDestinations li{margin:1em;border:4px solid #f5c34c;padding:.5em}
 .fleet-item{display:inline-block;vertical-align:top;width:300px;position:relative;margin-right:.5em;}
 .fleet-item:last-child{margin-right:0}
-.fleet-title{background:#9c6;color:#fff;padding:0 .5em}
+.fleet-title{background:#f00;color:#fff;padding:0 .5em}
 .fleet-image{position:absolute;}
 .fleet-image img{width:100%;max-height:170px}
 .fleet-description{position:relative;background:#f5c34c;left:0;right:0;bottom:8px;padding:.5em}
@@ -163,12 +163,12 @@ header #menu ul .active a{color:#9c6}
 .services-box .service:ntd-child(3){margin-right:0}
 .services-box .service h2{font:55px 'Tinos',Times New Roman,Arial,Helvetica,sans-serif;margin:0;margin-bottom:-21px;margin-top:45px;text-transform:uppercase;letter-spacing:-3px;}
 .services-box .service h2 span{line-height:30px;position:relative;font-size:30px;top:-30px}
-.services-box .service h3{color:#9c6;font:24px/25px Times New Roman,Arial,Helvetica,sans-serif;margin:0;margin-bottom:25px}
+.services-box .service h3{color:#f00;font:24px/25px Times New Roman,Arial,Helvetica,sans-serif;margin:0;margin-bottom:25px}
 .services-box .service ul{margin:0;padding:0;list-style:none;margin-top:18px;margin-bottom:71px;}
 .services-box .service ul li{font-size:14px;line-height:20px;background:url("../img/list_arrow.png") left center no-repeat;padding-left:30px;margin-bottom:20px;}
 .services-box .service ul li a{color:#695c3e;}
 .services-box .service ul li a:hover{text-decoration:underline}
-footer{background:#9c6;padding-bottom:20px;position:relative;padding-top:30px;}
+footer{background:#f00;padding-bottom:20px;position:relative;padding-top:30px;}
 footer em{position:absolute;top:0;left:0;right:0;height:8px;background:url("../img/circulos.png") 0 top repeat-x}
 footer p{margin:0;font:14px Times New Roman,Arial,Helvetica,sans-serif;line-height:20px;color:#fff;text-transform:uppercase}
 footer .copyright{float:left}
