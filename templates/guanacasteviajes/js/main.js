@@ -2,7 +2,11 @@
 	$menu = $('.menu'),
 	$aside_services = $('.forms-reservations'),
 	$btn_budget = $('.btn-budget'),
-	$cotizador = $('.cotizador');
+	$cotizador = $('.cotizador'),
+	detailsTours = $('.details'),
+	dd =  detailsTours.find('dd'),
+	btn_book = $('.btn-book');
+	
 	
 
 	 $(".chosen-select").chosen({width:"100%"});
@@ -29,10 +33,37 @@
     	e.preventDefault();
     });
 
+    btn_book.on('click',function (e) {
+    	
+    	if($aside_services.hasClass('open'))
+    		$aside_services.addClass('shake')
+    	else
+    		$aside_services.addClass('open shake');
+
+    	setTimeout(function(){
+    		$aside_services.removeClass('shake')	
+    	}, 3000);
+
+    	e.preventDefault();
+    });
+
 	$cotizador.on('click','.close', function (e) {
 		$cotizador.removeClass('open');
 		$btn_budget.show()
 	});
+
+	dd.addClass('hidden');
+
+	detailsTours.on('click','dt', function (e) {
+		$(this)
+			.next()
+				.slideDown(200)
+				.siblings('dd')
+					.slideUp(200);
+		
+	});
+
+
 
 	// SCROLL PANEL A COLUMNA
    /* menu_s_scroll = $aside_services.mCustomScrollbar({
@@ -46,7 +77,7 @@
     $aside_services.on('click','.handle',function (e) {
     	
     	if($aside_services.hasClass('open'))
-    		$aside_services.removeClass('open')
+    		$aside_services.removeClass('open shake')
     	else
     		$aside_services.addClass('open');
 

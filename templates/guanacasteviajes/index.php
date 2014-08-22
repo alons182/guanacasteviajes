@@ -26,7 +26,7 @@ $itemid   = $app->input->getCmd('Itemid', '');
 $doc->addStyleSheet('templates/'.$this->template.'/css/main.css');
 $doc->addStyleSheet('templates/'.$this->template.'/css/chosen.min.css');
 $doc->addStyleSheet('templates/'.$this->template.'/css/colorbox.css');
-
+$doc->addStyleSheet('templates/'.$this->template.'/css/animate.css');
 
 ?>
 <!DOCTYPE html>
@@ -115,7 +115,7 @@ $doc->addStyleSheet('templates/'.$this->template.'/css/colorbox.css');
             </div>
             <em class="border-colors"></em>
         </footer>
-        <aside class="forms-reservations open">
+        <aside class="forms-reservations open animated">
             <jdoc:include type="modules" name="forms-reservations" style="none" />
            
         </aside>
