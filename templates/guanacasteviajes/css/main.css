@@ -229,7 +229,8 @@ footer .redes a:hover{color:#695c3e;-webkit-transition:all 0.35s ease;-moz-trans
 .b2jcontainer h2{background:none !important;color:#695c3e;font-size:2em;font-family:"Times New Roman",Arial,Helvetica,sans-serif;font-weight:bold;margin-bottom:10px !important}
 .tripAdvisor-widget{float:right;position:relative;right:0;top:-220px;}
 .tripAdvisor-widget .widSSPnarrow{width:256px !important}
-.page-testimonialsTripAdvisor .widSSP{width:100% !important}
+.page-testimonialsTripAdvisor .widSSP{width:465px !important}
+.TA_selfserveprop,.TA_ssnarrowcollectreview{display:inline-block;vertical-align:top}
 .mCSB_container{width:auto;margin-right:30px;overflow:hidden}
 .mCSB_container.mCS_no_scrollbar{margin-right:0}
 .mCS_disabled>.mCustomScrollBox>.mCSB_container.mCS_no_scrollbar,.mCS_destroyed>.mCustomScrollBox>.mCSB_container.mCS_no_scrollbar{margin-right:30px}
