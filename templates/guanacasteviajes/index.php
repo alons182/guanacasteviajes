@@ -48,7 +48,7 @@ $doc->addStyleSheet('templates/'.$this->template.'/css/animate.css');
                 <div class="inner">
                     <jdoc:include type="modules" name="up-box" style="none" />
                 </div>
-                <em class="border-colors"></em>
+                <em class="border-colors b"></em>
             </section>
             <section class="down-box">
                 <div class="inner">
