@@ -9,3 +9,6 @@
 2014-09-22T19:46:20+00:00	INFO	joomlafailure	Username and password do not match or you do not have an account yet.
 2014-09-22T19:46:31+00:00	INFO	joomlafailure	Username and password do not match or you do not have an account yet.
 2014-09-22T20:55:58+00:00	INFO	joomlafailure	Username and password do not match or you do not have an account yet.
+2014-10-02T23:26:05+00:00	INFO	joomlafailure	Username and password do not match or you do not have an account yet.
+2014-10-02T23:26:16+00:00	INFO	joomlafailure	Username and password do not match or you do not have an account yet.
+2014-10-02T23:27:16+00:00	INFO	joomlafailure	Username and password do not match or you do not have an account yet.
