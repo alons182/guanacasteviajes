@@ -8,6 +8,11 @@
 	btn_book = $('.btn-book');
 	
 	
+	 if(localStorage.getItem('form_reservation_option'))
+           {
+                if($aside_services.hasClass('open'))
+               		$aside_services.removeClass('open shake')
+           } 
 
 	 $(".chosen-select").chosen({width:"100%"});
 
@@ -75,9 +80,13 @@
     });*/
 	$aside_services.stickyfloat({ duration: 400 });
     $aside_services.on('click','.handle',function (e) {
-    	
+    
     	if($aside_services.hasClass('open'))
+    	{
     		$aside_services.removeClass('open shake')
+    		if(! localStorage.getItem('form_reservation_option'))
+    			localStorage.setItem('form_reservation_option', 'closed');
+    	}
     	else
     		$aside_services.addClass('open');
 

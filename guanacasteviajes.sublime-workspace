@@ -519,6 +519,22 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "templates/guanacasteviajes/index.php",
+			"settings":
+			{
+				"buffer_size": 6224,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/guanacasteviajes/stylus/main.styl",
+			"settings":
+			{
+				"buffer_size": 13992,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -694,6 +710,20 @@
 	],
 	"file_history":
 	[
+		"/C/xampp/htdocs/guanacasteviajes/components/com_contact/metadata.xml",
+		"/C/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/stylus/responsive.styl",
+		"/C/xampp/htdocs/guanacasteviajes/README.md",
+		"/C/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/stylus/normalize.styl",
+		"/C/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/component.php",
+		"/C/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/error.php",
+		"/C/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/css/animate.css",
+		"/C/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/fonts/guanacasteviajes.woff",
+		"/C/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/fonts/guanacasteviajes.svg",
+		"/C/xampp/htdocs/guanacasteviajes/templates/beez3/css/general.css",
+		"/C/xampp/htdocs/guanacasteviajes/administrator/components/com_templates/templates.xml",
+		"/C/xampp/htdocs/guanacasteviajes/administrator/components/com_templates/templates.php",
+		"/C/xampp/htdocs/guanacasteviajes/administrator/includes/toolbar.php",
+		"/C/xampp/htdocs/guanacasteviajes/index.php",
 		"/C/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/index.php",
 		"/C/xampp/htdocs/energycontrol/protected/pages/modules/ajustefacturacion/admin/administrar.php",
 		"/C/xampp/htdocs/energycontrol/protected/pages/modules/ajustefacturacion/admin/addedit.php",
@@ -726,8 +756,6 @@
 		"/C/xampp/htdocs/guanacasteviajes/layouts/joomla/content/icons.php",
 		"/C/xampp/htdocs/guanacasteviajes/components/com_contact/helpers/icon.php",
 		"/C/xampp/htdocs/guanacasteviajes/administrator/manifests/libraries/idna_convert.xml",
-		"/C/xampp/htdocs/guanacasteviajes/index.php",
-		"/C/xampp/htdocs/guanacasteviajes/components/com_contact/metadata.xml",
 		"/C/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/js/main.js",
 		"/C/Users/Alonso/Desktop/construccion/index.html",
 		"/C/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/css/main.css",
@@ -738,12 +766,10 @@
 		"/C/xampp/htdocs/guanacasteviajes/modules/mod_articles_news/mod_articles_news.php",
 		"/C/xampp/htdocs/guanacasteviajes/libraries/cms/installer/manifest.php",
 		"/C/xampp/htdocs/guanacasteviajes/modules/mod_articles_news/index.html",
-		"/C/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/css/animate.css",
 		"/C/Users/Alonso/Desktop/Backup_13_8_2014.sql",
 		"/D/Downloads/animate.css",
 		"/C/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/stylus/tables.styl",
 		"/D/template guanacaste/form-reservation.html",
-		"/C/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/stylus/responsive.styl",
 		"/C/xampp/htdocs/guanacasteviajes/helpers/reservation.php",
 		"/D/template guanacaste/index.html",
 		"/C/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/css/colorbox.css",
@@ -765,15 +791,11 @@
 		"/C/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/html/mod_articles_news/default.php",
 		"/C/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/html/mod_articles_news/_item.php",
 		"/C/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/css/chosen.min.css",
-		"/C/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/error.php",
-		"/C/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/component.php",
 		"/C/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/stylus/mCustomScrollbar.styl",
 		"/C/xampp/htdocs/guanacasteviajes/guanacasteviajes.sublime-project",
 		"/C/xampp/htdocs/guanacasteviajes/github.php",
 		"/C/xampp/htdocs/guanacasteviajes/includes/framework.php",
 		"/C/xampp/htdocs/guanacasteviajes/media/system/js/frontediting-uncompressed.js",
-		"/C/xampp/htdocs/guanacasteviajes/administrator/includes/toolbar.php",
-		"/C/xampp/htdocs/guanacasteviajes/administrator/components/com_templates/templates.php",
 		"/C/xampp/htdocs/guanacasteviajes/stylus/main.styl",
 		"/C/xampp/htdocs/guanacasteviajes/js/main.js",
 		"/C/xampp/htdocs/guanacasteviajes/css/main.css",
@@ -815,13 +837,7 @@
 		"/C/xampp/htdocs/avotz/Gulpfile.js",
 		"/D/get_posts.php",
 		"/C/xampp/htdocs/avotz/stylus/responsive.styl",
-		"/C/xampp/htdocs/avotz/contacto.html",
-		"/C/xampp/htdocs/avotz/data/works.json",
-		"/D/Instaladores/Sublime Text 2.0.2 x64/Data/Packages/Default/Default (Windows).sublime-keymap",
-		"/D/Documents/dumps/planea.sql",
-		"/D/Documents/UNED/TFG/22021825 libney UNED.txt",
-		"/C/xampp/htdocs/avotz/.htaccess",
-		"/C/xampp/htdocs/avotz/404.html"
+		"/C/xampp/htdocs/avotz/contacto.html"
 	],
 	"find":
 	{
@@ -1012,8 +1028,186 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "templates/guanacasteviajes/index.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6224,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1846,
+								1846
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content"
+							],
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 600.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "templates/guanacasteviajes/stylus/main.styl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 13992,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1176,
+								1088
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content"
+							],
+							"syntax": "Packages/Stylus/Stylus.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": -0.0,
+						"translation.y": 776.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -1072,6 +1266,14 @@
 				"templates\\guanacasteviajes\\stylus\\main.styl"
 			],
 			[
+				"respo",
+				"templates\\guanacasteviajes\\stylus\\responsive.styl"
+			],
+			[
+				"templateguanainde",
+				"templates\\guanacasteviajes\\index.php"
+			],
+			[
 				"icons",
 				"templates\\guanacasteviajes\\stylus\\icons.styl"
 			],
@@ -1098,10 +1300,6 @@
 			[
 				"cotiza",
 				"templates\\guanacasteviajes\\js\\cotizador.js"
-			],
-			[
-				"respo",
-				"templates\\guanacasteviajes\\stylus\\responsive.styl"
 			],
 			[
 				"guanacasinde",
@@ -1316,6 +1514,18 @@
 		"selected_items":
 		[
 			[
+				"pura",
+				"C:\\xampp\\htdocs\\puravida\\puravida.sublime-project"
+			],
+			[
+				"",
+				"C:\\xampp\\htdocs\\guanaprint\\guanaprint.sublime-project"
+			],
+			[
+				"guna",
+				"C:\\xampp\\htdocs\\guanabikers\\guanabikers.sublime-project"
+			],
+			[
 				"bes",
 				"C:\\xampp\\htdocs\\best-quality\\bestquality.sublime-project"
 			],
@@ -1334,10 +1544,6 @@
 			[
 				"i",
 				"C:\\xampp\\htdocs\\inmobiliariacrc\\inmobiliariacrc.sublime-project"
-			],
-			[
-				"",
-				"C:\\xampp\\htdocs\\guanaprint\\guanaprint.sublime-project"
 			],
 			[
 				"fas",
