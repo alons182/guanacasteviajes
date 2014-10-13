@@ -175,11 +175,11 @@ header #menu ul .active a{color:#9c6}
 .forms-reservations .botones{margin-top:10px;text-align:center}
 .top-info{background:#9c6}
 .main{position:relative}
-.page-tourDetails{float:right;padding:.5em;width:280px;margin-left:10px;}
+.page-tourDetails{float:right;padding:.5em;width:280px;margin-left:10px;position:relative;z-index:2;}
 .page-tourDetails .details{margin:0;list-style:none;}
 .page-tourDetails .details dt{display:block;text-align:center;cursor:pointer;}
 .page-tourDetails .details dt:hover{background:#c3c3c3;border-color:#c3c3c3}
-.page-tourDetails .details dd{margin:0;padding:1em 0}
+.page-tourDetails .details dd{margin:0;padding:1em .5em;background:#fff}
 .page-tourDetails .details a{color:#695c3e;text-decoration:underline;}
 .page-tourDetails .details a:hover{color:#9c6}
 .page-tourDetails strong{color:#695c3e}
@@ -222,8 +222,9 @@ header #menu ul .active a{color:#9c6}
 .shuttle-column{display:inline-block;vertical-align:top;margin-right:4em;}
 .shuttle-column:last-child{margin-right:0}
 .shuttle-notes{list-style:none;font-size:13px}
-.inner{margin-right:auto;margin-left:auto;width:940px;display:table;position:relative}
-.blog,.item-page{padding:3em 0;min-height:600px}
+.inner{margin-right:auto;margin-left:auto;width:940px;display:table}
+.blog,.item-page{padding:3em 0;min-height:600px;}
+.blog.page-tour,.item-page.page-tour{min-height:800px}
 #slider .cycle-slideshow{width:100%;}
 #slider .cycle-slideshow img{width:100%;height:auto}
 .row{display:table}
@@ -249,12 +250,21 @@ footer .copyright{float:left}
 footer .redes{float:right;color:#fff;}
 footer .redes a{text-transform:uppercase;color:#fff;}
 footer .redes a:hover{color:#695c3e;-webkit-transition:all 0.35s ease;-moz-transition:all 0.35s ease;-o-transition:all 0.35s ease;-ms-transition:all 0.35s ease;transition:all 0.35s ease}
+.relative{position:relative}
 .b2jcontainer{border:none !important;background:none !important;margin-top:1.5em !important;}
 .b2jcontainer h2{background:none !important;color:#695c3e;font-size:2em;font-family:"Times New Roman",Arial,Helvetica,sans-serif;font-weight:bold;margin-bottom:10px !important}
 .tripAdvisor-widget{float:right;position:relative;right:0;top:-220px;}
 .tripAdvisor-widget .widSSPnarrow{width:256px !important}
 .page-testimonialsTripAdvisor .widSSP{width:465px !important}
 .TA_selfserveprop,.TA_ssnarrowcollectreview{display:inline-block;vertical-align:top}
+.tours-gallery{width:100%;min-height:650px;min-width:900px;padding-top:1px;position:absolute;left:0;right:0}
+#slider-gallery{margin:10px 0 0 0;height:500px;overflow:hidden;background:url("../img/ajax-loader.gif") center center no-repeat;}
+#slider-gallery .slide{position:relative;display:none;height:500px;float:left;background-position:center right;cursor:pointer;border-left:1px solid #fff;}
+#slider-gallery .slide:first-child{border:none}
+#slider-gallery .slide.active{cursor:default}
+#slider-gallery .slide-block{position:absolute;left:40px;bottom:75px;display:inline-block;width:435px;background-color:#fff;background-color:rgba(255,255,255,0.8);padding:20px;font-size:14px;color:#134b94;border:1px solid #fff;overflow:hidden;-webkit-border-radius:4px;border-radius:4px;}
+#slider-gallery .slide-block h4{font-size:36px;font-weight:bold;margin:0 0 10px 0;line-height:1}
+#slider-gallery .slide-block p{margin:0}
 .mCSB_container{width:auto;margin-right:30px;overflow:hidden}
 .mCSB_container.mCS_no_scrollbar{margin-right:0}
 .mCS_disabled>.mCustomScrollBox>.mCSB_container.mCS_no_scrollbar,.mCS_destroyed>.mCustomScrollBox>.mCSB_container.mCS_no_scrollbar{margin-right:30px}

@@ -129,6 +129,8 @@ $doc->addStyleSheet('templates/'.$this->template.'/css/animate.css');
         <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/vendor/chosen.jquery.min.js"></script>
         <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/vendor/jquery.validate.min.js"></script>
         <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/vendor/jquery.colorbox-min.js"></script>
+        <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/vendor/jquery.carouFredSel-6.2.0-packed.js"></script>
+        
       
         <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/cotizador.js"></script>
         <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/main.js"></script>
