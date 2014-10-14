@@ -243,6 +243,17 @@ header #menu ul .active a{color:#9c6}
 .services-box .service ul li{font-size:14px;line-height:20px;background:url("../img/list_arrow.png") left center no-repeat;padding-left:30px;margin-bottom:20px;}
 .services-box .service ul li a{color:#695c3e;}
 .services-box .service ul li a:hover{text-decoration:underline}
+.tabs{position:relative;top:-60px;}
+.tabs ul{float:right;position:absolute;right:20px;top:0;}
+.tabs ul li{background:#ccc;cursor:pointer;float:left;list-style:none;margin:0 -3px;padding:5px 15px 0 15px;position:relative;-webkit-box-shadow:2px 0 1px rgba(0,0,0,0.75);box-shadow:2px 0 1px rgba(0,0,0,0.75);-webkit-border-radius:5px 5px 0 0;border-radius:5px 5px 0 0;-webkit-transition:all 0.2s ease;-moz-transition:all 0.2s ease;-o-transition:all 0.2s ease;-ms-transition:all 0.2s ease;transition:all 0.2s ease;top:0;}
+.tabs ul li.active{z-index:6 !important;top:-5px;padding:5px 15px}
+.tabs ul li span{color:#fff;display:block;text-align:center}
+.tabs ul li .icon-home,.tabs ul li .icon-file,.tabs ul li .icon-book,.tabs ul li .icon-coin,.tabs ul li .icon-map,.tabs ul li .icon-users{color:rgba(255,255,255,0.6);font-size:1.3em}
+.tabs ul #intro{background-color:#619e33;z-index:5}
+.tabs ul #amenities{background-color:#eeae11;z-index:4}
+.tabs ul #things{background-color:#695c3e;z-index:3}
+.tabs ul #rates{background-color:#9c6;z-index:2}
+.tabs ul #booknow{background-color:#ee4035;z-index:1}
 footer{background:#9c6;padding-bottom:20px;position:relative;padding-top:30px;}
 footer em{position:absolute;top:0;left:0;right:0;height:8px;background:url("../img/circulos.png") 0 top repeat-x}
 footer p{margin:0;font:14px Times New Roman,Arial,Helvetica,sans-serif;line-height:20px;color:#fff;text-transform:uppercase}

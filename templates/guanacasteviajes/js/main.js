@@ -5,7 +5,9 @@
 	$cotizador = $('.cotizador'),
 	detailsTours = $('.details'),
 	dd =  detailsTours.find('dd'),
-	btn_book = $('.btn-book');
+	btn_book = $('.btn-book'),
+	tabs = $('.tabs'),
+	contentArticles = $('.item-page');
 	
 	
 	 if(localStorage.getItem('form_reservation_option'))
@@ -189,6 +191,35 @@
 		//	update item width config
 		slider.trigger( 'configuration', ['items.width', _width * 0.15] );
 	});	 
+
+	//tabs hotels
+	tabs.find('li').on('click',function(e){
+		
+		tabs.find('li').removeClass('active');
+		$(this).addClass('active');
+		
+		if(e.currentTarget.id == "booknow") {
+
+				if($aside_services.hasClass('open'))
+	    		$aside_services.addClass('shake')
+	    	else
+	    		$aside_services.addClass('open shake');
+
+	    	setTimeout(function(){
+	    		$aside_services.removeClass('shake')	
+	    	}, 3000);
+
+    	
+			return false	
+		}
+
+		contentArticles.find('article').hide();
+		contentArticles.find('article.'+ e.currentTarget.id).fadeIn(500);
+		 
+
+		 e.preventDefault();
+		
+	});
   
 	
 

@@ -819,7 +819,69 @@ header
 					&:hover
 						text-decoration underline
 		
-					
+.tabs
+	position relative
+	top -60px
+	ul
+		float right
+		position absolute
+		right 20px
+		top 0
+
+		li 
+			//overflow auto
+			background #CCC
+			cursor pointer
+			float left
+			//height 42px
+			list-style none
+			margin 0px -3px
+			padding 5px 15px 0 15px
+			position relative
+			box-shadow 2px 0px 1px rgba(0, 0, 0, .75)
+			border-radius 5px 5px 0 0
+			transition all .2s ease
+			top 0
+
+
+			&.active
+				z-index 6 !important
+				top -5px
+				padding 5px 15px 
+				
+		
+		
+				
+
+			span 
+				color #fff
+				display block
+				text-align center
+				//width 42px
+
+			.icon-home, .icon-file, .icon-book, .icon-coin, .icon-map, .icon-users
+				color rgba(255, 255, 255, 0.6)
+				font-size 1.3em
+				//padding-bottom 5px
+				//padding-top 2px
+		#intro 
+			background-color #619e33
+			z-index 5 
+				
+
+		#amenities
+			background-color $naranja
+			z-index 4
+		#things
+			background-color cafe
+			z-index 3  
+		#rates
+			background-color $verde
+			z-index 2 
+		
+		#booknow
+			background-color $rojo
+			z-index 1 					
 
 footer
 	background $verde
