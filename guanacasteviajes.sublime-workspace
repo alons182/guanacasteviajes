@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"to",
+				"top"
+			],
+			[
+				"ad",
+				"addClass"
+			],
+			[
+				"bor",
+				"border-radius"
+			],
+			[
 				"form",
 				"form_reservation_option"
 			],
@@ -38,10 +50,6 @@
 			[
 				"wi",
 				"width"
-			],
-			[
-				"bor",
-				"border"
 			],
 			[
 				"slid",
@@ -506,14 +514,6 @@
 			[
 				"if",
 				"ife	if … else"
-			],
-			[
-				"Roue",
-				"Route-get	Route-get"
-			],
-			[
-				"View",
-				"View-make	View-make"
 			]
 		]
 	},
@@ -532,7 +532,7 @@
 			"file": "templates/guanacasteviajes/stylus/main.styl",
 			"settings":
 			{
-				"buffer_size": 15748,
+				"buffer_size": 16056,
 				"line_ending": "Windows"
 			}
 		},
@@ -548,7 +548,7 @@
 			"file": "templates/guanacasteviajes/js/main.js",
 			"settings":
 			{
-				"buffer_size": 4867,
+				"buffer_size": 5225,
 				"line_ending": "Unix"
 			}
 		},
@@ -882,6 +882,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"transition",
+			"rojo",
 			"item-page",
 			"dd",
 			"slider2",
@@ -1007,9 +1009,7 @@
 			"hentry",
 			"form-allowed-tags",
 			".border-",
-			"#logo",
-			"shape",
-			"Shape"
+			"#logo"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1055,7 +1055,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -1151,15 +1151,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 15748,
+						"buffer_size": 16056,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								13491,
-								13491
+								13738,
+								13738
 							]
 						],
 						"settings":
@@ -1227,10 +1227,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 16572.0,
+						"translation.y": 16816.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -1327,15 +1327,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4867,
+						"buffer_size": 5225,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4854,
-								4854
+								4759,
+								4759
 							]
 						],
 						"settings":
@@ -1401,11 +1401,11 @@
 							],
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
-						"translation.x": -0.0,
-						"translation.y": 3480.0,
+						"translation.x": 0.0,
+						"translation.y": 3660.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{

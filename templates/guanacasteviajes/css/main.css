@@ -254,6 +254,7 @@ header #menu ul .active a{color:#9c6}
 .tabs ul #things{background-color:#695c3e;z-index:3}
 .tabs ul #rates{background-color:#9c6;z-index:2}
 .tabs ul #booknow{background-color:#ee4035;z-index:1}
+.amenities,.things,.booknow,.rates{display:none}
 footer{background:#9c6;padding-bottom:20px;position:relative;padding-top:30px;}
 footer em{position:absolute;top:0;left:0;right:0;height:8px;background:url("../img/circulos.png") 0 top repeat-x}
 footer p{margin:0;font:14px Times New Roman,Arial,Helvetica,sans-serif;line-height:20px;color:#fff;text-transform:uppercase}
