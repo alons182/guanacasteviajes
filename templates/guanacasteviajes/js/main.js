@@ -7,7 +7,10 @@
 	dd =  detailsTours.find('dd'),
 	btn_book = $('.btn-book'),
 	tabs = $('.tabs'),
-	contentArticles = $('.item-page');
+	contentArticles = $('.item-page'),
+	reservation_hotel = $('.reservation-hotel'),
+	reservation_tour = $('.reservation-tour'),
+	reservation_transport = $('.reservation-transport');
 	
 	
 	 if(localStorage.getItem('form_reservation_option'))
@@ -17,6 +20,17 @@
            } 
 
 	 $(".chosen-select").chosen({width:"100%"});
+
+	   /*
+        assigned dynamic height to page-tour section  
+         */
+        height_pageTour = $('.page-tour div[itemprop="articleBody"]').height();
+		height_toursGallery = $('.tours-gallery').height();
+		
+		$('.page-tour').height(height_pageTour + height_toursGallery);
+
+
+		
 
 	$menu.find(".parent").hoverIntent({
 	    over: function() {
@@ -42,6 +56,32 @@
 
     btn_book.on('click',function (e) {
     	
+    	reservation_hotel.addClass('hidden');
+    	reservation_tour.addClass('hidden');
+    	reservation_transport.addClass('hidden');
+    	//console.log($(this).data('activitie'))
+		$aside_services.find('#'+ $(this).data('form') +'-destination option[value="'+ $(this).data('activitie') +'"]').attr("selected",true);
+    	
+    	if ($(this).data('form') === 'tour')
+    	{
+    		reservation_tour.removeClass('hidden');
+    		$aside_services.addClass('green');
+    		
+    		
+    	}	
+    	if ($(this).data('form') === 'hotel')
+    	{
+    		reservation_hotel.removeClass('hidden');
+    		$aside_services.addClass('red');
+    		
+    	}
+    	if ($(this).data('form') === 'transport')
+    	{	
+    		reservation_transport.removeClass('hidden');
+    		$aside_services.addClass('yellow');
+    		
+		}
+
     	if($aside_services.hasClass('open'))
     		$aside_services.addClass('shake')
     	else
@@ -50,6 +90,8 @@
     	setTimeout(function(){
     		$aside_services.removeClass('shake')	
     	}, 3000);
+
+    	$(".chosen-select").trigger("chosen:updated");
 
     	e.preventDefault();
     });
@@ -220,6 +262,476 @@
 		 e.preventDefault();
 		
 	});
+
+	//reservation tour
+	// LOAD ACTIVITIES FORM RESERVATION
+	$.getJSON('/helpers/tours.php', function(data) {
+
+		  var items = [];
+
+		  var select = $('#tour-destination').empty();
+        $.each(data, function(i,item) {
+            select.append( '<option value="'
+                                 + $.trim(item.title)
+                                 + '">'
+                                 + item.title
+                                 + '</option>' ); 
+
+
+		 
+		});
+		select.prepend('<option value=""></option>');
+		
+		$(".chosen-select").trigger("chosen:updated");
+
+
+
+	});
+	//chosen
+
+	$(".chosen-select").chosen();
+	
+	
+	
+	//FORM SUBMIT RESERVATION
+
+	//$( "#date" ).datepicker();
+	//$( "#dateP" ).datepicker();
+	
+	 $("#formTour").validate({
+
+	 	messages:
+	 	{
+	 		"tour-fname":{
+	 			required:'*'
+	 		},
+	 		"tour-email":{
+	 			required:'*',
+	 			email:'*'
+	 		},
+	 		"tour-destination":{
+	 			required:'*'
+	 		},
+	 		"tour-children":{
+	 			required:''
+	 		},
+	 		"tour-persons":{
+	 			required:'',
+	 			number:''
+	 		},
+	 		"tour-phone":{
+	 			required:'*'
+	 		},
+	 		"tour-pdate":{
+	 			required:'*'
+	 		},
+	 		"tour-hotelpickup":{
+	 			required:'*'
+	 		},
+	 		
+	 		
+	 		
+	 	},
+	 	rules: {
+	 		
+		    
+		    "tour-destination":{
+		    	required: true
+		    },
+		    
+		    "tour-children": {
+
+		      number: true
+
+		    },
+		     "tour-persons": {
+
+		      required: true,
+
+		      number: true
+
+		    }
+		     
+		
+
+
+		   
+
+		  },
+		  errorPlacement: function(error, element) {
+
+		    if (element.attr("name") == "conditions") {
+
+		      error.insertAfter(".terms-text");
+
+		    } else if (element.attr("name") == "credit") {
+
+		       error.insertAfter("#exp_card");
+
+		    }else{
+		    	error.insertAfter(element);
+		    }
+
+		  },
+
+		  submitHandler: function(form) {
+
+		    var formInput =  $('#formTour').serializeArray();
+			var url = "/helpers/reservation_tour.php";
+			
+			$.post(url, formInput, function(data){
+						console.log(data);
+						
+						limpiaForm($('#formTour'));
+						limpiaChosen();
+
+						if(data=="ok")
+							$('.mensaje').html('<span class="ok">Reservation sent successfully</span>');
+						else
+							$('.mensaje').html('<span class="error">Error sending the reservation</span>');
+
+
+						setTimeout(function(){  
+					        $('.mensaje').fadeOut(200,function() {
+
+							    $('.mensaje span').remove();
+							    $('.mensaje').show();
+
+							  });}, 2000);  
+
+
+					});
+		   // form.submit();
+
+		  }
+
+		 });
+
+//reservation transport
+	
+	$('.datepicker').pickadate();
+	
+	//FORM SUBMIT RESERVATION
+	
+	
+	
+	 $("#formTransport").validate({
+
+	 	messages:
+	 	{
+	 		"transport-fname":{
+	 			required:'*'
+	 		},
+	 		"transport-email":{
+	 			required:'*',
+	 			email:'*'
+	 		},
+	 		"transport-destination":{
+	 			required:'*'
+	 		},
+	 		"transport-children":{
+	 			required:''
+	 		},
+	 		"transport-persons":{
+	 			required:'',
+	 			number:''
+	 		},
+	 		
+	 		"transport-pdate":{
+	 			required:'*'
+	 		},
+	 		"transport-rdate":{
+	 			required:'*'
+	 		},
+	 		
+	 		
+	 		
+	 	},
+	 	rules: {
+	 		
+		    
+		    "transport-destination":{
+		    	required: true
+		    },
+		    
+		    "transport-children": {
+
+		      number: true
+
+		    },
+		     "transport-persons": {
+
+		      required: true,
+
+		      number: true
+
+		    }
+		     
+		
+
+
+		   
+
+		  },
+		  errorPlacement: function(error, element) {
+
+		    if (element.attr("name") == "conditions") {
+
+		      error.insertAfter(".terms-text");
+
+		    } else if (element.attr("name") == "credit") {
+
+		       error.insertAfter("#exp_card");
+
+		    }else{
+		    	error.insertAfter(element);
+		    }
+
+		  },
+
+		  submitHandler: function(form) {
+
+		    var formInput =  $('#formTransport').serializeArray();
+			var url = "/helpers/reservation_transport.php";
+			
+			$.post(url, formInput, function(data){
+						console.log(data);
+						
+						limpiaForm($('#formTransport'));
+						limpiaChosen();
+
+						if(data=="ok")
+							$('.mensaje').html('<span class="ok">Reservation sent successfully</span>');
+						else
+							$('.mensaje').html('<span class="error">Error sending the reservation</span>');
+
+
+						setTimeout(function(){  
+					        $('.mensaje').fadeOut(200,function() {
+
+							    $('.mensaje span').remove();
+							    $('.mensaje').show();
+
+							  });}, 2000);  
+
+
+					});
+		   // form.submit();
+
+		  }
+
+		 });
+
+	//reservation hotel
+	// LOAD ACTIVITIES FORM RESERVATION
+	$.getJSON('/helpers/hotels.php', function(data) {
+
+		  var items = [];
+
+		  var select = $('#hotel-destination').empty();
+        $.each(data, function(i,item) {
+            select.append( '<option value="'
+                                 + $.trim(item.title)
+                                 + '">'
+                                 + item.title
+                                 + '</option>' ); 
+
+
+		 
+		});
+		select.prepend('<option value=""></option>');
+		
+		$(".chosen-select").trigger("chosen:updated");
+
+
+
+	});
+	//chosen
+
+	$(".chosen-select").chosen();
+	
+	
+	
+	//FORM SUBMIT RESERVATION
+
+	//$( "#date" ).datepicker();
+	//$( "#dateP" ).datepicker();
+	
+	 $("#formHotel").validate({
+
+	 	messages:
+	 	{
+	 		"hotel-fname":{
+	 			required:'*'
+	 		},
+	 		"hotel-email":{
+	 			required:'*',
+	 			email:'*'
+	 		},
+	 		"hotel-destination":{
+	 			required:'*'
+	 		},
+	 		"hotel-children":{
+	 			required:''
+	 		},
+	 		"hotel-persons":{
+	 			required:'',
+	 			number:''
+	 		},
+	 		"hotel-phone":{
+	 			required:'*'
+	 		},
+	 		"hotel-pdate":{
+	 			required:'*'
+	 		},
+	 		"hotel-hotelpickup":{
+	 			required:'*'
+	 		},
+	 		
+	 		
+	 		
+	 	},
+	 	rules: {
+	 		
+		    
+		    "hotel-destination":{
+		    	required: true
+		    },
+		    
+		    "hotel-children": {
+
+		      number: true
+
+		    },
+		     "hotel-persons": {
+
+		      required: true,
+
+		      number: true
+
+		    }
+		     
+		
+
+
+		   
+
+		  },
+		  errorPlacement: function(error, element) {
+
+		    if (element.attr("name") == "conditions") {
+
+		      error.insertAfter(".terms-text");
+
+		    } else if (element.attr("name") == "credit") {
+
+		       error.insertAfter("#exp_card");
+
+		    }else{
+		    	error.insertAfter(element);
+		    }
+
+		  },
+
+		  submitHandler: function(form) {
+
+		    var formInput =  $('#formHotel').serializeArray();
+			var url = "/helpers/reservation_hotel.php";
+			
+			$.post(url, formInput, function(data){
+						console.log(data);
+						
+						limpiaForm($('#formHotel'));
+						limpiaChosen();
+
+						if(data=="ok")
+							$('.mensaje').html('<span class="ok">Reservation sent successfully</span>');
+						else
+							$('.mensaje').html('<span class="error">Error sending the reservation</span>');
+
+
+						setTimeout(function(){  
+					        $('.mensaje').fadeOut(200,function() {
+
+							    $('.mensaje span').remove();
+							    $('.mensaje').show();
+
+							  });}, 2000);  
+
+
+					});
+		   // form.submit();
+
+		  }
+
+		 });
+
+	$('.form-type').change(function (e) {
+
+		var self = $(this);
+		reservation_hotel.addClass('hidden');
+    	reservation_tour.addClass('hidden');
+    	reservation_transport.addClass('hidden');
+    	$aside_services.removeClass('yellow red green');
+
+    	if (self.val() === 'tour')
+    	{
+    		reservation_tour.removeClass('hidden');
+    		$aside_services.addClass('green');
+    		$aside_services.find('.form-type').val('tour');
+
+    	}	
+    	if (self.val() === 'hotel')
+    	{
+    		reservation_hotel.removeClass('hidden');$aside_services.addClass('red');
+    		$aside_services.find('.form-type').val('hotel');
+    	}
+    	if (self.val() === 'transport')
+    	{	
+    		reservation_transport.removeClass('hidden');$aside_services.addClass('yellow');
+    		$aside_services.find('.form-type').val('transport');
+		}
+
+	})
+
+ // FUNCTION LIMPIAR FORM
+	  function limpiaChosen() {
+	 	
+	 	$("#tour-destination").val('').trigger("chosen:updated");
+		$("#tour-adults").val('').trigger("chosen:updated");
+		$("#tour-children").val('').trigger("chosen:updated");
+
+		$("#transport-destination").val('').trigger("chosen:updated");
+		$("#transport-adults").val('').trigger("chosen:updated");
+		$("#transport-children").val('').trigger("chosen:updated");
+
+		$("#hotel-destination").val('').trigger("chosen:updated");
+		$("#hotel-adults").val('').trigger("chosen:updated");
+		$("#hotel-children").val('').trigger("chosen:updated");
+		
+		
+	}
+	 function limpiaForm(miForm) {
+	 	
+		 // recorremos todos los campos que tiene el formulario
+		 $(":input", miForm).each(function() {
+		 var type = this.type;
+		 var tag = this.tagName.toLowerCase();
+		 //limpiamos los valores de los campos…
+		if (type == 'text' || type == 'password'  || type == 'email' || tag == 'textarea')
+		this.value = "";
+		 // excepto de los checkboxes y radios, le quitamos el checked
+		 // pero su valor no debe ser cambiado
+		 else if (type == 'checkbox' || type == 'radio')
+		this.checked = false;
+		 // los selects le ponesmos el indice a -
+		 else if (tag == 'select')
+		this.selectedIndex = -1;
+		 });
+	}
+
+      
+	    
   
 	
 

@@ -81,6 +81,7 @@ li.highlighted
 	border-radius 0
 	border-bottom 1px solid #f5c34c
 	transition all 0.35s ease
+	cursor pointer
 	
 	&:hover
 		background none
@@ -218,6 +219,12 @@ header
 				line-height 11px !important
 				border-right 1px solid #dbdbdb
 
+				&.item-143
+					.nav-child
+						display none !important
+					&:after
+						content '' !important
+
 				.nav-header
 				a
 					position relative
@@ -299,6 +306,7 @@ header
 			.active
 				a 
 					color $verde
+			
 
 .btn-budget 
 	position absolute
@@ -394,13 +402,50 @@ header
 	width 180px
 	transition all .5s ease
 	line-height 20px
+
+
+	&.green
+		border-top 4px solid $verde
+		.handle
+			border-left 35px solid $verde
+		.btn 
+			background $verde
+			border-bottom 1px solid $verde
+		.form-type
+			border-bottom 1px solid $verde
+			color $verde
+			
+	&.red
+		border-top 4px solid $rojo
+		.handle
+			border-left 35px solid $rojo
+		.btn 
+			background $rojo
+			border-bottom 1px solid $rojo
+
+		.form-type
+			border-bottom 1px solid $rojo
+			color $rojo
+			
+	&.yellow
+		border-top 4px solid #f5c34c
+		.handle
+			border-left 35px solid #f5c34c
+		.btn 
+			background #f5c34c
+			border-bottom 1px solid #f5c34c
+
+		.form-type
+			border-bottom 1px solid #f5c34c
+			color $naranja
+			
 	
 	&.open
 		left 0
 
 		.handle
 			&:after
-				content '<<'
+				content '\f100'
 			
 
 	/*&.close
@@ -416,15 +461,18 @@ header
 		top 30%
 		position absolute
 		cursor pointer
+
 		
 		&:after
-			content '>>'
+			font-family: 'guanacasteviajes';
+			content '\f101'
 			position absolute
-			font-size 1em
+			font-size 2em
 			color #FFF
 			right 15px
 			top -15px
-			font-weight bold
+			
+			
 			
 
 	.mCSB_dragger_bar
@@ -452,6 +500,9 @@ header
 	input[type="email"]
 		width 93%
 
+		&.error
+			border-color $rojo
+
 
 	.notas
 		margin-top 1em
@@ -472,17 +523,30 @@ header
 	label
 		text-align left
 		margin-right 5px
-		width 75px
+		//width 75px
 		display inline-block
 		float left
+		&.error
+			float: right;
+			position: absolute;
+			color: $rojo
+			
 
-	label[for="personsR"],
-	label[for="childrenR"]
+	label[for="transport-persons"],
+	label[for="transport-children"],
+	label[for="tour-persons"],
+	label[for="tour-children"],
+	label[for="hotel-persons"],
+	label[for="hotel-children"]
 		width 46px
 	label[for="childrenR"]
 		margin-left 5px
-	#personsR
-	#childrenR
+	#transport-persons,
+	#transport-children,
+	#tour-persons,
+	#tour-children,
+	#hotel-persons,
+	#hotel-children
 		width 25px
 	
 	.chosen-container
@@ -493,6 +557,22 @@ header
 	.botones
 		margin-top 10px
 		text-align center
+	.form-type
+		position absolute
+		right 0 
+		top 11px 
+		border none
+		font-size 1.1em
+		background rgba(0, 0, 0, 0)
+		font-family Time new roman
+		outline: 0;
+		border-bottom 1px solid #f5c34c
+		color $naranja
+		font-weight bold
+		text-align right
+		cursor pointer
+		
+			
 	
 .top-info	
 	background $verde
@@ -612,6 +692,7 @@ header
 				padding 2px
 		
 			.icon-star2
+			.icon-star1-5
 				color $rojo
 		.location
 			margin-left: 5px;
@@ -719,8 +800,8 @@ header
 	padding 3em 0
 	min-height 600px
 
-	&.page-tour
-		min-height 800px
+	/*&.page-tour
+		min-height 800px*/
 
 #slider
 	
@@ -957,7 +1038,7 @@ footer
 .tours-gallery
 	//height: 100%;
 	width: 100%;
-	min-height: 650px;
+	min-height: 500px;
 	min-width: 900px;
 	padding-top: 1px;
 	position absolute
@@ -977,6 +1058,8 @@ footer
 		height: 500px;
 		float: left;
 		background-position: center right;
+		//background-repeat no-repeat
+		//background-size: 100%,100%
 		cursor: pointer;
 		border-left: 1px solid #fff;
 
@@ -1014,7 +1097,27 @@ footer
 		p
 			margin: 0;
 
+.pagination 
+	text-align center
+	li 
+		display inline-block
+		vertical-align top 
 
+		a 
+			display block
+			padding .5em
+			font-size 2em
+			&:hover 
+				color $naranja
+		&.disabled
+			a 
+				color #E2E2E2 
+		&.active
+			a 
+				color $naranja
+
+.hidden 
+	display none
 @import "responsive.styl"
 @import "mCustomScrollbar.styl"	
 

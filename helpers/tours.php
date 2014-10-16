@@ -15,9 +15,9 @@ $app->initialise();
 
 $db = JFactory::getDBO();
 $query = $db->getQuery(true);
-$query->select('id, title');
+$query->select('id, title,alias');
 $query->from('#__content');
-$query->where("catid=8 and state=1 and (id<>44 and id<>45)");
+$query->where("catid=9 and state=1 and (id<>24)");
 $query->order("title");
 
 $db->setQuery((string)$query);

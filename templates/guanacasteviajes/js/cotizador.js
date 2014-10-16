@@ -1,10 +1,10 @@
 (function($){
     var items = [];
 
-    $.getJSON('/helpers/db/tours.json', function(data) {
+    $.getJSON('/helpers/db/transports_hotels.json', function(data) {
 
       var select = $('#tours').empty();
-       var selectReservation = $('#toursR').empty();
+       var selectReservation = $('#transport-destination').empty();
         $.each(data, function(i,item) {
 
             
@@ -38,7 +38,7 @@
         
          
          $("#tours option[value='']").attr("selected",true);
-         $("#toursR option[value='']").attr("selected",true);
+         $("#transport-destination option[value='']").attr("selected",true);
           
          // $("#tours").trigger('change');
         //  $("#toursR").trigger('change');
@@ -248,10 +248,10 @@
     }
     function actualiza_reservacion(){
 
-        var itemSeledted = $('#toursR').val();
-        var numPersons = $( "#personsR" ).val();
-        var numChildren = $( "#childrenR" ).val();
-        var tipoServicio = $( "#servicesR" ).val();
+        var itemSeledted = $('#transport-destination').val();
+        var numPersons = $( "#transport-persons" ).val();
+        var numChildren = $( "#transport-children" ).val();
+        var tipoServicio = $( "#transport-services" ).val();
         var personsExtra = 0;
         var totalOne =0;
         var totalRound =0;
@@ -269,8 +269,8 @@
             if((parseInt(numPersons) + ninos) > 8)
             {
                 alert("Maximum 8 people. Including children over 8 years");
-                $( "#personsR" ).val("0");
-                $( "#childrenR" ).val("0");
+                $( "#transport-persons" ).val("0");
+                $( "#transport-children" ).val("0");
                 $( "#total" ).val("0");
             }    
             else{
@@ -331,18 +331,18 @@
         } // end if is numeric
 
     }
-$( "#personsR" ).keyup(function() {
+$( "#transport-persons" ).keyup(function() {
 
  actualiza_reservacion();
 
 });
-$( "#childrenR" ).keyup(function() {
+$( "#transport-children" ).keyup(function() {
      actualiza_reservacion();
 });
-$('#servicesR').on("change",function(){
+$('#transport-services').on("change",function(){
     actualiza_reservacion();
 });
- $('#toursR').on("change",function(){
+ $('#transport-destination').on("change",function(){
         actualiza_reservacion();
 
     });

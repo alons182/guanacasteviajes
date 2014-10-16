@@ -27,7 +27,8 @@ $doc->addStyleSheet('templates/'.$this->template.'/css/main.css');
 $doc->addStyleSheet('templates/'.$this->template.'/css/chosen.min.css');
 $doc->addStyleSheet('templates/'.$this->template.'/css/colorbox.css');
 $doc->addStyleSheet('templates/'.$this->template.'/css/animate.css');
-
+$doc->addStyleSheet('templates/'.$this->template.'/css/picker.css');
+$doc->addStyleSheet('templates/'.$this->template.'/css/picker.date.css');
 ?>
 <!DOCTYPE html>
 <html lang="<?php echo $this->language; ?>" >
@@ -130,6 +131,8 @@ $doc->addStyleSheet('templates/'.$this->template.'/css/animate.css');
         <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/vendor/jquery.validate.min.js"></script>
         <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/vendor/jquery.colorbox-min.js"></script>
         <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/vendor/jquery.carouFredSel-6.2.0-packed.js"></script>
+        <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/vendor/picker.js"></script>
+        <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/vendor/picker.date.js"></script>
         
       
         <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/cotizador.js"></script>

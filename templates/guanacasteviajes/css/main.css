@@ -50,9 +50,15 @@ input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit
 button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
 textarea{overflow:auto;vertical-align:top;}
 table{border-collapse:collapse;border-spacing:0}
-@font-face{font-family:'guanacasteviajes';src:url("../fonts/guanacasteviajes.eot?l3721y");src:url("../fonts/guanacasteviajes.eot?#iefixl3721y") format('embedded-opentype'),url("../fonts/guanacasteviajes.woff?l3721y") format('woff'),url("../fonts/guanacasteviajes.ttf?l3721y") format('truetype'),url("../fonts/guanacasteviajes.svg?l3721y#guanacasteviajes") format('svg');font-weight:normal;font-style:normal}
+@font-face{font-family:'guanacasteviajes';src:url("../fonts/guanacasteviajes.eot?f80sj2");src:url("../fonts/guanacasteviajes.eot?#iefixf80sj2") format('embedded-opentype'),url("../fonts/guanacasteviajes.woff?f80sj2") format('woff'),url("../fonts/guanacasteviajes.ttf?f80sj2") format('truetype'),url("../fonts/guanacasteviajes.svg?f80sj2#guanacasteviajes") format('svg');font-weight:normal;font-style:normal}
 [class^="icon-"],[class*=" icon-"]{font-family:'guanacasteviajes';speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+.icon-first:before{content:"\f100"}
+.icon-last:before{content:"\f101"}
+.icon-previous:before{content:"\f104"}
+.icon-next:before{content:"\f105"}
+.icon-avotz:before{content:"\e606"}
 .icon-star:before{content:"\e600"}
+.icon-star1-5:before{content:"\e605"}
 .icon-star2:before{content:"\e601"}
 .icon-googleplus:before{content:"\e602"}
 .icon-facebook:before{content:"\e603"}
@@ -102,7 +108,7 @@ input[type="text"],input[type="email"]{background-color:#fff;background-image:-w
 li.highlighted{background-image:none !important;background-color:#9c6 !important}
 .hidden{display:none}
 .img{border:1px solid #dbdbdb;-webkit-border-radius:5px;border-radius:5px;padding:.2em;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
-.btn{-webkit-box-shadow:none;box-shadow:none;text-decoration:none;display:inline-block;padding:16px 17px 15px 18px;font:16px 'Tinos';color:#fff;background:#f5c34c;border:none;letter-spacing:0;text-transform:uppercase;text-shadow:none;text-decoration:none !important;-webkit-border-radius:0;border-radius:0;border-bottom:1px solid #f5c34c;-webkit-transition:all 0.35s ease;-moz-transition:all 0.35s ease;-o-transition:all 0.35s ease;-ms-transition:all 0.35s ease;transition:all 0.35s ease;}
+.btn{-webkit-box-shadow:none;box-shadow:none;text-decoration:none;display:inline-block;padding:16px 17px 15px 18px;font:16px 'Tinos';color:#fff;background:#f5c34c;border:none;letter-spacing:0;text-transform:uppercase;text-shadow:none;text-decoration:none !important;-webkit-border-radius:0;border-radius:0;border-bottom:1px solid #f5c34c;-webkit-transition:all 0.35s ease;-moz-transition:all 0.35s ease;-o-transition:all 0.35s ease;-ms-transition:all 0.35s ease;transition:all 0.35s ease;cursor:pointer;}
 .btn:hover{background:none;color:#fff;background:#eeae11;-webkit-transition:all 0.35s ease;-moz-transition:all 0.35s ease;-o-transition:all 0.35s ease;-ms-transition:all 0.35s ease;transition:all 0.35s ease}
 .btn-primary{background:#fff;color:#9c6;}
 .btn-primary:hover{background:none;color:#fff;background:#eeae11;-webkit-transition:all 0.35s ease;-moz-transition:all 0.35s ease;-o-transition:all 0.35s ease;-ms-transition:all 0.35s ease;transition:all 0.35s ease}
@@ -127,6 +133,8 @@ header #menu{float:right;height:35px;}
 header #menu .parent .nav-child .parent:after,header #menu .parent .sub-menu .parent:after{content:'°';position:absolute;right:-10px;top:15px}
 header #menu ul{position:relative;left:0;display:block;float:left;margin:0;padding:0;}
 header #menu ul li{position:relative;display:inline-block;margin:0;padding:0;float:left;margin-left:12px;zoom:1;padding:1px 10px 0 0;line-height:11px !important;border-right:1px solid #dbdbdb;}
+header #menu ul li.item-143 .nav-child{display:none !important}
+header #menu ul li.item-143:after{content:'' !important}
 header #menu ul li .nav-header,header #menu ul li a{position:relative;padding:0;-webkit-border-radius:0;border-radius:0;margin:0;color:#4a4a4a;-webkit-box-shadow:none !important;box-shadow:none !important;font:16px/16px 'Tinos',Times New Roman,Arial,Helvetica,sans-serif;text-shadow:none;display:inline-block;background:none;text-transform:uppercase;-webkit-transition:all 0.35s ease;-moz-transition:all 0.35s ease;-o-transition:all 0.35s ease;-ms-transition:all 0.35s ease;transition:all 0.35s ease;cursor:pointer}
 header #menu ul li:first-child + li + li + li + li + li + li + li{margin-right:0;padding-right:0;border-right:none}
 header #menu ul li:hover .nav-header,header #menu ul li:hover a{color:#9c6}
@@ -152,27 +160,42 @@ header #menu ul .active a{color:#9c6}
 .cotizador input[type="radio"]{display:none}
 .cotizador p{margin-top:0;margin-bottom:15px}
 .forms-reservations{position:absolute;top:140px;left:-194px;background:#fff;z-index:200;padding:.5em;border-top:4px solid #f5c34c;-webkit-box-shadow:0 0 5px rgba(0,0,0,0.75);box-shadow:0 0 5px rgba(0,0,0,0.75);width:180px;-webkit-transition:all 0.5s ease;-moz-transition:all 0.5s ease;-o-transition:all 0.5s ease;-ms-transition:all 0.5s ease;transition:all 0.5s ease;line-height:20px;}
+.forms-reservations.green{border-top:4px solid #9c6;}
+.forms-reservations.green .handle{border-left:35px solid #9c6}
+.forms-reservations.green .btn{background:#9c6;border-bottom:1px solid #9c6}
+.forms-reservations.green .form-type{border-bottom:1px solid #9c6;color:#9c6}
+.forms-reservations.red{border-top:4px solid #ee4035;}
+.forms-reservations.red .handle{border-left:35px solid #ee4035}
+.forms-reservations.red .btn{background:#ee4035;border-bottom:1px solid #ee4035}
+.forms-reservations.red .form-type{border-bottom:1px solid #ee4035;color:#ee4035}
+.forms-reservations.yellow{border-top:4px solid #f5c34c;}
+.forms-reservations.yellow .handle{border-left:35px solid #f5c34c}
+.forms-reservations.yellow .btn{background:#f5c34c;border-bottom:1px solid #f5c34c}
+.forms-reservations.yellow .form-type{border-bottom:1px solid #f5c34c;color:#eeae11}
 .forms-reservations.open{left:0;}
-.forms-reservations.open .handle:after{content:'<<'}
+.forms-reservations.open .handle:after{content:'\f100'}
 .forms-reservations .handle{border-right:10px solid rgba(0,0,0,0);border-left:35px solid #f5c34c;border-bottom:100px solid rgba(0,0,0,0);border-top:100px solid rgba(0,0,0,0);right:-45px;top:30%;position:absolute;cursor:pointer;}
-.forms-reservations .handle:after{content:'>>';position:absolute;font-size:1em;color:#fff;right:15px;top:-15px;font-weight:bold}
+.forms-reservations .handle:after{font-family:'guanacasteviajes';content:'\f101';position:absolute;font-size:2em;color:#fff;right:15px;top:-15px}
 .forms-reservations .mCSB_dragger_bar{background:#9c6 !important}
 .forms-reservations h2{font-size:1.3em;margin:0}
 .forms-reservations #btn_book{float:left}
 .forms-reservations .total-container{background:#695c3e;padding:.44em;color:#fff;font-size:1em;float:right;width:60px;}
 .forms-reservations .total-container span{display:block}
-.forms-reservations input[type="text"],.forms-reservations input[type="email"]{width:93%}
+.forms-reservations input[type="text"],.forms-reservations input[type="email"]{width:93%;}
+.forms-reservations input[type="text"].error,.forms-reservations input[type="email"].error{border-color:#ee4035}
 .forms-reservations .notas{margin-top:1em;margin-bottom:1em;}
 .forms-reservations .notas p{margin:2px 0}
 .forms-reservations .personal-info,.forms-reservations .reservation-info{display:inline-block;vertical-align:top}
 .forms-reservations p{text-align:left;margin-top:0;margin-bottom:15px}
-.forms-reservations label{text-align:left;margin-right:5px;width:75px;display:inline-block;float:left}
-.forms-reservations label[for="personsR"],.forms-reservations label[for="childrenR"]{width:46px}
+.forms-reservations label{text-align:left;margin-right:5px;display:inline-block;float:left;}
+.forms-reservations label.error{float:right;position:absolute;color:#ee4035}
+.forms-reservations label[for="transport-persons"],.forms-reservations label[for="transport-children"],.forms-reservations label[for="tour-persons"],.forms-reservations label[for="tour-children"],.forms-reservations label[for="hotel-persons"],.forms-reservations label[for="hotel-children"]{width:46px}
 .forms-reservations label[for="childrenR"]{margin-left:5px}
-.forms-reservations #personsR,.forms-reservations #childrenR{width:25px}
+.forms-reservations #transport-persons,.forms-reservations #transport-children,.forms-reservations #tour-persons,.forms-reservations #tour-children,.forms-reservations #hotel-persons,.forms-reservations #hotel-children{width:25px}
 .forms-reservations .chosen-container{width:170px !important}
 .forms-reservations .no-float{float:none !important}
 .forms-reservations .botones{margin-top:10px;text-align:center}
+.forms-reservations .form-type{position:absolute;right:0;top:11px;border:none;font-size:1.1em;background:rgba(0,0,0,0);font-family:Time new roman;outline:0;border-bottom:1px solid #f5c34c;color:#eeae11;font-weight:bold;text-align:right;cursor:pointer}
 .top-info{background:#9c6}
 .main{position:relative}
 .page-tourDetails{float:right;padding:.5em;width:280px;margin-left:10px;position:relative;z-index:2;}
@@ -198,7 +221,7 @@ header #menu ul .active a{color:#9c6}
 .page-hotels .hotel-introTop{margin-top:1px;margin-right:1px;border-top:1px solid #fff;border-bottom:1px solid #e2e2e2;padding-left:20px;padding-top:10px;padding-bottom:10px;}
 .page-hotels .hotel-introTop .stars,.page-hotels .hotel-introTop .location{display:inline-block;vertical-align:top}
 .page-hotels .hotel-introTop .stars .icon-star,.page-hotels .hotel-introTop .stars .icon-star2{font-size:1em;padding:2px}
-.page-hotels .hotel-introTop .stars .icon-star2{color:#ee4035}
+.page-hotels .hotel-introTop .stars .icon-star2,.page-hotels .hotel-introTop .stars .icon-star1-5{color:#ee4035}
 .page-hotels .hotel-introTop .location{margin-left:5px;}
 .page-hotels .hotel-introTop .location span{font-weight:bold;color:#eeae11}
 .page-hotels .item-image img{height:200px}
@@ -224,7 +247,6 @@ header #menu ul .active a{color:#9c6}
 .shuttle-notes{list-style:none;font-size:13px}
 .inner{margin-right:auto;margin-left:auto;width:940px;display:table}
 .blog,.item-page{padding:3em 0;min-height:600px;}
-.blog.page-tour,.item-page.page-tour{min-height:800px}
 #slider .cycle-slideshow{width:100%;}
 #slider .cycle-slideshow img{width:100%;height:auto}
 .row{display:table}
@@ -269,7 +291,7 @@ footer .redes a:hover{color:#695c3e;-webkit-transition:all 0.35s ease;-moz-trans
 .tripAdvisor-widget .widSSPnarrow{width:256px !important}
 .page-testimonialsTripAdvisor .widSSP{width:465px !important}
 .TA_selfserveprop,.TA_ssnarrowcollectreview{display:inline-block;vertical-align:top}
-.tours-gallery{width:100%;min-height:650px;min-width:900px;padding-top:1px;position:absolute;left:0;right:0}
+.tours-gallery{width:100%;min-height:500px;min-width:900px;padding-top:1px;position:absolute;left:0;right:0}
 #slider-gallery{margin:10px 0 0 0;height:500px;overflow:hidden;background:url("../img/ajax-loader.gif") center center no-repeat;}
 #slider-gallery .slide{position:relative;display:none;height:500px;float:left;background-position:center right;cursor:pointer;border-left:1px solid #fff;}
 #slider-gallery .slide:first-child{border:none}
@@ -277,6 +299,13 @@ footer .redes a:hover{color:#695c3e;-webkit-transition:all 0.35s ease;-moz-trans
 #slider-gallery .slide-block{position:absolute;left:40px;bottom:75px;display:inline-block;width:435px;background-color:#fff;background-color:rgba(255,255,255,0.8);padding:20px;font-size:14px;color:#134b94;border:1px solid #fff;overflow:hidden;-webkit-border-radius:4px;border-radius:4px;}
 #slider-gallery .slide-block h4{font-size:36px;font-weight:bold;margin:0 0 10px 0;line-height:1}
 #slider-gallery .slide-block p{margin:0}
+.pagination{text-align:center;}
+.pagination li{display:inline-block;vertical-align:top;}
+.pagination li a{display:block;padding:.5em;font-size:2em;}
+.pagination li a:hover{color:#eeae11}
+.pagination li.disabled a{color:#e2e2e2}
+.pagination li.active a{color:#eeae11}
+.hidden{display:none}
 .mCSB_container{width:auto;margin-right:30px;overflow:hidden}
 .mCSB_container.mCS_no_scrollbar{margin-right:0}
 .mCS_disabled>.mCustomScrollBox>.mCSB_container.mCS_no_scrollbar,.mCS_destroyed>.mCustomScrollBox>.mCSB_container.mCS_no_scrollbar{margin-right:30px}
