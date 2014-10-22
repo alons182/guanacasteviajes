@@ -235,6 +235,8 @@
 	});	 
 
 	//tabs hotels
+	contentArticles.find('article').hide();
+	contentArticles.find('article.intro').fadeIn(500);
 	tabs.find('li').on('click',function(e){
 		
 		tabs.find('li').removeClass('active');
@@ -242,7 +244,7 @@
 		
 		if(e.currentTarget.id == "booknow") {
 
-				if($aside_services.hasClass('open'))
+			if($aside_services.hasClass('open'))
 	    		$aside_services.addClass('shake')
 	    	else
 	    		$aside_services.addClass('open shake');

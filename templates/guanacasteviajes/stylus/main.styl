@@ -956,7 +956,7 @@ header
 		#things
 			background-color cafe
 			z-index 3  
-		#rates
+		#rooms
 			background-color $verde
 			z-index 2 
 		
@@ -964,12 +964,20 @@ header
 			background-color $rojo
 			z-index 1
 
-.amenities,
+
+/*.amenities,
 .things,
 .booknow,
-.rates, 					
-	display none
-	
+.rooms, 					
+	display none*/
+.rates 
+	width 500px
+	float right
+	margin-left: 1.5em;
+.li-rooms
+	display inline-block
+	vertical-align top 
+	width 300px
 footer
 	background $verde
 	padding-bottom 20px
@@ -1118,6 +1126,9 @@ footer
 
 .hidden 
 	display none
+.table 
+	p 
+		margin 0
 @import "responsive.styl"
 @import "mCustomScrollbar.styl"	
 
