@@ -102,6 +102,7 @@
 	});
 
 	dd.addClass('hidden');
+	dd.first().removeClass('hidden');
 
 	detailsTours.on('click','dt', function (e) {
 		$(this)
