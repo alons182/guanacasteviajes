@@ -103,9 +103,11 @@ h1{margin-top:0;margin-bottom:10px;line-height:1.5em}
 h2{margin-top:0;margin-bottom:10px;line-height:1.5em}
 ul{padding:0 0 0 20px}
 .li-check{list-style:none;}
-.li-check li{background:url("../img/list_arrow.png") left center no-repeat;padding-left:30px}
+.li-check li{background:url("../img/list_arrow.png") left center no-repeat;padding-left:30px;}
+.li-check li a:hover{text-decoration:underline}
 .li-img{list-style:none;}
-.li-img li{margin-bottom:1em}
+.li-img li{margin-bottom:1em;}
+.li-img li a:hover{text-decoration:underline}
 .col2,.col3{display:inline-block;vertical-align:top}
 .col2{width:265px}
 .col3{width:385px}
