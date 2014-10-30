@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"mar",
+				"margin"
+			],
+			[
 				"fo",
 				"font-weight"
 			],
@@ -54,10 +58,6 @@
 			[
 				"hotel",
 				"hotel-intro"
-			],
-			[
-				"mar",
-				"margin-top"
 			],
 			[
 				"he",
@@ -520,11 +520,20 @@
 	"buffers":
 	[
 		{
-			"file": "templates/guanacasteviajes/index.php",
+			"file": "templates/guanacasteviajes/stylus/main.styl",
 			"settings":
 			{
-				"buffer_size": 6772,
-				"line_ending": "Unix"
+				"buffer_size": 18100,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\nquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\nproident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+			"settings":
+			{
+				"buffer_size": 446,
+				"line_ending": "Windows",
+				"name": "Lorem ipsum dolor sit amet, consectetur adipisicin"
 			}
 		}
 	],
@@ -707,14 +716,18 @@
 	],
 	"file_history":
 	[
+		"/C/xampp/htdocs/guanacasteviajes/components/com_contact/metadata.xml",
+		"/D/Documents/dumps/guanacasteviajes.sql",
+		"/C/Users/Alonso/Desktop/test.sql",
+		"/C/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/stylus/main.styl",
+		"/C/xampp/php/php.ini",
+		"/C/xampp/php/php.ini-development",
+		"/C/xampp/php/php.ini-production",
+		"/C/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/js/main.js",
 		"/C/xampp/htdocs/partytime/templates/partytime/index.php",
 		"/C/xampp/htdocs/3monkiescr/templates/3monkiescr/js/main.js",
-		"/C/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/js/main.js",
-		"/C/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/stylus/main.styl",
-		"/D/Documents/dumps/guanacasteviajes.sql",
 		"/C/xampp/htdocs/horizon/app/controllers/HomeController.php",
 		"/C/xampp/htdocs/guanacasteviajes/helpers/tours.php",
-		"/C/xampp/htdocs/guanacasteviajes/components/com_contact/metadata.xml",
 		"/D/Downloads/guanacasteviajes/style.css",
 		"/D/Downloads/guanacasteviajes (1)/style.css",
 		"/C/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/stylus/icons.styl",
@@ -830,11 +843,7 @@
 		"/C/xampp/htdocs/guanacasteviajes/js/cotizador.js",
 		"/C/xampp/htdocs/cotizador/main.js",
 		"/C/xampp/htdocs/guanacasteviajes/js/vendor/jquery.hoverIntent.minified.js",
-		"/C/xampp/htdocs/guanacasteviajes/stylus/responsive.styl",
-		"/C/xampp/htdocs/guanacasteviajes/css/chosen.min.css",
-		"/C/xampp/htdocs/guanacasteviajes/js/vendor/stickyfloat.min.js",
-		"/C/xampp/htdocs/guanacasteviajes/js/vendor/jquery.mCustomScrollbar.min.js",
-		"/C/xampp/htdocs/avotz/index.html"
+		"/C/xampp/htdocs/guanacasteviajes/stylus/responsive.styl"
 	],
 	"find":
 	{
@@ -852,6 +861,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"rates",
+			"mail",
+			"rates",
 			"form-t",
 			"handle",
 			"form-ty",
@@ -976,10 +988,7 @@
 			"control-label",
 			"control-group",
 			"main_imagen",
-			"email_address",
-			"propiedades",
-			"relative",
-			"Twitter"
+			"email_address"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1025,24 +1034,24 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "templates/guanacasteviajes/index.php",
-					"semi_transient": true,
+					"file": "templates/guanacasteviajes/stylus/main.styl",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6772,
+						"buffer_size": 18100,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								15585,
+								15585
 							]
 						],
 						"settings":
@@ -1050,16 +1059,16 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
 								"bh_c_define",
 								"bh_c_define_center",
 								"bh_c_define_open",
@@ -1070,48 +1079,134 @@
 								"bh_single_quote_open",
 								"bh_single_quote_close",
 								"bh_single_quote_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
 								"bh_unmatched_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
 								"bh_regex_close",
 								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
 								"bh_curly",
 								"bh_curly_center",
 								"bh_curly_open",
 								"bh_curly_close",
-								"bh_curly_content"
+								"bh_curly_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
 							],
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Stylus/Stylus.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1140.0,
+						"translation.y": 19076.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 446,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								446,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_name": "Lorem ipsum dolor sit amet, consectetur adipisicin",
+							"bh_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -1172,15 +1267,15 @@
 		[
 			[
 				"main",
+				"templates\\guanacasteviajes\\stylus\\main.styl"
+			],
+			[
+				"main.js",
 				"templates\\guanacasteviajes\\js\\main.js"
 			],
 			[
 				"icons",
 				"templates\\guanacasteviajes\\stylus\\icons.styl"
-			],
-			[
-				"main.js",
-				"templates\\guanacasteviajes\\js\\main.js"
 			],
 			[
 				"main.styl",
@@ -1427,6 +1522,14 @@
 		"selected_items":
 		[
 			[
+				"horiz",
+				"C:\\xampp\\htdocs\\horizon\\horizon.sublime-project"
+			],
+			[
+				"pura",
+				"C:\\xampp\\htdocs\\puravida\\puravida.sublime-project"
+			],
+			[
 				"ond",
 				"C:\\xampp\\htdocs\\ondabrava\\ondabrava.sublime-project"
 			],
@@ -1449,10 +1552,6 @@
 			[
 				"fashion",
 				"C:\\xampp\\htdocs\\fashionfactory\\fashion.sublime-project"
-			],
-			[
-				"pura",
-				"C:\\xampp\\htdocs\\puravida\\puravida.sublime-project"
 			],
 			[
 				"",

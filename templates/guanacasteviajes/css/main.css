@@ -104,6 +104,7 @@ h2{margin-top:0;margin-bottom:10px;line-height:1.5em}
 ul{padding:0 0 0 20px}
 .li-check{list-style:none;}
 .li-check li{background:url("../img/list_arrow.png") left center no-repeat;padding-left:30px}
+.col2{display:inline-block;vertical-align:top;width:265px}
 input[type="text"],input[type="email"]{background-color:#fff;background-image:-webkit-linear-gradient(#eee 1%, #fff 15%) !important;background-image:-moz-linear-gradient(#eee 1%, #fff 15%) !important;background-image:-o-linear-gradient(#eee 1%, #fff 15%) !important;background-image:-ms-linear-gradient(#eee 1%, #fff 15%) !important;background-image:linear-gradient(#eee 1%, #fff 15%) !important;border:1px solid #aaa;-webkit-box-shadow:0 0 3px #fff inset,0 1px 1px rgba(0,0,0,0.1);box-shadow:0 0 3px #fff inset,0 1px 1px rgba(0,0,0,0.1);height:20px}
 .chosen-single{-webkit-border-radius:0 !important;border-radius:0 !important;background-color:#fff !important;background-image:-webkit-linear-gradient(#eee 1%, #fff 15%) !important;background-image:-moz-linear-gradient(#eee 1%, #fff 15%) !important;background-image:-o-linear-gradient(#eee 1%, #fff 15%) !important;background-image:-ms-linear-gradient(#eee 1%, #fff 15%) !important;background-image:linear-gradient(#eee 1%, #fff 15%) !important}
 li.highlighted{background-image:none !important;background-color:#9c6 !important}
@@ -277,7 +278,7 @@ header #menu ul .active a{color:#9c6}
 .tabs ul #things{background-color:#695c3e;z-index:3}
 .tabs ul #rooms{background-color:#9c6;z-index:2}
 .tabs ul #booknow{background-color:#ee4035;z-index:1}
-.rates{width:500px;float:right;margin-left:1.5em}
+.rates,.right-info{width:320px;float:right;margin-left:1.5em}
 .li-rooms{display:inline-block;vertical-align:top;width:300px}
 footer{background:#9c6;padding-bottom:20px;position:relative;padding-top:30px;}
 footer em{position:absolute;top:0;left:0;right:0;height:8px;background:url("../img/circulos.png") 0 top repeat-x}
