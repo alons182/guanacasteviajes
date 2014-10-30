@@ -208,6 +208,12 @@ header #menu ul .active a{color:#9c6}
 .page-tourDetails .details a{color:#695c3e;text-decoration:underline;}
 .page-tourDetails .details a:hover{color:#9c6}
 .page-tourDetails strong{color:#695c3e}
+.rooms .details{margin:0;list-style:none;}
+.rooms .details dt{display:block;text-align:center;cursor:pointer;}
+.rooms .details dt:hover{background:#c3c3c3;border-color:#c3c3c3}
+.rooms .details dd{margin:0;padding:1em .5em;background:#fff}
+.rooms .details a{color:#695c3e;text-decoration:underline;}
+.rooms .details a:hover{color:#9c6}
 .btn-book{text-align:center;display:block;background:#ee4035;border-bottom:1px solid #ee4031;color:#fff;}
 .btn-book:hover{background:#ee4035}
 .gallery-item{display:inline-block;vertical-align:top;width:200px;height:155px;margin-bottom:10px;margin-right:5px;}
@@ -279,7 +285,7 @@ header #menu ul .active a{color:#9c6}
 .tabs ul #rooms{background-color:#9c6;z-index:2}
 .tabs ul #booknow{background-color:#ee4035;z-index:1}
 .rates,.right-info{width:320px;float:right;margin-left:1.5em}
-.table-rates{-webkit-box-shadow:1px 1px 2px rgba(0,0,0,0.75);box-shadow:1px 1px 2px rgba(0,0,0,0.75)}
+.table-rates{-webkit-box-shadow:1px 1px 2px rgba(0,0,0,0.75);box-shadow:1px 1px 2px rgba(0,0,0,0.75);margin-bottom:0}
 .table-title{background:#9c6 !important;color:#fff}
 .li-rooms{display:inline-block;vertical-align:top;width:300px}
 footer{background:#9c6;padding-bottom:20px;position:relative;padding-top:30px;}
