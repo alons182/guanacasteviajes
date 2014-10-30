@@ -279,6 +279,8 @@ header #menu ul .active a{color:#9c6}
 .tabs ul #rooms{background-color:#9c6;z-index:2}
 .tabs ul #booknow{background-color:#ee4035;z-index:1}
 .rates,.right-info{width:320px;float:right;margin-left:1.5em}
+.table-rates{-webkit-box-shadow:1px 1px 2px rgba(0,0,0,0.75);box-shadow:1px 1px 2px rgba(0,0,0,0.75)}
+.table-title{background:#9c6 !important;color:#fff}
 .li-rooms{display:inline-block;vertical-align:top;width:300px}
 footer{background:#9c6;padding-bottom:20px;position:relative;padding-top:30px;}
 footer em{position:absolute;top:0;left:0;right:0;height:8px;background:url("../img/circulos.png") 0 top repeat-x}
