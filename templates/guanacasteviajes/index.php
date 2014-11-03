@@ -45,7 +45,7 @@ $doc->addStyleSheet('templates/'.$this->template.'/css/picker.date.css');
  <body class="<?php echo ($itemid ? ' bgid-' . $itemid : '')?>">
 
         <header>
-            <section class="up-box test2">
+            <section class="up-box">
                 <div class="inner">
                     <jdoc:include type="modules" name="up-box" style="none" />
                 </div>
