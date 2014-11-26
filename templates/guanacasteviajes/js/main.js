@@ -7,7 +7,7 @@
 	dd =  detailsTours.find('dd'),
 	btn_book = $('.btn-book'),
 	tabs = $('.tabs'),
-	contentArticles = $('.item-page'),
+	contentArticles = $('.item-page.page-hotels'),
 	reservation_hotel = $('.reservation-hotel'),
 	reservation_tour = $('.reservation-tour'),
 	reservation_transport = $('.reservation-transport');
