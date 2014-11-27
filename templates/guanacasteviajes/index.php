@@ -53,7 +53,7 @@ $doc->addStyleSheet('templates/'.$this->template.'/css/picker.date.css');
             </section>
             <section class="down-box">
                 <div class="inner">
-                    <div id="logo"><a href="<?php echo $this->baseurl ?>">LOGO</a></div>
+                    <div id="logo"><a href="<?php echo $this->baseurl ?>"><img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/img/logo.png" alt="Guanacaste Viajes"></a></div>
                     <nav id="menu">
                         <jdoc:include type="modules" name="menu" style="none" />
                     </nav>
