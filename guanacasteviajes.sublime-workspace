@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"fon",
+				"font-size"
+			],
+			[
+				"fo",
+				"font-size"
+			],
+			[
+				"te",
+				"text-shadow"
+			],
+			[
+				"tex",
+				"text-transform"
+			],
+			[
 				"mar",
 				"margin-bottom"
 			],
@@ -18,10 +34,6 @@
 			[
 				"box",
 				"box-shadow"
-			],
-			[
-				"fo",
-				"font-weight"
 			],
 			[
 				"v",
@@ -56,14 +68,6 @@
 				"form_reservation_option"
 			],
 			[
-				"fon",
-				"font-size"
-			],
-			[
-				"tex",
-				"text-align"
-			],
-			[
 				"pa",
 				"padding-left"
 			],
@@ -82,10 +86,6 @@
 			[
 				"slid",
 				"slideDown"
-			],
-			[
-				"te",
-				"text-align"
 			],
 			[
 				"ma",
@@ -689,16 +689,19 @@
 	"expanded_folders":
 	[
 		"/D/xampp/htdocs/guanacasteviajes/templates",
-		"/D/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes"
+		"/D/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes",
+		"/D/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/js"
 	],
 	"file_history":
 	[
 		"/D/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/stylus/main.styl",
-		"/D/xampp/htdocs/guanacasteviajes/.gitignore",
+		"/D/Downloads/Compressed/webfontkit-20141127-134800/stylesheet.css",
+		"/D/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/index.php",
+		"/D/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/js/main.js",
 		"/D/xampp/htdocs/guanacasteviajes/components/com_contact/metadata.xml",
+		"/D/xampp/htdocs/guanacasteviajes/.gitignore",
 		"/D/xampp/apache/conf/extra/httpd-vhosts.conf",
 		"/D/xampp/php/php.ini",
-		"/D/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/index.php",
 		"/D/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/stylus/main.css",
 		"/C/xampp/htdocs/guanacasteviajes/components/com_contact/metadata.xml",
 		"/D/Documents/dumps/guanacasteviajes.sql",
@@ -818,9 +821,7 @@
 		"/C/xampp/htdocs/guanacasteviajes/css/main.css",
 		"/D/Downloads/Compressed/backbone-js/src/app.js",
 		"/D/Downloads/Compressed/backbone-js/src/models/libro_model.js",
-		"/D/Downloads/Compressed/backbone-js/src/views/libro_view.js",
-		"/C/xampp/htdocs/guanacasteviajes/index.html",
-		"/C/xampp/htdocs/cotizador/index.html"
+		"/D/Downloads/Compressed/backbone-js/src/views/libro_view.js"
 	],
 	"find":
 	{
@@ -838,6 +839,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"advisor",
 			"\"\\xampp",
 			"rates",
 			"mail",
@@ -964,8 +966,7 @@
 			"RewriteCond",
 			"output",
 			"control-label",
-			"control-group",
-			"main_imagen"
+			"control-group"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1067,6 +1068,10 @@
 		"selected_items":
 		[
 			[
+				"main.sty",
+				"templates\\guanacasteviajes\\stylus\\main.styl"
+			],
+			[
 				"main",
 				"templates\\guanacasteviajes\\stylus\\main.styl"
 			],
@@ -1100,10 +1105,6 @@
 			],
 			[
 				"mains",
-				"templates\\guanacasteviajes\\stylus\\main.styl"
-			],
-			[
-				"main.sty",
 				"templates\\guanacasteviajes\\stylus\\main.styl"
 			],
 			[
