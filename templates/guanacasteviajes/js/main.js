@@ -12,6 +12,41 @@
 	reservation_tour = $('.reservation-tour'),
 	reservation_transport = $('.reservation-transport');
 	
+	check_menu_location_for_form_reservation($('body').data('form'));
+
+
+	function check_menu_location_for_form_reservation(form_menu_id)
+	{
+		
+		reservation_hotel.addClass('hidden');
+	    reservation_tour.addClass('hidden');
+	    reservation_transport.addClass('hidden');
+		
+		if(form_menu_id === 124 || form_menu_id === 125 || form_menu_id === 126 || form_menu_id === 127 || form_menu_id === 128 || form_menu_id === 130 || form_menu_id === 131 || form_menu_id === 132 || form_menu_id === 133 || form_menu_id === 134 || form_menu_id === 135 || form_menu_id === 137 || form_menu_id === 138 || form_menu_id === 140 || form_menu_id === 141 || form_menu_id === 142 || form_menu_id === 121 || form_menu_id === 122)
+		{
+			
+	    	reservation_tour.removeClass('hidden');
+	    	$aside_services.addClass('green');
+
+		}else if(form_menu_id === 143 || form_menu_id === 184 || form_menu_id === 190 || form_menu_id === 189 || form_menu_id === 162 || form_menu_id === 185 || form_menu_id === 191 || form_menu_id === 186 || form_menu_id === 183 || form_menu_id === 187 || form_menu_id === 188 || form_menu_id === 196 || form_menu_id === 197)
+		{
+			
+	    	reservation_hotel.removeClass('hidden');
+	    	$aside_services.addClass('red');
+
+		}else if(form_menu_id === 147 || form_menu_id === 148 || form_menu_id === 149 || form_menu_id === 150)
+		{
+			
+	    	reservation_transport.removeClass('hidden');
+	    	$aside_services.addClass('yellow');
+
+		}else
+		{
+			reservation_transport.removeClass('hidden');
+	    	$aside_services.addClass('yellow');
+		}
+	}
+
 	
 	 if(localStorage.getItem('form_reservation_option'))
            {
