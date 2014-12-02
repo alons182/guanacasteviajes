@@ -13,7 +13,7 @@
 	reservation_transport = $('.reservation-transport');
 	
 	// verifcar en que menu esta para poner el formulario correspondiente
-	check_menu_location_for_form_reservation($('body').data('form'));
+	check_menu_location_for_form_reservation($.trim($('body').data('form')));
 
 
 	function check_menu_location_for_form_reservation(form_menu_id)
