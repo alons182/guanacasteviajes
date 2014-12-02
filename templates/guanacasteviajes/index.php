@@ -42,7 +42,7 @@ $doc->addStyleSheet('templates/'.$this->template.'/css/picker.date.css');
 </head>
 
 
- <body class="<?php echo ($itemid ? ' bgid-' . $itemid : '')?>" data-form="<?php echo ($itemid ? $itemid : '')?> ">
+ <body class="<?php echo ($itemid ? ' bgid-' . $itemid : '')?>" data-form="<?php echo ($itemid ? $itemid : '')?>">
 
         <header>
             <section class="up-box">
