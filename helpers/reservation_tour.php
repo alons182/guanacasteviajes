@@ -25,6 +25,7 @@ $asunto = "Reservation in Guanacaste Viajes";
 	<h1>Datos de Reservacion de Tour:</h1>
 
 	<strong>Destination:</strong> '.json_encode($data['tour-destination']).'<br />
+	<strong>Type of tour:</strong> '.$data['tour-type'].'<br />
 	<strong>Hotel for Pick up:</strong> '.$data['tour-hotelpickup'].'<br />
 	<strong>Date:</strong> '.$data['tour-pdate'].'<br />
 	<strong>Full Name:</strong> '.$data['tour-fname'].'<br />

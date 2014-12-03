@@ -368,6 +368,9 @@
 	 		"tour-hotelpickup":{
 	 			required:'*'
 	 		},
+	 		"tour-type":{
+	 			required:'*'
+	 		},
 	 		
 	 		
 	 		
@@ -390,7 +393,10 @@
 
 		      number: true
 
-		    }
+		    },
+		    "tour-type":{
+	 			required: true
+	 		}
 		     
 		
 
