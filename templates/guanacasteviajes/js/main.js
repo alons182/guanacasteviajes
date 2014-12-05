@@ -1,5 +1,5 @@
 (function($){
-	$menu = $('.menu'),
+	$menu = $('#menu'),
 	$aside_services = $('.forms-reservations'),
 	$btn_budget = $('.btn-budget'),
 	$cotizador = $('.cotizador'),
@@ -11,6 +11,16 @@
 	reservation_hotel = $('.reservation-hotel'),
 	reservation_tour = $('.reservation-tour'),
 	reservation_transport = $('.reservation-transport');
+
+
+
+	$('.btn-menu').on('click', function (e) {
+	
+		$menu.toggle();
+
+		e.preventDefault();
+	});
+
 	
 	// verifcar en que menu esta para poner el formulario correspondiente
 	check_menu_location_for_form_reservation($('body').data('form'));
@@ -270,6 +280,13 @@
  
 		//	update item width config
 		slider.trigger( 'configuration', ['items.width', _width * 0.15] );
+
+
+		height_pageTour = $('.page-tour div[itemprop="articleBody"]').height();
+		height_toursGallery = $('.tours-gallery').height();
+		
+		$('.page-tour').height(height_pageTour + height_toursGallery);
+
 	});	 
 
 	//tabs hotels

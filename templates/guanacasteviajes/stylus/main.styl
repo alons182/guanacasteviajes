@@ -10,11 +10,15 @@ $verde = #99CC66
 $rojo = #EE4035
 cafe = #695C3E
 
+
 body
 	
 	font 14px Times New Roman, Arial, Helvetica, sans-serif
 	line-height 25px
 	color cafe
+* 
+	box-sizing border-box
+	
 p 
 	margin 0 0 25px;
 a 
@@ -36,7 +40,8 @@ ul
 	padding: 0 0 0 20px
 
 .li-check
-	list-style none 
+	list-style none
+	
 	li 
 		background url("../img/list_arrow.png") left center no-repeat
 		padding-left 30px
@@ -184,18 +189,20 @@ header
 		color #ffffff
 		text-transform uppercase
 		margin 0
-		float left
+		//float left
+		
 		& > span
 			width 62px
 			display inline-block
 			color #ffffff
 	.login, .advisor
-		float right
+		float left
 		//margin-top -20px
+		
 		margin-bottom 0
 	.icon-redes
 		color #FFF
-		float right
+		float left
 		display inline-block
 		font-size 18px
 		vertical-align top
@@ -216,10 +223,14 @@ header
 		a 
 			position absolute
 			top -20px
-			left -90px
-	#menu
+			left 0//-90px
+	.btn-menu
 		float right
-		height 35px
+		font-size 1.5em
+		padding 0.1em 0.4em
+	#menu
+		height auto
+		display none
 		
 		.parent
 			.nav-child
@@ -239,24 +250,27 @@ header
 				content '°'*/
 		
 		ul 
-			position relative
+			position absolute
+			background #FFF
 			left 0
+			right 0
+			top 173px
 			display block
-			float left
+			//float left
 			margin 0
 			padding 0
+			z-index 199
 
 			li 
 				position relative
-				display inline-block
+				display block //inline-block
 				margin 0
-				padding 0
-				float left
-				margin-left 10px
+				//float left
 				zoom: 1
-				padding 1px 10px 0 0
+				padding 10px 10px 
 				line-height 11px !important
 				border-right 1px solid #dbdbdb
+				text-align center
 
 				&.item-143
 					.nav-child
@@ -279,6 +293,7 @@ header
 					text-transform uppercase
 					transition all 0.35s ease
 					cursor pointer
+					
 
 				&:first-child + li + li + li + li + li + li + li
 					margin-right 0
@@ -293,24 +308,24 @@ header
 
 				.nav-child
 				.sub-menu 
-					position absolute
+					position relative
 					display none
-					width 182px
-					left -22px
-					top 43px
-					padding 21px 20px 29px 20px
+					width 100% //182px
+					left 0 //-22px
+					top 10px//43px
+					padding 0 0 10px 0px
 					list-style none !important
 					zoom: 1
 					z-index 102
 					background #ffffff
 					margin 0
-					border-top 4px solid #f5c34c
-					box-shadow 0px 0px 5px rgba(0, 0, 0, .75)
+					//border-top 4px solid #f5c34c
+					//box-shadow 0px 0px 5px rgba(0, 0, 0, .75)
 					
 					.nav-child
 					.sub-menu
-						left 205px
-						top 0px
+						left 0 //205px
+						top 10px
 						
 
 
@@ -325,6 +340,7 @@ header
 						border-bottom 1px solid #ebebeb
 						height auto !important
 						overflow visible !important
+						text-align center
 
 						.nav-header
 						a 
@@ -340,6 +356,9 @@ header
 							transition: all 0.35s ease
 							&:hover 
 								color $verde
+						&.parent
+							.nav-header
+								color $naranja
 						/*&:hover 
 							display block*/
 			.active
@@ -349,12 +368,12 @@ header
 
 .btn-budget 
 	position absolute
-	top 50px
+	top 45px//50px
 	right 0
-	z-index 760
+	z-index 198
 	display block
-	padding 15px 0 15px 20px
-	width 125px
+	padding 15px// 0 15px 20px
+	//width 125px
 	background none repeat scroll 0 0 #f5c34c
 	box-shadow 0 2px 5px 0 rgba(0, 0, 0, 0.47)
 	color #FFF
@@ -432,13 +451,13 @@ header
 	
 	position absolute
 	top 140px
-	left -194px
+	left -226px
 	background #FFF
 	z-index 200
 	padding .5em
 	border-top 4px solid #f5c34c
 	box-shadow 0px 0px 5px rgba(0, 0, 0, .75)
-	width 180px
+	width 225px//196px
 	transition all .5s ease
 	line-height 20px
 
@@ -626,16 +645,18 @@ header
 	
 .top-info	
 	background $verde
+	.newsflash
+		text-align center
 .main 
 	position relative
 
 
 .page-tourDetails
-	float right
+	//float right
 	//background $verde
 	padding .5em
-	width 280px
-	margin-left 10px
+	width 100%
+	margin-left 0px
 	//color #FFF
 	position relative 
 	z-index 2
@@ -807,11 +828,16 @@ header
 		font-size 1.3em
 	.subheading-category
 		font-size 1.5em
+.page-about
+	.img
+		width 100%
+		height auto
+		float none
 .page-aboutDestinations
 	list-style none
 	margin 0 
 	padding 0
-	width 685px 
+	width 100%//685px 
 
 	li 
 		margin 1em
@@ -864,8 +890,9 @@ header
 .inner
 	margin-right auto
 	margin-left auto
-	width 940px
+	width 100%//940px
 	display table
+	padding 0 1em
 	//position relative
 .blog
 .item-page
@@ -889,12 +916,13 @@ header
 	//margin-left -30px
 	display table
 .info-main
-	width 300px
+	width 100%//300px
 	position relative
 	display inline-block
 	vertical-align top
 	margin-right 10px
-	padding-bottom 35px
+	//text-align left
+	//padding-bottom 35px
 
 	&:ntd-child(3)
 		margin-right 0
@@ -929,7 +957,7 @@ header
 		display inline-block
 		vertical-align top
 		margin-right 10px
-		padding-bottom 73px
+		//padding-bottom 73px
 		
 		&:ntd-child(3)
 			margin-right 0
@@ -957,7 +985,7 @@ header
 			padding 0
 			list-style none
 			margin-top 18px
-			margin-bottom 71px
+			//margin-bottom 71px
 
 			li 
 				font-size 14px
@@ -974,18 +1002,19 @@ header
 		
 .tabs
 	position relative
-	top -60px
+	//top -60px
 	ul
-		float right
-		position absolute
+		//float right
+		//position absolute
 		right 20px
 		top 0
+		padding-left 0
 
 		li 
 			//overflow auto
 			background #CCC
 			cursor pointer
-			float left
+			float none//left
 			//height 42px
 			list-style none
 			margin 0px -3px
@@ -1044,9 +1073,9 @@ header
 	display none*/
 .rates
 .right-info 
-	width 320px
-	float right
-	margin-left: 1.5em;
+	width 100% //320px
+	//float right
+	//margin-left: 1.5em;
 
 .table-rates
 	//border-radius 10px
@@ -1072,6 +1101,7 @@ footer
 	padding-bottom 20px
 	position relative
 	padding-top 30px
+	text-align center
 	em 
 		position absolute
 		top 0
@@ -1087,9 +1117,9 @@ footer
 		text-transform uppercase
 
 	.copyright
-		float left
+		float none //left
 	.redes
-		float right
+		float none //right
 		color #ffffff
 
 		a 
@@ -1099,9 +1129,9 @@ footer
 				color #695c3e
 				transition all 0.35s ease
 	.phone-numbers
-		margin-left: 120px;
+		margin-left: 0;
 		text-align: center;
-		float: left;
+		float: none //left;
 .relative
 	position relative
 .b2jcontainer
@@ -1117,17 +1147,16 @@ footer
 		font-weight bold
 		margin-bottom 10px !important
 .tripAdvisor-widget
-	float right
 	position relative
 	right 0
-	top -220px
+	top 0px
 
 
 	.widSSPnarrow
-		width 256px !important
+		width 100% !important //256px !important
 .page-testimonialsTripAdvisor
 	.widSSP
-		width 465px !important
+		width 100% !important
 
 .TA_selfserveprop
 .TA_ssnarrowcollectreview
@@ -1140,7 +1169,7 @@ footer
 	//height: 100%;
 	width: 100%;
 	min-height: 500px;
-	min-width: 900px;
+	//min-width: 900px;
 	padding-top: 1px;
 	position absolute
 	left 0
