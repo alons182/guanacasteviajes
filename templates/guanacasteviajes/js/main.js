@@ -320,6 +320,10 @@
 
 		 
 		});
+		// for day trips selection
+		select.append( '<option value="Liberia Shopping and Waterfall">Liberia Shopping and Waterfall</option>' );
+		select.append( '<option value="Guaitil Pottery Shopping">Guaitil Pottery Shopping</option>' );  
+
 		select.prepend('<option value=""></option>');
 		
 		$(".chosen-select").trigger("chosen:updated");
