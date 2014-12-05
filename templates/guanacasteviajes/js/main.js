@@ -24,7 +24,7 @@
 	    reservation_tour.addClass('hidden');
 	    reservation_transport.addClass('hidden');
 		
-		if(form_menu_id === 124 || form_menu_id === 125 || form_menu_id === 126 || form_menu_id === 127 || form_menu_id === 128 || form_menu_id === 130 || form_menu_id === 131 || form_menu_id === 132 || form_menu_id === 133 || form_menu_id === 134 || form_menu_id === 135 || form_menu_id === 137 || form_menu_id === 138 || form_menu_id === 140 || form_menu_id === 141 || form_menu_id === 142 || form_menu_id === 121 || form_menu_id === 122)
+		if(form_menu_id === 124 || form_menu_id === 125 || form_menu_id === 126 || form_menu_id === 127 || form_menu_id === 128 || form_menu_id === 130 || form_menu_id === 131 || form_menu_id === 132 || form_menu_id === 133 || form_menu_id === 134 || form_menu_id === 135 || form_menu_id === 137 || form_menu_id === 138 || form_menu_id === 140 || form_menu_id === 141 || form_menu_id === 142 || form_menu_id === 121 || form_menu_id === 122 || form_menu_id === 199)
 		{
 			
 	    	reservation_tour.removeClass('hidden');

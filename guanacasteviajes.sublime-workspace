@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"form",
+				"form_menu_id"
+			],
+			[
+				"check",
+				"check_menu_location_for_form_reservation"
+			],
+			[
 				"fon",
 				"font-size"
 			],
@@ -62,10 +70,6 @@
 			[
 				"ad",
 				"addClass"
-			],
-			[
-				"form",
-				"form_reservation_option"
 			],
 			[
 				"pa",
@@ -510,10 +514,6 @@
 			[
 				"Reso",
 				"Response"
-			],
-			[
-				"eac",
-				"each	.each()"
 			]
 		]
 	},
@@ -688,19 +688,24 @@
 	},
 	"expanded_folders":
 	[
+		"/D/xampp/htdocs/guanacasteviajes/helpers",
 		"/D/xampp/htdocs/guanacasteviajes/templates",
 		"/D/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes",
 		"/D/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/js"
 	],
 	"file_history":
 	[
+		"/D/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/js/main.js",
+		"/D/xampp/htdocs/guanacasteviajes/helpers/reservation_tour.php",
+		"/D/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/index.php",
+		"/D/xampp/htdocs/avotz/contacto.html",
+		"/D/Proyectos/hosts",
+		"/D/xampp/apache/conf/extra/httpd-vhosts.conf",
+		"/D/xampp/Mail Sent to Local Server/2014-12-03 09.44.54,572.eml",
 		"/D/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/stylus/main.styl",
 		"/D/Downloads/Compressed/webfontkit-20141127-134800/stylesheet.css",
-		"/D/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/index.php",
-		"/D/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/js/main.js",
 		"/D/xampp/htdocs/guanacasteviajes/components/com_contact/metadata.xml",
 		"/D/xampp/htdocs/guanacasteviajes/.gitignore",
-		"/D/xampp/apache/conf/extra/httpd-vhosts.conf",
 		"/D/xampp/php/php.ini",
 		"/D/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/stylus/main.css",
 		"/C/xampp/htdocs/guanacasteviajes/components/com_contact/metadata.xml",
@@ -817,11 +822,7 @@
 		"/C/xampp/htdocs/guanacasteviajes/includes/framework.php",
 		"/C/xampp/htdocs/guanacasteviajes/media/system/js/frontediting-uncompressed.js",
 		"/C/xampp/htdocs/guanacasteviajes/stylus/main.styl",
-		"/C/xampp/htdocs/guanacasteviajes/js/main.js",
-		"/C/xampp/htdocs/guanacasteviajes/css/main.css",
-		"/D/Downloads/Compressed/backbone-js/src/app.js",
-		"/D/Downloads/Compressed/backbone-js/src/models/libro_model.js",
-		"/D/Downloads/Compressed/backbone-js/src/views/libro_view.js"
+		"/C/xampp/htdocs/guanacasteviajes/js/main.js"
 	],
 	"find":
 	{
