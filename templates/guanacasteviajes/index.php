@@ -112,6 +112,7 @@ $doc->addStyleSheet('templates/'.$this->template.'/css/picker.date.css');
         <footer>
             <div class="inner">
                 <div class="copyright"><p>Guanacaste viajes © 2013</p></div>
+                <div class="phone-numbers"><p><strong>USA Phone Number:</strong> +1-404-963-9097 </p><p><strong>Costa Rica:</strong> +011-506-2697-0563 | +011-506-8704-3690</p></div>
                 <div class="redes"><a href="#">Facebook</a> • <a href="#">Twitter</a></div>
             </div>
             <em class="border-colors"></em>
