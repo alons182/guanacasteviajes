@@ -57,7 +57,7 @@ $doc->addStyleSheet('templates/'.$this->template.'/css/picker.date.css');
                     <nav id="menu">
                         <jdoc:include type="modules" name="menu" style="none" />
                     </nav>
-                    <a href="#" class="btn-menu"><i class="icon-menu"></i>Menu</a>
+                    <a href="#" class="btn-menu"><i class="icon-menu"></i></a>
 
                     <?php if ($this->countModules('cotizador')) : ?>
                         <jdoc:include type="modules" name="btn_cotizador" style="none" />

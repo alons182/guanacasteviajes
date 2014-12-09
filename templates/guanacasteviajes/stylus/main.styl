@@ -222,14 +222,19 @@ header
 		
 		a 
 			position absolute
-			top -20px
+			top -10px
 			left 0//-90px
+			width 190px
+			img 
+				width 100%
 	.btn-menu
 		float right
-		font-size 1.5em
-		padding 0.1em 0.4em
+		font-size 2em
+		//padding 0.1em 0.4em
 		position relative
 		z-index 99
+		&:hover
+			color $naranja
 	#menu
 		height auto
 		display none
@@ -256,12 +261,13 @@ header
 			background #FFF
 			left 0
 			right 0
-			top 173px
+			top 172px
 			display block
 			//float left
 			margin 0
 			padding 0
 			z-index 199
+			border-bottom 5px solid $verde
 
 			li 
 				position relative
@@ -810,7 +816,7 @@ header
 		height 200px
 		border-left: 1px solid #E2E2E2;
 		text-align center
-		padding 20px 0
+		padding 0px 0
 		display none
 	.btn-rates-availability
 		font-size .85em
