@@ -23,12 +23,13 @@ $itemid   = $app->input->getCmd('Itemid', '');
 
 // Add Stylesheets
 //$doc->addStyleSheet('templates/'.$this->template.'/css/normalize.min.css');
-$doc->addStyleSheet('templates/'.$this->template.'/css/main.css');
+$doc->addStyleSheet('templates/'.$this->template.'/css/bundle.css');
+/*$doc->addStyleSheet('templates/'.$this->template.'/css/main.css');
 $doc->addStyleSheet('templates/'.$this->template.'/css/chosen.min.css');
 $doc->addStyleSheet('templates/'.$this->template.'/css/colorbox.css');
 $doc->addStyleSheet('templates/'.$this->template.'/css/animate.css');
 $doc->addStyleSheet('templates/'.$this->template.'/css/picker.css');
-$doc->addStyleSheet('templates/'.$this->template.'/css/picker.date.css');
+$doc->addStyleSheet('templates/'.$this->template.'/css/picker.date.css');*/
 ?>
 <!DOCTYPE html>
 <html lang="<?php echo $this->language; ?>" >
@@ -125,7 +126,7 @@ $doc->addStyleSheet('templates/'.$this->template.'/css/picker.date.css');
         
         
         <!--<script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/vendor/jquery-1.10.2.min.js"></script>-->
-        <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/vendor/jquery.cycle2.min.js"></script>
+        <!--<script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/vendor/jquery.cycle2.min.js"></script>
         <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/vendor/jquery.hoverIntent.minified.js"></script>
         <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/vendor/jquery.mCustomScrollbar.min.js"></script>
         <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/vendor/stickyfloat.min.js"></script>
@@ -134,11 +135,11 @@ $doc->addStyleSheet('templates/'.$this->template.'/css/picker.date.css');
         <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/vendor/jquery.colorbox-min.js"></script>
         <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/vendor/jquery.carouFredSel-6.2.0-packed.js"></script>
         <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/vendor/picker.js"></script>
-        <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/vendor/picker.date.js"></script>
+        <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/vendor/picker.date.js"></script>-->
         
       
-        <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/cotizador.js"></script>
-        <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/main.js"></script>
+        <!--<script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/cotizador.js"></script>-->
+        <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/bundle.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
        <!-- <script>
