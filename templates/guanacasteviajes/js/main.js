@@ -4,15 +4,40 @@
 	$btn_budget = $('.btn-budget'),
 	$cotizador = $('.cotizador'),
 	detailsTours = $('.details'),
+	linkInterest = $('.link-interest'),
 	dd =  detailsTours.find('dd'),
 	btn_book = $('.btn-book'),
 	tabs = $('.tabs'),
 	contentArticles = $('.item-page.page-hotels'),
 	reservation_hotel = $('.reservation-hotel'),
 	reservation_tour = $('.reservation-tour'),
-	reservation_transport = $('.reservation-transport');
+	reservation_transport = $('.reservation-transport')
+	
 
+	$('.btn-carRentals').on('click', function (e) {
+	
+		localStorage.setItem('carRentals', $(this).data('activitie'));
+ 		//window.location.href = "/Reservation.html";
+		//e.preventDefault();
+	});
+	verifica_carRentals();
+	function verifica_carRentals () {
 
+        if(localStorage.getItem('carRentals'))
+            {
+
+               var carRentals = localStorage.getItem('carRentals');
+
+               $(".b2j_contact").find('textarea').text('Rent: ' + carRentals);
+                    
+                localStorage.removeItem('carRentals');
+               
+                 
+            }
+    }
+
+	
+           
 
 	$('.btn-menu').on('click', function (e) {
 	
@@ -72,9 +97,11 @@
         assigned dynamic height to page-tour section  
          */
         height_pageTour = $('.page-tour div[itemprop="articleBody"]').height();
+        height_pageAbout = $('.page-about div[itemprop="articleBody"]').height();
 		height_toursGallery = $('.tours-gallery').height();
 		
 		$('.page-tour').height(height_pageTour + height_toursGallery);
+		$('.page-about').height(height_pageAbout + height_toursGallery - 200);
 
 
 		
@@ -151,6 +178,17 @@
 	dd.addClass('hidden');
 	dd.first().removeClass('hidden');
 
+	$('.link-interest').find('dd').addClass('hidden');
+
+	linkInterest.on('click','dt', function (e) {
+		$(this)
+			.next()
+				.toggle();
+				//.siblings('dd')
+					//.slideUp(200);
+		
+	});
+
 	detailsTours.on('click','dt', function (e) {
 		$(this)
 			.next()
@@ -159,6 +197,8 @@
 					.slideUp(200);
 		
 	});
+
+	
 
 
 
@@ -283,10 +323,11 @@
 
 
 		height_pageTour = $('.page-tour div[itemprop="articleBody"]').height();
+		height_pageAbout = $('.page-about div[itemprop="articleBody"]').height();
 		height_toursGallery = $('.tours-gallery').height();
 		
 		$('.page-tour').height(height_pageTour + height_toursGallery);
-
+		$('.page-about').height(height_pageAbout + height_toursGallery - 200);
 	});	 
 
 	//tabs hotels
