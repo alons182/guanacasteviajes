@@ -13,14 +13,16 @@
 	reservation_tour = $('.reservation-tour'),
 	reservation_transport = $('.reservation-transport')
 	
+	//CAR RENTALS
+	
+	verifica_carRentals();
 
 	$('.btn-carRentals').on('click', function (e) {
 	
 		localStorage.setItem('carRentals', $(this).data('activitie'));
- 		//window.location.href = "/Reservation.html";
-		//e.preventDefault();
+ 	
 	});
-	verifica_carRentals();
+	
 	function verifica_carRentals () {
 
         if(localStorage.getItem('carRentals'))
@@ -37,7 +39,7 @@
     }
 
 	
-           
+   // BUTTON MENU MOBILE        
 
 	$('.btn-menu').on('click', function (e) {
 	
@@ -46,8 +48,9 @@
 		e.preventDefault();
 	});
 
-	
-	// verifcar en que menu esta para poner el formulario correspondiente
+
+	//verifcar en que menu esta para poner el formulario correspondiente
+	 
 	check_menu_location_for_form_reservation($('body').data('form'));
 
 
@@ -93,9 +96,8 @@
 
 	 $(".chosen-select").chosen({width:"100%"});
 
-	   /*
-        assigned dynamic height to page-tour section  
-         */
+	 // ASIGNED DYNAMIC HEGIHT TO PAGE TOUR OR ABOUT
+	 
         height_pageTour = $('.page-tour div[itemprop="articleBody"]').height();
         height_pageAbout = $('.page-about div[itemprop="articleBody"]').height();
 		height_toursGallery = $('.tours-gallery').height();
@@ -105,6 +107,7 @@
 
 
 		
+	// MENU HOVER FUNCTION (SUBMENU)
 
 	$menu.find(".parent").hoverIntent({
 	    over: function() {
@@ -117,6 +120,9 @@
 
 	   	});
 
+
+	// BUTTON BUDGET (COTIZADOR)
+
 	$btn_budget.on('click',function (e) {
     	
     	if($cotizador.hasClass('open'))
@@ -128,6 +134,12 @@
     	e.preventDefault();
     });
 
+    $cotizador.on('click','.close', function (e) {
+		$cotizador.removeClass('open');
+		$btn_budget.show()
+	});
+
+	// BUTTON BOOK NOW FOR FORM RESERVATION
     btn_book.on('click',function (e) {
     	
     	reservation_hotel.addClass('hidden');
@@ -170,46 +182,6 @@
     	e.preventDefault();
     });
 
-	$cotizador.on('click','.close', function (e) {
-		$cotizador.removeClass('open');
-		$btn_budget.show()
-	});
-
-	dd.addClass('hidden');
-	dd.first().removeClass('hidden');
-
-	$('.link-interest').find('dd').addClass('hidden');
-
-	linkInterest.on('click','dt', function (e) {
-		$(this)
-			.next()
-				.toggle();
-				//.siblings('dd')
-					//.slideUp(200);
-		
-	});
-
-	detailsTours.on('click','dt', function (e) {
-		$(this)
-			.next()
-				.slideDown(200)
-				.siblings('dd')
-					.slideUp(200);
-		
-	});
-
-	
-
-
-
-	// SCROLL PANEL A COLUMNA
-   /* menu_s_scroll = $aside_services.mCustomScrollbar({
-        theme:"dark",
-        scrollButtons:{
-          enable:true
-        }
-
-    });*/
 	$aside_services.stickyfloat({ duration: 400 });
     $aside_services.on('click','.handle',function (e) {
     
@@ -227,142 +199,7 @@
     });
 
 
-    $(".gallery-item").colorbox({rel:'gallery'});
-    $(".gallery-item .video").colorbox({
-		inline:true,
-		href:".inlinevideocontent",
-		width: "900px"
-	});
-
-
-	//gallery carrousel
-
-  $('#slider-gallery').carouFredSel({
-		width: '100%',
-		align: false,
-		items: 3,
-		items: {
-			width: $('.tours-gallery').width() * 0.15,
-			height: 500,
-			visible: 1,
-			minimum: 1
-		},
-		scroll: {
-			items: 1,
-			timeoutDuration : 5000,
-			onBefore: function(data) {
- 
-				//	find current and next slide
-				var currentSlide = $('.slide.active', this),
-					nextSlide = data.items.visible,
-					_width = $('.tours-gallery').width();
- 
-				//	resize currentslide to small version
-				currentSlide.stop().animate({
-					width: _width * 0.15
-				});		
-				currentSlide.removeClass( 'active' );
- 
-				//	hide current block
-				data.items.old.add( data.items.visible ).find( '.slide-block' ).stop().fadeOut();					
- 
-				//	animate clicked slide to large size
-				nextSlide.addClass( 'active' );
-				nextSlide.stop().animate({
-					width: _width * 0.7
-				});						
-			},
-			onAfter: function(data) {
-				//	show active slide block
-				data.items.visible.last().find( '.slide-block' ).stop().fadeIn();
-			}
-		},
-		onCreate: function(data){
- 
-			//	clone images for better sliding and insert them dynamacly in slider
-			var newitems = $('.slide',this).clone( true ),
-				_width = $('.tours-gallery').width();
- 
-			$(this).trigger( 'insertItem', [newitems, newitems.length, false] );
- 
-			//	show images 
-			$('.slide', this).fadeIn();
-			$('.slide:first-child', this).addClass( 'active' );
-			$('.slide', this).width( _width * 0.15 );
- 
-			//	enlarge first slide
-			$('.slide:first-child', this).animate({
-				width: _width * 0.7
-			});
- 
-			//	show first title block and hide the rest
-			$(this).find( '.slide-block' ).hide();
-			$(this).find( '.slide.active .slide-block' ).stop().fadeIn();
-		}
-	});
- 
-	//	Handle click events
-	$('#slider-gallery').children().click(function() {
-		$('#slider-gallery').trigger( 'slideTo', [this] );
-	});
- 
-	//	Enable code below if you want to support browser resizing
-	$(window).resize(function(){
- 
-		var slider = $('#slider-gallery'),
-			_width = $('.tours-gallery').width();
- 
-		//	show images
-		slider.find( '.slide' ).width( _width * 0.15 );
- 
-		//	enlarge first slide
-		slider.find( '.slide.active' ).width( _width * 0.7 );
- 
-		//	update item width config
-		slider.trigger( 'configuration', ['items.width', _width * 0.15] );
-
-
-		height_pageTour = $('.page-tour div[itemprop="articleBody"]').height();
-		height_pageAbout = $('.page-about div[itemprop="articleBody"]').height();
-		height_toursGallery = $('.tours-gallery').height();
-		
-		$('.page-tour').height(height_pageTour + height_toursGallery);
-		$('.page-about').height(height_pageAbout + height_toursGallery - 200);
-	});	 
-
-	//tabs hotels
-	contentArticles.find('article').hide();
-	contentArticles.find('article.intro').fadeIn(500);
-	tabs.find('li').on('click',function(e){
-		
-		tabs.find('li').removeClass('active');
-		$(this).addClass('active');
-		
-		if(e.currentTarget.id == "booknow") {
-
-			if($aside_services.hasClass('open'))
-	    		$aside_services.addClass('shake')
-	    	else
-	    		$aside_services.addClass('open shake');
-
-	    	setTimeout(function(){
-	    		$aside_services.removeClass('shake')	
-	    	}, 3000);
-
-    	
-			return false	
-		}
-
-		contentArticles.find('article').hide();
-		contentArticles.find('article.'+ e.currentTarget.id).fadeIn(500);
-		 
-
-		 e.preventDefault();
-		
-	});
-
-	//reservation tour
-	// LOAD ACTIVITIES FORM RESERVATION
+	// LOAD ACTIVITIES FORM RESERVATION 
 	$.getJSON('/helpers/tours.php', function(data) {
 
 		  var items = [];
@@ -389,17 +226,35 @@
 
 
 	});
-	//chosen
 
-	$(".chosen-select").chosen();
-	
-	
-	
-	//FORM SUBMIT RESERVATION
+	// LOAD HOTELS FORM RESERVATION
+	$.getJSON('/helpers/hotels.php', function(data) {
 
-	//$( "#date" ).datepicker();
-	//$( "#dateP" ).datepicker();
+		  var items = [];
+
+		  var select = $('#hotel-destination').empty();
+        $.each(data, function(i,item) {
+            select.append( '<option value="'
+                                 + $.trim(item.title)
+                                 + '">'
+                                 + item.title
+                                 + '</option>' ); 
+
+
+		 
+		});
+		select.prepend('<option value=""></option>');
+		
+		$(".chosen-select").trigger("chosen:updated");
+
+
+
+	});
 	
+	
+
+	//FORM SUBMIT RESERVATION TOUR
+
 	 $("#formTour").validate({
 
 	 	messages:
@@ -515,13 +370,12 @@
 
 		 });
 
-//reservation transport
+	
+	
+	
+	//FORM SUBMIT RESERVATION TRANSPORT
 	
 	$('.datepicker').pickadate();
-	
-	//FORM SUBMIT RESERVATION
-	
-	
 	
 	 $("#formTransport").validate({
 
@@ -630,40 +484,12 @@
 
 		 });
 
-	//reservation hotel
-	// LOAD ACTIVITIES FORM RESERVATION
-	$.getJSON('/helpers/hotels.php', function(data) {
-
-		  var items = [];
-
-		  var select = $('#hotel-destination').empty();
-        $.each(data, function(i,item) {
-            select.append( '<option value="'
-                                 + $.trim(item.title)
-                                 + '">'
-                                 + item.title
-                                 + '</option>' ); 
-
-
-		 
-		});
-		select.prepend('<option value=""></option>');
-		
-		$(".chosen-select").trigger("chosen:updated");
-
-
-
-	});
-	//chosen
-
-	$(".chosen-select").chosen();
 	
 	
 	
-	//FORM SUBMIT RESERVATION
+	
+	//FORM SUBMIT RESERVATION HOTEL
 
-	//$( "#date" ).datepicker();
-	//$( "#dateP" ).datepicker();
 	
 	 $("#formHotel").validate({
 
@@ -801,6 +627,176 @@
 		}
 
 	})
+
+
+	
+	// FUNCTION FOR DETAILS TOUR AND HOTEL ROOMS
+
+	dd.addClass('hidden');
+	dd.first().removeClass('hidden');
+
+	detailsTours.on('click','dt', function (e) {
+		$(this)
+			.next()
+				.slideDown(200)
+				.siblings('dd')
+					.slideUp(200);
+		
+	});
+
+	// FUNCTION FOR LINK OF INTEREST
+	
+	$('.link-interest').find('dd').addClass('hidden');
+
+	linkInterest.on('click','dt', function (e) {
+		$(this)
+			.next()
+				.toggle();
+				//.siblings('dd')
+					//.slideUp(200);
+		
+	});
+
+
+	// COLORBOX FOR GALLERY
+	
+    $(".gallery-item").colorbox({rel:'gallery'});
+    $(".gallery-item .video").colorbox({
+		inline:true,
+		href:".inlinevideocontent",
+		width: "900px"
+	});
+
+
+	//GALLERY OF CARROUSEL
+
+  $('#slider-gallery').carouFredSel({
+		width: '100%',
+		align: false,
+		items: 3,
+		items: {
+			width: $('.tours-gallery').width() * 0.15,
+			height: 500,
+			visible: 1,
+			minimum: 1
+		},
+		scroll: {
+			items: 1,
+			timeoutDuration : 5000,
+			onBefore: function(data) {
+ 
+				//	find current and next slide
+				var currentSlide = $('.slide.active', this),
+					nextSlide = data.items.visible,
+					_width = $('.tours-gallery').width();
+ 
+				//	resize currentslide to small version
+				currentSlide.stop().animate({
+					width: _width * 0.15
+				});		
+				currentSlide.removeClass( 'active' );
+ 
+				//	hide current block
+				data.items.old.add( data.items.visible ).find( '.slide-block' ).stop().fadeOut();					
+ 
+				//	animate clicked slide to large size
+				nextSlide.addClass( 'active' );
+				nextSlide.stop().animate({
+					width: _width * 0.7
+				});						
+			},
+			onAfter: function(data) {
+				//	show active slide block
+				data.items.visible.last().find( '.slide-block' ).stop().fadeIn();
+			}
+		},
+		onCreate: function(data){
+ 
+			//	clone images for better sliding and insert them dynamacly in slider
+			var newitems = $('.slide',this).clone( true ),
+				_width = $('.tours-gallery').width();
+ 
+			$(this).trigger( 'insertItem', [newitems, newitems.length, false] );
+ 
+			//	show images 
+			$('.slide', this).fadeIn();
+			$('.slide:first-child', this).addClass( 'active' );
+			$('.slide', this).width( _width * 0.15 );
+ 
+			//	enlarge first slide
+			$('.slide:first-child', this).animate({
+				width: _width * 0.7
+			});
+ 
+			//	show first title block and hide the rest
+			$(this).find( '.slide-block' ).hide();
+			$(this).find( '.slide.active .slide-block' ).stop().fadeIn();
+		}
+	});
+ 
+	//	Handle click events
+	$('#slider-gallery').children().click(function() {
+		$('#slider-gallery').trigger( 'slideTo', [this] );
+	});
+ 
+	//	FUNCTION RESIZE BROWSER
+	$(window).resize(function(){
+ 
+		var slider = $('#slider-gallery'),
+			_width = $('.tours-gallery').width();
+ 
+		//	show images
+		slider.find( '.slide' ).width( _width * 0.15 );
+ 
+		//	enlarge first slide
+		slider.find( '.slide.active' ).width( _width * 0.7 );
+ 
+		//	update item width config
+		slider.trigger( 'configuration', ['items.width', _width * 0.15] );
+
+
+		height_pageTour = $('.page-tour div[itemprop="articleBody"]').height();
+		height_pageAbout = $('.page-about div[itemprop="articleBody"]').height();
+		height_toursGallery = $('.tours-gallery').height();
+		
+		$('.page-tour').height(height_pageTour + height_toursGallery);
+		$('.page-about').height(height_pageAbout + height_toursGallery - 200);
+	});	 
+
+	//FUNCTION TABS OF HOTELS PAGE
+	contentArticles.find('article').hide();
+	contentArticles.find('article.intro').fadeIn(500);
+	tabs.find('li').on('click',function(e){
+		
+		tabs.find('li').removeClass('active');
+		$(this).addClass('active');
+		
+		if(e.currentTarget.id == "booknow") {
+
+			if($aside_services.hasClass('open'))
+	    		$aside_services.addClass('shake')
+	    	else
+	    		$aside_services.addClass('open shake');
+
+	    	setTimeout(function(){
+	    		$aside_services.removeClass('shake')	
+	    	}, 3000);
+
+    	
+			return false	
+		}
+
+		contentArticles.find('article').hide();
+		contentArticles.find('article.'+ e.currentTarget.id).fadeIn(500);
+		 
+
+		 e.preventDefault();
+		
+	});
+	
+	
+	
+	
 
  // FUNCTION LIMPIAR FORM
 	  function limpiaChosen() {
