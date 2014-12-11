@@ -70,3 +70,75 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule .* index.php [L]
 #
 ## End - Joomla! core SEF Section.
+
+#Redirect old site
+
+Redirect 301 /About.html http://www.airporttransfercostarica.com/about-us.html
+Redirect 301 /Ground_Transportation.html http://www.airporttransfercostarica.com/fleet.html
+Redirect 301 /Tours.html #
+Redirect 301 /Testimonials-next.html http://www.airporttransfercostarica.com/testimonials.html
+Redirect 301 /Contact_us.html http://www.airporttransfercostarica.com/contact-us.html
+
+#transport
+
+Redirect 301 /Transport.html http://airporttransfercostarica.com/transportation/airport-transfer.html
+Redirect 301 /Shuttle_Service.html http://airporttransfercostarica.com/transportation/airport-shuttle.html
+Redirect 301 /Carrentals.html http://airporttransfercostarica.com/transportation/car-rentals.html
+Redirect 301 /Arrivals-Departures.html http://airporttransfercostarica.com/transportation/airport-arrivals.html
+
+
+#tour
+
+Redirect 301 /Day-Tours/Mega_combo.html http://airporttransfercostarica.com/tours/combo-tours-at/buena-vista.html
+Redirect 301 /Day-Tours/Combo_canopy-Borinquen.html http://airporttransfercostarica.com/tours/combo-tours-at/borinquen.html
+Redirect 301 /Day-Tours/Hacienda-guachipelin.html http://airporttransfercostarica.com/tours/combo-tours-at/guachipelin.html
+Redirect 301 /Day-Tours/The_Canyon_Adventure_Tour.html http://airporttransfercostarica.com/tours/combo-tours-at/canyon-tours.html
+
+Redirect 301 /Day-Tours/Tenorio-rafting.html http://airporttransfercostarica.com/tours/rafting-tours/tenorio-iii-iv.html
+Redirect 301 /Day-Tours/The_Canyon_Adventure_Tour.html http://airporttransfercostarica.com/tours/combo-tours-at/canyon-tours.html
+Redirect 301 /Day-Tours/White_Water_Rafting.html http://airporttransfercostarica.com/tours/rafting-tours/corobici-i-ii.html
+
+Redirect 301 /Day-Tours/Arenal-Sky-tram.html http://airporttransfercostarica.com/tours/sky-adventure-tour/arenal-sky-adventure.html
+Redirect 301 /Day-Tours/Monteverde.html http://airporttransfercostarica.com/tours/sky-adventure-tour/monteverde-sky-adventure.html
+
+Redirect 301 /Day-Tours/Rincon_Hiking.html http://airporttransfercostarica.com/tours/nature-walking/rinco-de-la-vieja.html
+Redirect 301 /Day-Tours/Rio-Celeste.html http://airporttransfercostarica.com/tours/nature-walking/rio-celeste.html
+Redirect 301 /Day-Tours/Arenal-Hanging-Bridges.html http://airporttransfercostarica.com/tours/nature-walking/arenal-hanging-bridge.html
+
+
+Redirect 301 /Day-Tours/Canopy.html http://airporttransfercostarica.com/tours/zip-line-tours/congo-trail.html
+Redirect 301 /Day-Tours/witchs-rock-canopy.html http://airporttransfercostarica.com/tours/zip-line-tours/witchs-rock-canopy.html
+
+
+Redirect 301 /Day-Tours/Arenal_Volcano.html http://airporttransfercostarica.com/tours/cultural-tours/arenal-volcano-rain-forest.html
+Redirect 301 /Day-Tours/Palo-Verde-tour.html http://airporttransfercostarica.com/tours/cultural-tours/palo-verde-boat-tour.html
+Redirect 301 /Day-Tours/Monteverde_Selvatura.html http://airporttransfercostarica.com/tours/cultural-tours/monteverde-green-adventure.html
+
+Redirect 301 /Surfing.html http://airporttransfercostarica.com/tours/surfing.html
+Redirect 301 /Trips.html http://airporttransfercostarica.com/tours/day-trips.html
+
+#hotels
+
+Redirect 301 /Hotels.html#allinclusive http://airporttransfercostarica.com/hotels/all-inclusive.html
+Redirect 301 /Papagayo-Hotel.html http://airporttransfercostarica.com/hotels/papagayo-hotels.html
+
+
+Redirect 301 /Papagayo_hotels-transportation/Hilton.html http://airporttransfercostarica.com/hotels/papagayo-hotels/hilton-papagayo-resort.html
+Redirect 301 /RIU_Guanacaste.html http://airporttransfercostarica.com/hotels/papagayo-hotels/riu-guanacaste-hotel.html
+Redirect 301 /RIU_Palace_Costa_Rica.html http://airporttransfercostarica.com/hotels/papagayo-hotels/riu-palace-costa-rica-hotel.html
+Redirect 301 /Flamingo-Conchal-hotels/Westin-Conchal.html http://airporttransfercostarica.com/hotels/all-inclusive/westin-playa-conchal-resort.html
+
+Redirect 301 /Papagayo_hotels-transportation/Villas-Sol.html http://airporttransfercostarica.com/hotels/papagayo-hotels/villas-sol-hotel-and-beach-resort.html
+Redirect 301 /Papagayo_hotels-transportation/Allegro-Papagayo-hotel.html  http://airporttransfercostarica.com/hotels/papagayo-hotels/allegro-papagayo-resort.html
+Redirect 301 /Papagayo_hotels-transportation/Occidental-Grand-Papagayo.html http://airporttransfercostarica.com/hotels/papagayo-hotels/occidental-grand-papagayo-resort.html
+
+Redirect 301 /Tamarindo-Hotels/Barcelo_Langosta.html http://airporttransfercostarica.com/hotels/all-inclusive/barcel%C3%B3-langosta-hotel.html
+
+Redirect 301 /Papagayo_hotels-transportation/Condovac_La_Costa.html http://airporttransfercostarica.com/hotels/papagayo-hotels/condovac-la-costa-hotel.html
+
+Redirect 301 /Papagayo_hotels-transportation/Casa_Conde.html http://airporttransfercostarica.com/hotels/papagayo-hotels/casa-conde-del-mar.html
+
+
+Redirect 301 /Ocotal-Resort.html http://airporttransfercostarica.com/hotels/papagayo-hotels/ocotal-beach-resort.html
+
+Redirect 301 /Flamingo-Conchal-hotels/Flamingo_beach_Resort.html http://airporttransfercostarica.com/hotels/all-inclusive/flamingo-beach-resort.html
