@@ -175,20 +175,20 @@ header #menu ul .active a{color:#9c6}
 .cotizador p{margin-top:0;margin-bottom:15px}
 .forms-reservations{position:absolute;top:140px;left:-226px;background:#fff;z-index:200;padding:.5em;border-top:4px solid #f5c34c;-webkit-box-shadow:0 0 5px rgba(0,0,0,.75);box-shadow:0 0 5px rgba(0,0,0,.75);width:225px;-webkit-transition:all .5s ease;-moz-transition:all .5s ease;-o-transition:all .5s ease;-ms-transition:all .5s ease;transition:all .5s ease;line-height:20px}
 .forms-reservations.green{border-top:4px solid #9c6}
-.forms-reservations.green .handle{border-left:35px solid #9c6}
+.forms-reservations.green .handle{border-left:45px solid #9c6}
 .forms-reservations.green .btn{background:#9c6;border-bottom:1px solid #9c6}
 .forms-reservations.green .form-type{border-bottom:1px solid #9c6;color:#9c6}
 .forms-reservations.red{border-top:4px solid #ee4035}
-.forms-reservations.red .handle{border-left:35px solid #ee4035}
+.forms-reservations.red .handle{border-left:45px solid #ee4035;text-align:center;line-height:13px}
 .forms-reservations.red .btn{background:#ee4035;border-bottom:1px solid #ee4035}
 .forms-reservations.red .form-type{border-bottom:1px solid #ee4035;color:#ee4035}
 .forms-reservations.yellow{border-top:4px solid #f5c34c}
-.forms-reservations.yellow .handle{border-left:35px solid #f5c34c}
+.forms-reservations.yellow .handle{border-left:45px solid #f5c34c}
 .forms-reservations.yellow .btn{background:#f5c34c;border-bottom:1px solid #f5c34c}
 .forms-reservations.yellow .form-type{border-bottom:1px solid #f5c34c;color:#eeae11}
 .forms-reservations.open{left:0}
-.forms-reservations .handle{border-right:10px solid transparent;border-left:35px solid #f5c34c;border-bottom:100px solid transparent;border-top:100px solid transparent;right:-45px;top:30%;position:absolute;cursor:pointer}
-.forms-reservations .handle span{position:absolute;-webkit-transform:rotate(270deg);-moz-transform:rotate(270deg);-o-transform:rotate(270deg);-ms-transform:rotate(270deg);transform:rotate(270deg);display:block;width:90px;right:-23px;top:-18px;color:#fff;text-transform:uppercase;font-weight:700;font-size:13px;text-shadow:1px 1px 1px rgba(0,0,0,.75)}
+.forms-reservations .handle{border-right:10px solid transparent;border-left:45px solid #f5c34c;border-bottom:110px solid transparent;border-top:110px solid transparent;right:-55px;top:30%;position:absolute;cursor:pointer}
+.forms-reservations .handle span{position:absolute;-webkit-transform:rotate(270deg);-moz-transform:rotate(270deg);-o-transform:rotate(270deg);-ms-transform:rotate(270deg);transform:rotate(270deg);display:block;width:90px;right:-16px;top:-18px;color:#fff;text-transform:uppercase;font-weight:700;font-size:13px;text-shadow:1px 1px 1px rgba(0,0,0,.75)}
 .forms-reservations .mCSB_dragger_bar{background:#9c6!important}
 .forms-reservations h2{font-size:1.2em;margin:0}
 .forms-reservations #btn_book{float:left}
@@ -252,7 +252,7 @@ header #menu ul .active a{color:#9c6}
 .page-hotels .readmore{position:absolute;bottom:0}
 .page-hotels .hotel-title{font-weight:700;font-size:1em}
 .page-hotels .subheading-category{font-size:1.5em}
-.page-transport .img{width:100%;height:auto}
+.page-transport img{width:100%;height:auto}
 .page-about .img{width:100%;height:auto;float:none}
 .page-aboutDestinations{list-style:none;margin:0;padding:0;width:100%}
 .page-aboutDestinations li{margin:1em;border:4px solid #f5c34c;padding:.5em}

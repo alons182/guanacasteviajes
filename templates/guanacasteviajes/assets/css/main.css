@@ -1073,7 +1073,7 @@ header #menu ul .active a {
   border-top: 4px solid #9c6;
 }
 .forms-reservations.green .handle {
-  border-left: 35px solid #9c6;
+  border-left: 45px solid #9c6;
 }
 .forms-reservations.green .btn {
   background: #9c6;
@@ -1087,7 +1087,9 @@ header #menu ul .active a {
   border-top: 4px solid #ee4035;
 }
 .forms-reservations.red .handle {
-  border-left: 35px solid #ee4035;
+  border-left: 45px solid #ee4035;
+  text-align: center;
+  line-height: 13px;
 }
 .forms-reservations.red .btn {
   background: #ee4035;
@@ -1101,7 +1103,7 @@ header #menu ul .active a {
   border-top: 4px solid #f5c34c;
 }
 .forms-reservations.yellow .handle {
-  border-left: 35px solid #f5c34c;
+  border-left: 45px solid #f5c34c;
 }
 .forms-reservations.yellow .btn {
   background: #f5c34c;
@@ -1119,10 +1121,10 @@ header #menu ul .active a {
 }
 .forms-reservations .handle {
   border-right: 10px solid rgba(0,0,0,0);
-  border-left: 35px solid #f5c34c;
-  border-bottom: 100px solid rgba(0,0,0,0);
-  border-top: 100px solid rgba(0,0,0,0);
-  right: -45px;
+  border-left: 45px solid #f5c34c;
+  border-bottom: 110px solid rgba(0,0,0,0);
+  border-top: 110px solid rgba(0,0,0,0);
+  right: -55px;
   top: 30%;
   position: absolute;
   cursor: pointer;
@@ -1144,7 +1146,7 @@ header #menu ul .active a {
   transform: rotate(270deg);
   display: block;
   width: 90px;
-  right: -23px;
+  right: -16px;
   top: -18px;
   color: #fff;
   text-transform: uppercase;
@@ -1460,7 +1462,7 @@ header #menu ul .active a {
 .page-hotels .subheading-category {
   font-size: 1.5em;
 }
-.page-transport .img {
+.page-transport img {
   width: 100%;
   height: auto;
 }
