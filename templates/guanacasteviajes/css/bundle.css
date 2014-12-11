@@ -205,6 +205,7 @@ header #menu ul .active a{color:#9c6}
 .forms-reservations label[for=hotel-children],.forms-reservations label[for=hotel-persons],.forms-reservations label[for=tour-children],.forms-reservations label[for=tour-persons],.forms-reservations label[for=transport-children],.forms-reservations label[for=transport-persons]{width:46px}
 .forms-reservations label[for=childrenR]{margin-left:5px}
 .forms-reservations #hotel-children,.forms-reservations #hotel-persons,.forms-reservations #tour-children,.forms-reservations #tour-persons,.forms-reservations #transport-children,.forms-reservations #transport-persons{width:25px}
+.forms-reservations #transport-atime,.forms-reservations #transport-dtime{width:45px}
 .forms-reservations .chosen-container{width:170px!important}
 .forms-reservations .no-float{float:none!important}
 .forms-reservations .botones{margin-top:10px;text-align:center}

@@ -1230,6 +1230,10 @@ header #menu ul .active a {
 .forms-reservations #hotel-children {
   width: 25px;
 }
+.forms-reservations #transport-atime,
+.forms-reservations #transport-dtime {
+  width: 45px;
+}
 .forms-reservations .chosen-container {
   width: 170px !important;
 }
