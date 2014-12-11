@@ -4,16 +4,16 @@
 		"selected_items":
 		[
 			[
+				"pa",
+				"padding-top"
+			],
+			[
 				"pre",
 				"preventDefault"
 			],
 			[
 				"border-",
 				"border-bottom"
-			],
-			[
-				"pa",
-				"padding-bottom"
 			],
 			[
 				"mar",
@@ -526,6 +526,14 @@
 				"buffer_size": 7579,
 				"line_ending": "Windows"
 			}
+		},
+		{
+			"file": "templates/guanacasteviajes/assets/stylus/main.styl",
+			"settings":
+			{
+				"buffer_size": 20143,
+				"line_ending": "Windows"
+			}
 		}
 	],
 	"build_system": "",
@@ -698,11 +706,19 @@
 	[
 		"/D/xampp/htdocs/guanacasteviajes",
 		"/D/xampp/htdocs/guanacasteviajes/templates",
-		"/D/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes",
-		"/D/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/assets/js"
+		"/D/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes"
 	],
 	"file_history":
 	[
+		"/D/xampp/htdocs/guanacasteviajes/node_modules/gulp-stylus/node_modules/replace-ext/test/main.js",
+		"/D/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/assets/stylus/main.styl",
+		"/D/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/assets/js/main.js",
+		"/D/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/assets/css/main.css",
+		"/D/xampp/htdocs/guanacasteviajes/node_modules/gulp-stylus/test/main.js",
+		"/D/xampp/htdocs/guanacasteviajes/node_modules/gulp-concat/test/main.js",
+		"/D/xampp/htdocs/guanacasteviajes/components/com_mailto/mailto.php",
+		"/D/xampp/htdocs/guanacasteviajes/modules/mod_articles_archive/mod_articles_archive.php",
+		"/D/xampp/htdocs/guanacasteviajes/components/com_contact/metadata.xml",
 		"/D/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/index.php",
 		"/D/xampp/htdocs/guanacasteviajes/Gulpfile.js",
 		"/D/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/js/bundle.js",
@@ -717,7 +733,6 @@
 		"/D/xampp/htdocs/guanacasteviajes/modules/mod_articles_news/mod_articles_news.php",
 		"/D/xampp/htdocs/guanacasteviajes/libraries/cms/installer/manifest.php",
 		"/D/xampp/htdocs/guanacasteviajes/README.md",
-		"/D/xampp/htdocs/guanacasteviajes/components/com_contact/metadata.xml",
 		"/D/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/component.php",
 		"/D/xampp/htdocs/guanacasteviajes/guanacasteviajes.sublime-project",
 		"/D/xampp/htdocs/guanacasteviajes/github.php",
@@ -822,15 +837,7 @@
 		"/C/xampp/htdocs/guanacasteviajes/modules/mod_articles_news/mod_articles_news.php",
 		"/C/xampp/htdocs/guanacasteviajes/libraries/cms/installer/manifest.php",
 		"/C/xampp/htdocs/guanacasteviajes/modules/mod_articles_news/index.html",
-		"/C/Users/Alonso/Desktop/Backup_13_8_2014.sql",
-		"/D/Downloads/animate.css",
-		"/C/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/stylus/tables.styl",
-		"/D/template guanacaste/form-reservation.html",
-		"/C/xampp/htdocs/guanacasteviajes/helpers/reservation.php",
-		"/D/template guanacaste/index.html",
-		"/C/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/css/colorbox.css",
-		"/D/Downloads/Compressed/colorbox-master/colorbox-master/example1/index.html",
-		"/C/xampp/htdocs/guanacasteviajes/templates/beez3/javascript/respond.js"
+		"/C/Users/Alonso/Desktop/Backup_13_8_2014.sql"
 	],
 	"find":
 	{
@@ -1021,7 +1028,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -1046,61 +1053,61 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
 								"bh_curly",
 								"bh_curly_center",
 								"bh_curly_open",
 								"bh_curly_close",
 								"bh_curly_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
 								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
 								"bh_double_quote_close",
 								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
-								"bh_single_quote_content"
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
 							],
 							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"tab_size": 4,
@@ -1108,6 +1115,94 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 300.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "templates/guanacasteviajes/assets/stylus/main.styl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 20143,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								12499,
+								12499
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"syntax": "Packages/Stylus/Stylus.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 14896.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -1167,6 +1262,10 @@
 		"selected_items":
 		[
 			[
+				"main.",
+				"templates\\guanacasteviajes\\assets\\stylus\\main.styl"
+			],
+			[
 				"main.js",
 				"templates\\guanacasteviajes\\js\\main.js"
 			],
@@ -1181,10 +1280,6 @@
 			[
 				"guanacasteviajes/inde",
 				"templates\\guanacasteviajes\\index.php"
-			],
-			[
-				"main.",
-				"templates\\guanacasteviajes\\stylus\\main.styl"
 			],
 			[
 				"main",
@@ -1427,12 +1522,12 @@
 		"selected_items":
 		[
 			[
-				"a",
-				"D:\\xampp\\htdocs\\avotz\\avotz.sublime-project"
-			],
-			[
 				"",
 				"D:\\xampp\\htdocs\\diamante\\diamante.sublime-project"
+			],
+			[
+				"a",
+				"D:\\xampp\\htdocs\\avotz\\avotz.sublime-project"
 			],
 			[
 				"hori",

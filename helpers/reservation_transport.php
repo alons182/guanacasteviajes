@@ -30,7 +30,11 @@ $asunto = "Reservation in Guanacaste Viajes";
 	<strong>Full Name:</strong> '.$data['transport-fname'].'<br />
 	<strong>Email:</strong> '.  $data['transport-email'].'<br />
 	<strong>Adults: </strong>'.  $data['transport-persons'].'<br />
-	<strong>Childrens:</strong> '.  $data['transport-children'];
+	<strong>Childrens:</strong> '.  $data['transport-children']. '<br />
+	<strong>Flight Number: </strong>'.  $data['transport-flight'].'<br />
+	<strong>Airline: </strong>'.  $data['transport-airline'].'<br />
+	<strong>Arrival Time:: </strong>'.  $data['transport-atime'].'<br />
+	<strong>Departure Time:: </strong>'.  $data['transport-dtime'].'<br />';
 	
 	$emailuser = $data['transport-email'];
 
