@@ -37,7 +37,7 @@ $doc->addStyleSheet('templates/'.$this->template.'/css/picker.date.css');*/
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<jdoc:include type="head" />
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700' rel='stylesheet' type='text/css'>
-	<script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/vendor/modernizr-2.6.2.min.js"></script>
+	<script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/assets/js/vendor/modernizr-2.6.2.min.js"></script>
      
      
 </head>

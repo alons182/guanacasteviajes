@@ -236,7 +236,7 @@ header #menu ul .active a{color:#9c6}
 .page-hotels .item{height:160px;max-height:200px;margin-bottom:20px;position:relative;overflow:hidden;background-color:#fafafa;border:1px solid #e2e2e2;-webkit-border-radius:2px;border-radius:2px;padding:20px}
 .page-hotels .pull-left{position:absolute;top:0;left:0;width:200px;overflow:hidden}
 .page-hotels .hotel-intro{width:auto;position:absolute;top:0;left:200px}
-.page-hotels .hotel-intro p{padding-left:20px}
+.page-hotels .hotel-intro p{padding-left:20px;padding-top:5px}
 .page-hotels .hotel-introTop{margin-top:1px;margin-right:1px;border-top:1px solid #fff;border-bottom:1px solid #e2e2e2;padding-left:20px;padding-top:10px;padding-bottom:10px}
 .page-hotels .hotel-introTop .location,.page-hotels .hotel-introTop .stars{display:inline-block;vertical-align:top}
 .page-hotels .hotel-introTop .stars .icon-star,.page-hotels .hotel-introTop .stars .icon-star2{font-size:1em;padding:2px}
