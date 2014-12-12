@@ -31,7 +31,7 @@ class JConfig {
 	public $offset = 'UTC';
 	public $mailonline = '1';
 	public $mailer = 'mail';
-	public $mailfrom = 'manuel@airporttransfercostarica.com';
+	public $mailfrom = 'info@airporttransfercostarica.com';
 	public $fromname = 'Guanacaste Viajes';
 	public $sendmail = '/usr/sbin/sendmail';
 	public $smtpauth = '0';
