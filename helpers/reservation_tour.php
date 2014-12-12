@@ -43,7 +43,7 @@ $emailuser= array(
 			$config->getValue( 'config.fromname' )
 			 );*/
 
-$destinatario = 'alonso@avotz.com'; //$email_yokue;
+$destinatario = 'manuel@airporttransfercostarica.com';//'alonso@avotz.com'; //$email_yokue;
 
 
 

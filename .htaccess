@@ -75,7 +75,6 @@ RewriteRule .* index.php [L]
 
 Redirect 301 /About.html http://www.airporttransfercostarica.com/about-us.html
 Redirect 301 /Ground_Transportation.html http://www.airporttransfercostarica.com/fleet.html
-Redirect 301 /Tours.html #
 Redirect 301 /Testimonials-next.html http://www.airporttransfercostarica.com/testimonials.html
 Redirect 301 /Contact_us.html http://www.airporttransfercostarica.com/contact-us.html
 
