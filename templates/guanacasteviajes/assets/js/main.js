@@ -349,18 +349,23 @@
 						limpiaChosen();
 
 						if(data=="ok")
-							$('.mensaje').html('<span class="ok">Reservation sent successfully</span>');
-						else
-							$('.mensaje').html('<span class="error">Error sending the reservation</span>');
+						{
+							swal({   title: "Reservation sent successfully",   text: "I will close in 5 seconds.",   timer: 5000 });
+							//$('.mensaje').html('<span class="ok">Reservation sent successfully</span>');
+						}
+						else{
+							swal({   type: "warning", title: "Error sending the reservation",   text: "I will close in 5 seconds.",   timer: 5000 });
+							//$('.mensaje').html('<span class="error">Error sending the reservation</span>');
+						}
 
 
-						setTimeout(function(){  
+						/*setTimeout(function(){  
 					        $('.mensaje').fadeOut(200,function() {
 
 							    $('.mensaje span').remove();
 							    $('.mensaje').show();
 
-							  });}, 2000);  
+							  });}, 2000); */ 
 
 
 					});
@@ -463,18 +468,14 @@
 						limpiaChosen();
 
 						if(data=="ok")
-							$('.mensaje').html('<span class="ok">Reservation sent successfully</span>');
-						else
-							$('.mensaje').html('<span class="error">Error sending the reservation</span>');
-
-
-						setTimeout(function(){  
-					        $('.mensaje').fadeOut(200,function() {
-
-							    $('.mensaje span').remove();
-							    $('.mensaje').show();
-
-							  });}, 2000);  
+						{
+							swal({   title: "Reservation sent successfully",   text: "I will close in 5 seconds.",   timer: 5000 });
+							//$('.mensaje').html('<span class="ok">Reservation sent successfully</span>');
+						}
+						else{
+							swal({   type: "warning", title: "Error sending the reservation",   text: "I will close in 5 seconds.",   timer: 5000 });
+							//$('.mensaje').html('<span class="error">Error sending the reservation</span>');
+						}  
 
 
 					});
@@ -579,19 +580,14 @@
 						limpiaChosen();
 
 						if(data=="ok")
-							$('.mensaje').html('<span class="ok">Reservation sent successfully</span>');
-						else
-							$('.mensaje').html('<span class="error">Error sending the reservation</span>');
-
-
-						setTimeout(function(){  
-					        $('.mensaje').fadeOut(200,function() {
-
-							    $('.mensaje span').remove();
-							    $('.mensaje').show();
-
-							  });}, 2000);  
-
+						{
+							swal({   title: "Reservation sent successfully",   text: "I will close in 5 seconds.",   timer: 5000 });
+							//$('.mensaje').html('<span class="ok">Reservation sent successfully</span>');
+						}
+						else{
+							swal({   type: "warning", title: "Error sending the reservation",   text: "I will close in 5 seconds.",   timer: 5000 });
+							//$('.mensaje').html('<span class="error">Error sending the reservation</span>');
+						}
 
 					});
 		   // form.submit();
