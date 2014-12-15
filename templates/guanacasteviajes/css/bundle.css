@@ -175,6 +175,7 @@ header #menu ul .active a{color:#9c6}
 .cotizador input[type=radio]{display:none}
 .cotizador p{margin-top:0;margin-bottom:15px}
 .forms-reservations{position:absolute;top:140px;left:-240px;background:#fff;z-index:200;padding:.5em;border-top:4px solid #f5c34c;-webkit-box-shadow:0 0 5px rgba(0,0,0,.75);box-shadow:0 0 5px rgba(0,0,0,.75);-webkit-transition:all .5s ease;-moz-transition:all .5s ease;-o-transition:all .5s ease;-ms-transition:all .5s ease;transition:all .5s ease;line-height:20px}
+.forms-reservations .col1{width:100%}
 .forms-reservations.green{border-top:4px solid #9c6}
 .forms-reservations.green .handle{border-left:45px solid #9c6}
 .forms-reservations.green .btn{background:#9c6;border-bottom:1px solid #9c6}
@@ -183,11 +184,11 @@ header #menu ul .active a{color:#9c6}
 .forms-reservations.red .handle{border-left:45px solid #ee4035;text-align:center;line-height:13px}
 .forms-reservations.red .btn{background:#ee4035;border-bottom:1px solid #ee4035}
 .forms-reservations.red .form-type{border-bottom:1px solid #ee4035;color:#ee4035}
-.forms-reservations.yellow{border-top:4px solid #f5c34c;left:-408px}
+.forms-reservations.yellow{border-top:4px solid #f5c34c}
 .forms-reservations.yellow .handle{border-left:45px solid #f5c34c}
 .forms-reservations.yellow .btn{background:#f5c34c;border-bottom:1px solid #f5c34c}
 .forms-reservations.yellow .form-type{border-bottom:1px solid #f5c34c;color:#eeae11}
-.forms-reservations .reservation-hotel,.forms-reservations .reservation-tour{width:225px}
+.forms-reservations .reservation-hotel,.forms-reservations .reservation-tour,.forms-reservations .reservation-transport{width:225px;overflow:hidden}
 .forms-reservations.open{left:0}
 .forms-reservations .handle{border-right:10px solid transparent;border-left:45px solid #f5c34c;border-bottom:110px solid transparent;border-top:110px solid transparent;right:-55px;top:30%;position:absolute;cursor:pointer}
 .forms-reservations .handle span{position:absolute;-webkit-transform:rotate(270deg);-moz-transform:rotate(270deg);-o-transform:rotate(270deg);-ms-transform:rotate(270deg);transform:rotate(270deg);display:block;width:90px;right:-16px;top:-18px;color:#fff;text-transform:uppercase;font-weight:700;font-size:13px;text-shadow:1px 1px 1px rgba(0,0,0,.75)}
@@ -337,6 +338,10 @@ footer .phone-numbers{margin-left:0;text-align:center;float:none}
 .table p{margin:0}
 @media only screen and (min-width:320px){header #logo a{top:-20px;width:260px}
 header .tel{font-size:14px}}
+@media only screen and (min-width:480px){.forms-reservations.yellow{left:-408px}
+.forms-reservations.open{left:0}
+.forms-reservations .col1{width:195px}
+.forms-reservations .reservation-transport{width:auto}}
 @media only screen and (min-width:940px){.inner{width:940px;padding:0}
 .btn-menu{display:none}
 header #menu{display:block!important;height:35px}

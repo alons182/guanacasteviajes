@@ -24,7 +24,10 @@ $asunto = "Reservation in Guanacaste Viajes";
 
 	<h1>Datos de Reservacion de Transporte:</h1>
 
+	
+	<strong>Service:</strong> '. $data['transport-services'].'<br />
 	<strong>Destination:</strong> '.json_encode($data['transport-destination']).'<br />
+	<strong>Price:</strong> '. $data['transport-price'].'<br />
 	<strong>Pick up:</strong> '.$data['transport-pdate'].'<br />
 	<strong>Return Date:</strong> '.$data['transport-rdate'].'<br />
 	<strong>Full Name:</strong> '.$data['transport-fname'].'<br />
@@ -37,7 +40,7 @@ $asunto = "Reservation in Guanacaste Viajes";
 	<strong>Arrival Time: </strong>'.  $data['transport-atime'].'<br />
 	<strong>Departure Time: </strong>'.  $data['transport-dtime'].'<br />
 	<strong>Notes: </strong>'.  $data['transport-notes'].'<br />';
-	
+
 	$emailuser = $data['transport-email'];
 
 

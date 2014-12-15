@@ -131,7 +131,7 @@ Redirect 301 /Papagayo_hotels-transportation/Villas-Sol.html http://airporttrans
 Redirect 301 /Papagayo_hotels-transportation/Allegro-Papagayo-hotel.html  http://airporttransfercostarica.com/hotels/papagayo-hotels/allegro-papagayo-resort.html
 Redirect 301 /Papagayo_hotels-transportation/Occidental-Grand-Papagayo.html http://airporttransfercostarica.com/hotels/papagayo-hotels/occidental-grand-papagayo-resort.html
 
-Redirect 301 /Tamarindo-Hotels/Barcelo_Langosta.html http://airporttransfercostarica.com/hotels/all-inclusive/barcel%C3%B3-langosta-hotel.html
+Redirect 301 /Tamarindo-Hotels/Barcelo_Langosta.html http://airporttransfercostarica.com/hotels/tamarindo-hotels/barcel%C3%B3-langosta-hotel.html
 
 Redirect 301 /Papagayo_hotels-transportation/Condovac_La_Costa.html http://airporttransfercostarica.com/hotels/papagayo-hotels/condovac-la-costa-hotel.html
 
@@ -141,4 +141,6 @@ Redirect 301 /Papagayo_hotels-transportation/Casa_Conde.html http://airporttrans
 Redirect 301 /Ocotal-Resort.html http://airporttransfercostarica.com/hotels/papagayo-hotels/ocotal-beach-resort.html
 
 Redirect 301 /Flamingo-Conchal-hotels/Flamingo_beach_Resort.html http://airporttransfercostarica.com/hotels/all-inclusive/flamingo-beach-resort.html
-Redirect 301 /Tamarindo-Hotels/CalaLuna.html http://airporttransfercostarica.com
+Redirect 301 /Tamarindo-Hotels/CalaLuna.html http://airporttransfercostarica.com/hotels/tamarindo-hotels/hotel-villas-cala-luna.html
+Redirect 301 /Tamarindo-Hotels/JW-Marriott-Hotel.html http://airporttransfercostarica.com/hotels/tamarindo-hotels/jw-marriott-guanacaste-resort-and-spa.html
+Redirect 301 /Tamarindo-Hotels/Tamarindo-Diria.html http://airporttransfercostarica.com/hotels/tamarindo-hotels/tamarindo-diria-beach-golf-resort.html

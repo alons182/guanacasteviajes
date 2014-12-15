@@ -1074,6 +1074,9 @@ header #menu ul .active a {
 /*.chosen-container
 		width 170px !important */
 }
+.forms-reservations .col1 {
+  width: 100%;
+}
 .forms-reservations.green {
   border-top: 4px solid #9c6;
 }
@@ -1106,7 +1109,6 @@ header #menu ul .active a {
 }
 .forms-reservations.yellow {
   border-top: 4px solid #f5c34c;
-  left: -408px;
 }
 .forms-reservations.yellow .handle {
   border-left: 45px solid #f5c34c;
@@ -1119,9 +1121,11 @@ header #menu ul .active a {
   border-bottom: 1px solid #f5c34c;
   color: #eeae11;
 }
+.forms-reservations .reservation-transport,
 .forms-reservations .reservation-tour,
 .forms-reservations .reservation-hotel {
   width: 225px;
+  overflow: hidden;
 }
 .forms-reservations.open {
   left: 0;
@@ -1913,6 +1917,20 @@ footer .phone-numbers {
   }
   header .tel {
     font-size: 14px;
+  }
+}
+@media only screen and (min-width: 480px) {
+  .forms-reservations.yellow {
+    left: -408px;
+  }
+  .forms-reservations.open {
+    left: 0;
+  }
+  .forms-reservations .col1 {
+    width: 195px;
+  }
+  .forms-reservations .reservation-transport {
+    width: auto;
   }
 }
 @media only screen and (min-width: 940px) {

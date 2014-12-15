@@ -272,6 +272,7 @@
                 $( "#transport-persons" ).val("0");
                 $( "#transport-children" ).val("0");
                 $( "#total" ).val("0");
+                $( "#transport-price" ).val("0");
             }    
             else{
                 $.each(items,function (i,item) {
@@ -303,7 +304,7 @@
                                     $( "#total" ).text('$ ' + totalShuttle);
                                     //$( "#total" ).val(totalShuttle);
                                     
-                                
+                                $( "#transport-price" ).val($( "#total" ).text());
                             }else{
                                                             
                                  if(tipoServicio == "One way")
@@ -315,6 +316,9 @@
                                 else if(tipoServicio == "Shuttle Bus")
                                     $( "#total" ).text('$ ' + totalShuttle);
                                     //$( "#total" ).val(totalShuttle);
+                                    
+
+                                $( "#transport-price" ).val($( "#total" ).text());
 
                             }
                               
