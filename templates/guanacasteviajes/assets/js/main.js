@@ -94,7 +94,7 @@
                		$aside_services.removeClass('open shake')
            } 
 
-	 $(".chosen-select").chosen({width:"100%"});
+	 $(".chosen-select").chosen({width:"93%"});
 
 	 // ASIGNED DYNAMIC HEGIHT TO PAGE TOUR OR ABOUT
 	 
@@ -350,11 +350,11 @@
 
 						if(data=="ok")
 						{
-							swal({   title: "Reservation sent successfully",   text: "I will close in 5 seconds.",   timer: 5000 });
+							swal({   title: "Thanks for make a reservation with Airport Transfer Costa Rica",   text: "We will contact you before 24 hours to check details, your vacation in our country will be aweson !!!",   timer: 9000 });
 							//$('.mensaje').html('<span class="ok">Reservation sent successfully</span>');
 						}
 						else{
-							swal({   type: "warning", title: "Error sending the reservation",   text: "I will close in 5 seconds.",   timer: 5000 });
+							swal({   type: "error", title: "Error sending the reservation",   text: "I will close in 5 seconds.",   timer: 5000 });
 							//$('.mensaje').html('<span class="error">Error sending the reservation</span>');
 						}
 
@@ -410,6 +410,9 @@
 	 		"transport-rdate":{
 	 			required:'*'
 	 		},
+	 		"transport-phone":{
+	 			required:'*'
+	 		}
 	 		
 	 		
 	 		
@@ -432,6 +435,9 @@
 
 		      number: true
 
+		    },
+		    "transport-phone":{
+		    	required: true
 		    }
 		     
 		
@@ -469,11 +475,11 @@
 
 						if(data=="ok")
 						{
-							swal({   title: "Reservation sent successfully",   text: "I will close in 5 seconds.",   timer: 5000 });
+							swal({   title: "Thanks for make a reservation with Airport Transfer Costa Rica",   text: "We will contact you before 24 hours to check details, your vacation in our country will be aweson !!!",   timer: 9000 });
 							//$('.mensaje').html('<span class="ok">Reservation sent successfully</span>');
 						}
 						else{
-							swal({   type: "warning", title: "Error sending the reservation",   text: "I will close in 5 seconds.",   timer: 5000 });
+							swal({   type: "error", title: "Error sending the reservation",   text: "I will close in 5 seconds.",   timer: 5000 });
 							//$('.mensaje').html('<span class="error">Error sending the reservation</span>');
 						}  
 
@@ -581,11 +587,11 @@
 
 						if(data=="ok")
 						{
-							swal({   title: "Reservation sent successfully",   text: "I will close in 5 seconds.",   timer: 5000 });
+							swal({   title: "Thanks for make a reservation with Airport Transfer Costa Rica",   text: "We will contact you before 24 hours to check details, your vacation in our country will be aweson !!!",   timer: 9000 });
 							//$('.mensaje').html('<span class="ok">Reservation sent successfully</span>');
 						}
 						else{
-							swal({   type: "warning", title: "Error sending the reservation",   text: "I will close in 5 seconds.",   timer: 5000 });
+							swal({   type: "error", title: "Error sending the reservation",   text: "I will close in 5 seconds.",   timer: 5000 });
 							//$('.mensaje').html('<span class="error">Error sending the reservation</span>');
 						}
 

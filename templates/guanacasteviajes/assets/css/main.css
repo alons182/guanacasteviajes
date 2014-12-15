@@ -596,10 +596,14 @@ iframe {
 .li-img li a:hover {
   text-decoration: underline;
 }
+.col1,
 .col2,
 .col3 {
   display: inline-block;
   vertical-align: top;
+}
+.col1 {
+  width: 195px;
 }
 .col2 {
   width: 265px;
@@ -1052,14 +1056,13 @@ header #menu ul .active a {
 .forms-reservations {
   position: absolute;
   top: 140px;
-  left: -226px;
+  left: -240px;
   background: #fff;
   z-index: 200;
   padding: 0.5em;
   border-top: 4px solid #f5c34c;
   -webkit-box-shadow: 0px 0px 5px rgba(0,0,0,0.75);
   box-shadow: 0px 0px 5px rgba(0,0,0,0.75);
-  width: 225px;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
@@ -1068,6 +1071,8 @@ header #menu ul .active a {
   line-height: 20px;
 /*&.close
 		left -180px*/
+/*.chosen-container
+		width 170px !important */
 }
 .forms-reservations.green {
   border-top: 4px solid #9c6;
@@ -1101,6 +1106,7 @@ header #menu ul .active a {
 }
 .forms-reservations.yellow {
   border-top: 4px solid #f5c34c;
+  left: -408px;
 }
 .forms-reservations.yellow .handle {
   border-left: 45px solid #f5c34c;
@@ -1112,6 +1118,10 @@ header #menu ul .active a {
 .forms-reservations.yellow .form-type {
   border-bottom: 1px solid #f5c34c;
   color: #eeae11;
+}
+.forms-reservations .reservation-tour,
+.forms-reservations .reservation-hotel {
+  width: 225px;
 }
 .forms-reservations.open {
   left: 0;
@@ -1170,17 +1180,19 @@ header #menu ul .active a {
   color: #fff;
   font-size: 1em;
   float: right;
-  width: 60px;
+  width: 65px;
 }
 .forms-reservations .total-container span {
   display: block;
 }
 .forms-reservations input[type="text"],
-.forms-reservations input[type="email"] {
+.forms-reservations input[type="email"],
+.forms-reservations textarea {
   width: 93%;
 }
 .forms-reservations input[type="text"].error,
-.forms-reservations input[type="email"].error {
+.forms-reservations input[type="email"].error,
+.forms-reservations textarea.error {
   border-color: #ee4035;
 }
 .forms-reservations .notas {
@@ -1233,9 +1245,6 @@ header #menu ul .active a {
 .forms-reservations #transport-atime,
 .forms-reservations #transport-dtime {
   width: 45px;
-}
-.forms-reservations .chosen-container {
-  width: 170px !important;
 }
 .forms-reservations .no-float {
   float: none !important;
@@ -1982,10 +1991,6 @@ footer .phone-numbers {
   }
   .services-box .service ul {
     margin-bottom: 71px;
-  }
-  .forms-reservations {
-    width: 196px;
-    left: -196px;
   }
   .page-tourDetails {
     float: right;

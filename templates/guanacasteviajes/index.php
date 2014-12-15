@@ -119,7 +119,7 @@ $doc->addStyleSheet('templates/'.$this->template.'/css/picker.date.css');*/
             </div>
             <em class="border-colors"></em>
         </footer>
-        <aside class="forms-reservations open animated">
+        <aside class="forms-reservations animated">
             <jdoc:include type="modules" name="forms-reservations" style="none" />
            
         </aside>

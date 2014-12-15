@@ -58,10 +58,13 @@ iframe
 		a 
 			&:hover
 				text-decoration underline
-.col2
+.col1,
+.col2,
 .col3
 	display inline-block
 	vertical-align top 
+.col1
+	width 195px
 .col2
 	width 265px		
 .col3
@@ -460,13 +463,13 @@ header
 	
 	position absolute
 	top 140px
-	left -226px
+	left -240px
 	background #FFF
 	z-index 200
 	padding .5em
 	border-top 4px solid #f5c34c
 	box-shadow 0px 0px 5px rgba(0, 0, 0, .75)
-	width 225px//196px
+	//width 225px//196px
 	transition all .5s ease
 	line-height 20px
 
@@ -498,6 +501,7 @@ header
 			
 	&.yellow
 		border-top 4px solid #f5c34c
+		left -408px
 		.handle
 			border-left 45px solid #f5c34c
 		.btn 
@@ -508,6 +512,9 @@ header
 			border-bottom 1px solid #f5c34c
 			color $naranja
 			
+	.reservation-tour
+	.reservation-hotel
+		width 225px//196px
 	
 	&.open
 		left 0
@@ -571,13 +578,14 @@ header
 		color #FFF
 		font-size 1em
 		float right
-		width 60px
+		width 65px
 		
 		span
 			display block
 
 	input[type="text"],
-	input[type="email"]
+	input[type="email"],
+	textarea
 		width 93%
 
 		&.error
@@ -633,8 +641,8 @@ header
 	#transport-dtime
 		width 45px
 	
-	.chosen-container
-		width 170px !important 
+	/*.chosen-container
+		width 170px !important */
 
 	.no-float
 		float none !important
