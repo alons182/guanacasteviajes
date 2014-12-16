@@ -119,6 +119,7 @@ Redirect 301 /Trips.html http://airporttransfercostarica.com/tours/day-trips.htm
 #hotels
 
 Redirect 301 /Hotels.html#allinclusive http://airporttransfercostarica.com/hotels/all-inclusive.html
+Redirect 301 /Hotels.html http://airporttransfercostarica.com/hotels/all-inclusive.html
 Redirect 301 /Papagayo-Hotel.html http://airporttransfercostarica.com/hotels/papagayo-hotels.html
 
 
@@ -144,3 +145,4 @@ Redirect 301 /Flamingo-Conchal-hotels/Flamingo_beach_Resort.html http://airportt
 Redirect 301 /Tamarindo-Hotels/CalaLuna.html http://airporttransfercostarica.com/hotels/tamarindo-hotels/hotel-villas-cala-luna.html
 Redirect 301 /Tamarindo-Hotels/JW-Marriott-Hotel.html http://airporttransfercostarica.com/hotels/tamarindo-hotels/jw-marriott-guanacaste-resort-and-spa.html
 Redirect 301 /Tamarindo-Hotels/Tamarindo-Diria.html http://airporttransfercostarica.com/hotels/tamarindo-hotels/tamarindo-diria-beach-golf-resort.html
+Redirect 301 /Tamarindo-Hotels/Capitan_Suizo.html http://airporttransfercostarica.com/hotels/tamarindo-hotels/hotel-capitan-suizo-tamarindo.html

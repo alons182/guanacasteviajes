@@ -246,6 +246,24 @@
                  
             }
     }
+    function verifica_tipoService(){
+       var itemSeledted = $('#transport-destination').val();
+      
+      $.each(items,function (i,item) {
+
+                    if(item.name == itemSeledted)
+                        {
+                            
+                             if(!item.shuttle)
+                                 {
+                                  $("#transport-services option[value='Shuttle Bus']").attr("disabled",true);
+                                  $(".chosen-select").trigger("chosen:updated");
+                                   
+                                }
+                          }
+                        });
+
+    }
     function actualiza_reservacion(){
 
         var itemSeledted = $('#transport-destination').val();
@@ -282,8 +300,11 @@
                             
                              if(item.shuttle)
                                     totalShuttle = item.shuttle * parseInt(numPersons);
-                                else
-                                    totalShuttle= "Not available";
+                                else{
+                                  totalShuttle= "Not available";
+                                  transport-services
+                                }
+                                    
 
                             if((parseInt(numPersons) + ninos) > 4)
                             {
@@ -347,6 +368,7 @@ $('#transport-services').on("change",function(){
     actualiza_reservacion();
 });
  $('#transport-destination').on("change",function(){
+        verifica_tipoService();
         actualiza_reservacion();
 
     });

@@ -68,7 +68,7 @@
 	    	reservation_tour.removeClass('hidden');
 	    	$aside_services.addClass('green');
 
-		}else if(form_menu_id === 143 || form_menu_id === 184 || form_menu_id === 190 || form_menu_id === 189 || form_menu_id === 162 || form_menu_id === 185 || form_menu_id === 191 || form_menu_id === 186 || form_menu_id === 183 || form_menu_id === 187 || form_menu_id === 188 || form_menu_id === 196 || form_menu_id === 197)
+		}else if(form_menu_id === 143 || form_menu_id === 184 || form_menu_id === 190 || form_menu_id === 189 || form_menu_id === 162 || form_menu_id === 185 || form_menu_id === 191 || form_menu_id === 186 || form_menu_id === 183 || form_menu_id === 187 || form_menu_id === 188 || form_menu_id === 196 || form_menu_id === 197 || form_menu_id === 192 || form_menu_id === 194 ||form_menu_id === 202 || form_menu_id === 197 || form_menu_id === 203 || form_menu_id === 197 || form_menu_id === 204 || form_menu_id === 205 || form_menu_id === 206)
 		{
 			
 	    	reservation_hotel.removeClass('hidden');
@@ -350,7 +350,7 @@
 
 						if(data=="ok")
 						{
-							swal({   title: "Thanks for make a reservation with Airport Transfer Costa Rica",   text: "We will contact you before 24 hours to check details, your vacation in our country will be aweson !!!",   timer: 9000 });
+							swal({   title: "Thanks for make a reservation with Guanacaste Viajes Costa Rica",   text: "We will contact you before 24 hours to check details, your vacation in our country will be aweson !!!",   timer: 9000 });
 							//$('.mensaje').html('<span class="ok">Reservation sent successfully</span>');
 						}
 						else{
@@ -475,7 +475,7 @@
 
 						if(data=="ok")
 						{
-							swal({   title: "Thanks for make a reservation with Airport Transfer Costa Rica",   text: "We will contact you before 24 hours to check details, your vacation in our country will be aweson !!!",   timer: 9000 });
+							swal({   title: "Thanks for make a reservation with Guanacaste Viajes Costa Rica",   text: "We will contact you before 24 hours to check details, your vacation in our country will be aweson !!!",   timer: 9000 });
 							//$('.mensaje').html('<span class="ok">Reservation sent successfully</span>');
 						}
 						else{
@@ -587,7 +587,7 @@
 
 						if(data=="ok")
 						{
-							swal({   title: "Thanks for make a reservation with Airport Transfer Costa Rica",   text: "We will contact you before 24 hours to check details, your vacation in our country will be aweson !!!",   timer: 9000 });
+							swal({   title: "Thanks for make a reservation with Guanacaste Viajes Costa Rica",   text: "We will contact you before 24 hours to check details, your vacation in our country will be aweson !!!",   timer: 9000 });
 							//$('.mensaje').html('<span class="ok">Reservation sent successfully</span>');
 						}
 						else{

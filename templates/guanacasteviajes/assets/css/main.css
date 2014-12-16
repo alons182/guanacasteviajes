@@ -1125,7 +1125,6 @@ header #menu ul .active a {
 .forms-reservations .reservation-tour,
 .forms-reservations .reservation-hotel {
   width: 225px;
-  overflow: hidden;
 }
 .forms-reservations.open {
   left: 0;
