@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"ma",
+				"margin-left"
+			],
+			[
 				"pa",
 				"padding-top"
 			],
@@ -98,10 +102,6 @@
 			[
 				"slid",
 				"slideDown"
-			],
-			[
-				"ma",
-				"margin"
 			],
 			[
 				"rg",
@@ -674,6 +674,7 @@
 		"height": 125.0,
 		"history":
 		[
+			"import urllib.request,os; pr='Preferences.sublime-settings'; ip='ignored_packages'; n='Package Control'; s=sublime.load_settings(pr); ig=s.get(ip); ig.append(n); s.set(ip,ig); sublime.save_settings('Preferences.sublime-settings'); pf=n+'.sublime-package'; urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler())); by=urllib.request.urlopen('https://packagecontrol.io/'+pf.replace(' ','%20')).read(); open(os.path.join(sublime.installed_packages_path(),pf),'wb').write(by); ig.remove(n); s.set(ip,ig); sublime.save_settings(pr); print('Package Control: 3.0.0 upgrade successful!')",
 			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
 		]
 	},
@@ -690,53 +691,108 @@
 	[
 		"/D/xampp/htdocs/guanacasteviajes",
 		"/D/xampp/htdocs/guanacasteviajes/helpers",
+		"/D/xampp/htdocs/guanacasteviajes/helpers/db",
 		"/D/xampp/htdocs/guanacasteviajes/templates",
 		"/D/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes",
+		"/D/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/assets",
+		"/D/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/assets/css",
+		"/D/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/assets/js",
 		"/D/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/js"
 	],
 	"file_history":
 	[
-		"/D/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/error.php",
+		"/D/xampp/htdocs/diamante/assets/stylus/main.styl",
+		"/D/xampp/htdocs/ondabrava/admin/videoteca.php",
+		"/D/xampp/htdocs/ondabrava/admin/helpers.php",
+		"/D/mod_articles_news/_item.php",
+		"/D/mod_articles_news/default.php",
+		"/D/Proyectos/AVOTZ/frame/framecr/index.html",
+		"/D/xampp/Mail Sent to Local Server/2015-02-23 11.40.03,598.eml",
+		"/D/xampp/Mail Sent to Local Server/2015-02-23 11.40.52,318.eml",
+		"/D/Proyectos/AVOTZ/diamante/submenu.txt",
+		"/D/xampp/php/php.ini",
+		"/D/Proyectos/AVOTZ/frame/template/templateDetails.xml",
+		"/D/Proyectos/AVOTZ/frame/template/index.php",
+		"/D/Proyectos/AVOTZ/frame/framecr/projects.html",
+		"/D/Proyectos/AVOTZ/frame/framecr/project.html",
+		"/D/Proyectos/AVOTZ/frame/template/error.php",
+		"/D/Proyectos/AVOTZ/frame/template/component.php",
+		"/D/xampp/htdocs/framecr/assets/js/main.js",
+		"/D/xampp/htdocs/energycontrol/index.php",
+		"/D/xampp/htdocs/partytime/templates/partytime/css/animate.css",
+		"/D/xampp/htdocs/partytime/templates/partytime/stylus/main.styl",
+		"/D/Documents/Programacion/Ejemplos Web/themes/janux/janux/index.html",
 		"/D/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/index.php",
+		"/D/.htaccess",
+		"/D/xampp/htdocs/guanacasteviajes/guanacasteviajes.sublime-project",
 		"/D/xampp/htdocs/guanacasteviajes/Gulpfile.js",
+		"/D/xampp/htdocs/guanacasteviajes/github.php",
+		"/D/xampp/htdocs/suenos/.gitignore",
+		"/D/xampp/htdocs/suenos/composer.json",
+		"/D/xampp/htdocs/suenos/Gulpfile.js",
+		"/D/xampp/htdocs/suenos/bootstrap/start.php",
+		"/D/xampp/htdocs/suenos/package.json",
+		"/D/xampp/apache/conf/extra/httpd-vhosts.conf",
+		"/D/Documents/br.txt",
+		"/D/Proyectos/hosts",
+		"/D/Documents/Visual Studio 2013/Projects/POSBASE MySQL_ultimo Huracan/truncate_tables_posalo.sql",
+		"/C/backup.sql",
+		"/D/Documents/Visual Studio 2013/Projects/POSBASE MySQL_ultimo Huracan/POSBASE/bin/Release/Reportes/rptFacturaCotizacion.rdlc",
+		"/C/ProgramData/TechSmith/Camtasia Studio 8/RegInfo.ini",
+		"/D/Documents/Programacion/Ejemplos Web/themes/janux/janux/README.md",
+		"/D/Documents/Programacion/Ejemplos Web/themes/cameo/vector.html",
+		"/D/Documents/Programacion/Ejemplos Web/themes/cameo/js/vector.js",
+		"/D/Documents/dumps/articulos_huracan.sql",
+		"/D/Documents/Programacion/Ejemplos Web/themes/cameo/vendor/jvectormap/jquery-jvectormap-1.2.2.min.js",
+		"/C/Program Files (x86)/Pro Evolution Soccer 2015/download/DpFileList.bin",
 		"/D/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/assets/js/main.js",
+		"/D/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/assets/stylus/main.styl",
+		"/D/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/assets/js/cotizador.js",
+		"/D/xampp/htdocs/guanacasteviajes/.htaccess",
+		"/D/xampp/htdocs/guanacasteviajes/helpers/db/transports_hotels.json",
+		"/D/xampp/Mail Sent to Local Server/2014-12-15 13.31.12,595.eml",
+		"/D/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/assets/css/chosen.min.css",
+		"/D/xampp/htdocs/guanacasteviajes/helpers/reservation_transport.php",
+		"/D/xampp/Mail Sent to Local Server/2014-12-15 11.56.32,556.eml",
+		"/D/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/assets/stylus/responsive.styl",
+		"/D/reservation_transport.php",
+		"/D/xampp/Mail Sent to Local Server/2014-12-15 09.47.24,650.eml",
+		"/D/xampp/htdocs/guanacasteviajes/components/com_contact/metadata.xml",
+		"/D/xampp/htdocs/guanacasteviajes/node_modules/gulp-stylus/test/main.js",
+		"/D/xampp/htdocs/guanacasteviajes/node_modules/gulp-concat/test/main.js",
+		"/D/xampp/htdocs/guanacasteviajes/media/jui/less/responsive-1200px-min.less",
+		"/D/xampp/htdocs/guanacasteviajes/media/jui/less/responsive-utilities.less",
+		"/D/xampp/htdocs/guanacasteviajes/media/jui/less/responsive-navbar.less",
+		"/D/xampp/htdocs/guanacasteviajes/media/jui/less/responsive.less",
+		"/D/xampp/htdocs/guanacasteviajes/libraries/joomla/http/response.php",
+		"/D/xampp/htdocs/guanacasteviajes/helpers/reservation_hotel.php",
+		"/D/xampp/htdocs/guanacasteviajes/node_modules/gulp/node_modules/gulp-util/lib/replaceExtension.js",
+		"/D/xampp/htdocs/guanacasteviajes/README.md",
+		"/D/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/error.php",
 		"/D/xampp/htdocs/guanacasteviajes/helpers/reservation_tour.php",
 		"/D/xampp/Mail Sent to Local Server/2014-12-12 19.47.50,676.eml",
 		"/D/xampp/Mail Sent to Local Server/2014-12-12 19.44.54,407.eml",
 		"/D/xampp/Mail Sent to Local Server/2014-12-12 19.43.25,847.eml",
 		"/D/xampp/Mail Sent to Local Server/2014-12-12 19.43.47,416.eml",
 		"/D/xampp/Mail Sent to Local Server/2014-12-12 19.53.53,442.eml",
-		"/D/xampp/htdocs/guanacasteviajes/helpers/reservation_hotel.php",
 		"/D/xampp/Mail Sent to Local Server/2014-12-12 19.42.08,142.eml",
 		"/D/xampp/Mail Sent to Local Server/2014-12-12 19.42.38,064.eml",
 		"/D/xampp/htdocs/guanacasteviajes/node_modules/gulp-stylus/node_modules/replace-ext/test/main.js",
 		"/D/xampp/htdocs/guanacasteviajes/administrator/components/com_users/models/forms/mail.xml",
-		"/D/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/assets/stylus/main.styl",
-		"/D/xampp/htdocs/guanacasteviajes/node_modules/gulp-concat/test/main.js",
-		"/D/xampp/htdocs/guanacasteviajes/components/com_contact/metadata.xml",
-		"/D/xampp/htdocs/guanacasteviajes/github.php",
 		"/D/xampp/htdocs/guanacasteviajes/modules/mod_articles_archive/mod_articles_archive.php",
-		"/D/xampp/htdocs/guanacasteviajes/.htaccess",
-		"/D/xampp/htdocs/guanacasteviajes/helpers/reservation_transport.php",
 		"/C/Users/Alonso/Desktop/redirect guanacasteviajes.txt",
 		"/D/xampp/Mail Sent to Local Server/2014-12-11 14.46.35,348.eml",
 		"/D/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/assets/css/main.css",
-		"/D/xampp/htdocs/guanacasteviajes/node_modules/gulp-stylus/test/main.js",
 		"/D/xampp/htdocs/guanacasteviajes/components/com_mailto/mailto.php",
 		"/D/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/js/bundle.js",
 		"/D/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/stylus/main.styl",
 		"/D/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/stylus/responsive.styl",
 		"/D/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/js/main.js",
-		"/D/xampp/htdocs/suenos/Gulpfile.js",
 		"/D/xampp/htdocs/guanacasteviajes/.gitignore",
 		"/D/xampp/htdocs/guanacasteviajes/package.json",
-		"/D/xampp/htdocs/suenos/package.json",
-		"/D/xampp/htdocs/suenos/composer.json",
 		"/D/xampp/htdocs/guanacasteviajes/modules/mod_articles_news/mod_articles_news.php",
 		"/D/xampp/htdocs/guanacasteviajes/libraries/cms/installer/manifest.php",
-		"/D/xampp/htdocs/guanacasteviajes/README.md",
 		"/D/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/component.php",
-		"/D/xampp/htdocs/guanacasteviajes/guanacasteviajes.sublime-project",
 		"/D/xampp/htdocs/guanacasteviajes/helpers/tours.php",
 		"/D/xampp/htdocs/guanacasteviajes/administrator/components/com_templates/templates.php",
 		"/D/xampp/htdocs/guanacasteviajes/templates/beez3/javascript/template.js",
@@ -748,11 +804,8 @@
 		"/D/sitio.txt",
 		"/D/wp-config.php",
 		"/D/xampp/htdocs/avotz/contacto.html",
-		"/D/Proyectos/hosts",
-		"/D/xampp/apache/conf/extra/httpd-vhosts.conf",
 		"/D/xampp/Mail Sent to Local Server/2014-12-03 09.44.54,572.eml",
 		"/D/Downloads/Compressed/webfontkit-20141127-134800/stylesheet.css",
-		"/D/xampp/php/php.ini",
 		"/D/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/stylus/main.css",
 		"/C/xampp/htdocs/guanacasteviajes/components/com_contact/metadata.xml",
 		"/D/Documents/dumps/guanacasteviajes.sql",
@@ -775,55 +828,7 @@
 		"/C/xampp/htdocs/suenos/assets/js/main.js",
 		"/C/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/index.php",
 		"/C/xampp/Mail Sent to Local Server/2014-10-15 20.43.08,346.eml",
-		"/C/xampp/htdocs/guanacasteviajes/helpers/reservation_hotel.php",
-		"/C/xampp/htdocs/guanacasteviajes/helpers/reservation_tour.php",
-		"/C/xampp/Mail Sent to Local Server/2014-10-15 19.08.52,466.eml",
-		"/C/xampp/Mail Sent to Local Server/2014-10-15 20.41.04,897.eml",
-		"/C/xampp/Mail Sent to Local Server/2014-10-15 20.41.40,612.eml",
-		"/C/xampp/Mail Sent to Local Server/2014-10-15 20.42.17,685.eml",
-		"/C/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/css/picker.css",
-		"/C/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/css/picker.date.css",
-		"/C/xampp/Mail Sent to Local Server/2014-10-15 20.59.43,383.eml",
-		"/C/xampp/htdocs/suenos/assets/css/default.css",
-		"/C/xampp/htdocs/guanacasteviajes/index.php",
-		"/D/Downloads/Compressed/coolcarousel/coolcarousel.html",
-		"/D/energy construccion/index.html",
-		"/D/energy construccion/assets/css/style.css",
-		"/D/Downloads/Compressed/coolcarousel/jquery.carouFredSel-6.2.0-packed.js",
-		"/C/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/stylus/responsive.styl",
-		"/C/xampp/htdocs/guanacasteviajes/README.md",
-		"/C/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/stylus/normalize.styl",
-		"/C/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/component.php",
-		"/C/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/error.php",
-		"/C/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/css/animate.css",
-		"/C/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/fonts/guanacasteviajes.woff",
-		"/C/xampp/htdocs/guanacasteviajes/templates/guanacasteviajes/fonts/guanacasteviajes.svg",
-		"/C/xampp/htdocs/guanacasteviajes/templates/beez3/css/general.css",
-		"/C/xampp/htdocs/guanacasteviajes/administrator/components/com_templates/templates.xml",
-		"/C/xampp/htdocs/guanacasteviajes/administrator/components/com_templates/templates.php",
-		"/C/xampp/htdocs/guanacasteviajes/administrator/includes/toolbar.php",
-		"/C/xampp/htdocs/energycontrol/protected/pages/modules/ajustefacturacion/admin/administrar.php",
-		"/C/xampp/htdocs/energycontrol/protected/pages/modules/ajustefacturacion/admin/addedit.php",
-		"/C/xampp/htdocs/pokedex/public/js/services.js",
-		"/C/xampp/htdocs/pokedex/public/js/app.js",
-		"/C/ProgramData/TechSmith/Camtasia Studio 8/RegInfo.ini",
-		"/C/Windows/System32/drivers/etc/hosts",
-		"/D/Downloads/chunklist_b644000.m3u8",
-		"/C/xampp/htdocs/contacts3.2/public/js/app/views/contactListItem.js",
-		"/C/xampp/htdocs/contacts3.2/public/js/app/views/listSearchItemResults.js",
-		"/C/xampp/htdocs/contacts3.2/public/js/app/views/contact.js",
-		"/C/xampp/htdocs/contacts3.2/public/js/app/views/contactList.js",
-		"/C/xampp/htdocs/contacts3.2/public/js/app/views/header.js",
-		"/C/xampp/htdocs/contacts3.2/public/js/app.js",
-		"/C/xampp/htdocs/contacts3.2/public/js/app/router.js",
-		"/C/xampp/htdocs/contacts3.2/public/js/app/views/listSearchResults.js",
-		"/C/xampp/htdocs/contacts3.2/public/js/app/collections/contactCollection.js",
-		"/C/xampp/htdocs/contacts3.2/public/Gulpfile.js",
-		"/C/xampp/htdocs/contacts3.2/public/js/app/utils.js",
-		"/C/xampp/htdocs/contacts3.2/public/js/app/models/contact.js",
-		"/C/xampp/htdocs/contacts3.2.1/app/views/home.blade.php",
-		"/C/xampp/htdocs/contacts3.2/app/views/home.blade.php",
-		"/C/xampp/htdocs/guanacasteviajes/configuration.php"
+		"/C/xampp/htdocs/guanacasteviajes/helpers/reservation_hotel.php"
 	],
 	"find":
 	{
@@ -841,6 +846,45 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"Prefab",
+			"p17",
+			"Papillon",
+			"p16",
+			"Casa Oceano",
+			"p14",
+			"Casa Oceano",
+			"p14",
+			"Project 12 Guanacaste",
+			"p12",
+			"Casa Rio",
+			"p10",
+			"Rio",
+			"p10",
+			"Project 9 Guanacaste",
+			"p9",
+			"Casa Acuario",
+			"p8",
+			"Marfil",
+			"p6",
+			"Casa Marfil",
+			"p6",
+			"Punta Playa Vista Condominio",
+			"p4",
+			"Punta Playa Vista Condominio",
+			"p4",
+			"Casa Melray #2",
+			"p2",
+			"Casa Melray #2",
+			"p2",
+			"alt=\"gallery\"",
+			"gallery",
+			"images/projects/",
+			"users",
+			"background:url(chosen-sprite.png)",
+			"services-ty",
+			"col1",
+			"col2",
+			"chosen",
 			"->",
 			"http",
 			"person",
@@ -929,46 +973,7 @@
 			"category",
 			"categories",
 			"property",
-			"$user",
-			"property",
-			"user",
-			"label",
-			"exceptions",
-			"subscribe",
-			"SubscribeTo",
-			"subscribeto",
-			"subscri",
-			"curl",
-			"Username",
-			"username",
-			"Username",
-			"username",
-			"Username",
-			"username",
-			"view",
-			"$foo",
-			"$foo = null",
-			"$querySearch",
-			"furniture",
-			"type",
-			"dropdown",
-			"items",
-			"article",
-			"li",
-			".service",
-			"service",
-			"rojo",
-			"celeste",
-			".col",
-			"file_info",
-			"warnin",
-			"bootstrap",
-			"backgrid",
-			"bootstrap",
-			"<%=",
-			"%>",
-			"<%=",
-			"jquery"
+			"$user"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1009,7 +1014,7 @@
 		"show_context": true,
 		"use_buffer2": true,
 		"whole_word": false,
-		"wrap": false
+		"wrap": true
 	},
 	"groups":
 	[
@@ -1021,7 +1026,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 40.0
+		"height": 36.0
 	},
 	"input":
 	{
@@ -1070,12 +1075,24 @@
 		"selected_items":
 		[
 			[
-				"assemain.js",
-				"templates\\guanacasteviajes\\assets\\js\\main.js"
+				"guanacasteviajes/in",
+				"templates\\guanacasteviajes\\index.php"
+			],
+			[
+				"main.styl",
+				"templates\\guanacasteviajes\\assets\\stylus\\main.styl"
 			],
 			[
 				"main.js",
-				"node_modules\\gulp-concat\\test\\main.js"
+				"templates\\guanacasteviajes\\assets\\js\\main.js"
+			],
+			[
+				"responsi",
+				"templates\\guanacasteviajes\\assets\\stylus\\responsive.styl"
+			],
+			[
+				"assemain.js",
+				"templates\\guanacasteviajes\\assets\\js\\main.js"
 			],
 			[
 				"main.s",
@@ -1108,10 +1125,6 @@
 			[
 				"icons",
 				"templates\\guanacasteviajes\\stylus\\icons.styl"
-			],
-			[
-				"main.styl",
-				"templates\\guanacasteviajes\\stylus\\main.styl"
 			],
 			[
 				"templateguanainde",
@@ -1342,15 +1355,39 @@
 		"selected_items":
 		[
 			[
+				"frame",
+				"D:\\xampp\\htdocs\\framecr\\frame.sublime-project"
+			],
+			[
+				"av",
+				"D:\\xampp\\htdocs\\avotz\\avotz.sublime-project"
+			],
+			[
+				"",
+				"D:\\xampp\\htdocs\\avotz\\avotz.sublime-project"
+			],
+			[
+				"diam",
+				"D:\\xampp\\htdocs\\diamante\\diamante.sublime-workspace"
+			],
+			[
+				"pura",
+				"D:\\xampp\\htdocs\\puravida\\puravida.sublime-project"
+			],
+			[
+				"pur",
+				"D:\\xampp\\htdocs\\puravida\\puravida.sublime-project"
+			],
+			[
+				"avo",
+				"D:\\xampp\\htdocs\\avotz\\avotz.sublime-project"
+			],
+			[
 				"d",
 				"D:\\xampp\\htdocs\\diamante\\diamante.sublime-project"
 			],
 			[
 				"di",
-				"D:\\xampp\\htdocs\\diamante\\diamante.sublime-project"
-			],
-			[
-				"",
 				"D:\\xampp\\htdocs\\diamante\\diamante.sublime-project"
 			],
 			[
@@ -1364,10 +1401,6 @@
 			[
 				"horiz",
 				"C:\\xampp\\htdocs\\horizon\\horizon.sublime-project"
-			],
-			[
-				"pura",
-				"C:\\xampp\\htdocs\\puravida\\puravida.sublime-project"
 			],
 			[
 				"ond",
@@ -1416,14 +1449,6 @@
 			[
 				"fas",
 				"C:\\xampp\\htdocs\\fashionfactory\\fashion.sublime-project"
-			],
-			[
-				"avo",
-				"C:\\xampp\\htdocs\\avotz\\avotz.sublime-project"
-			],
-			[
-				"pur",
-				"/C/xampp/htdocs/puravida/puravida.sublime-project"
 			]
 		],
 		"width": 380.0

@@ -35,10 +35,10 @@ $doc->addStyleSheet('templates/'.$this->template.'/css/picker.date.css');*/
 <html lang="<?php echo $this->language; ?>" >
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<jdoc:include type="head" />
+    <meta name="google-site-verification" content="0WKJexcAYvBAbJ_3yC2PFLDKDunq6PsyMuKaE7K1gbs" /> 
+    <jdoc:include type="head" />
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700' rel='stylesheet' type='text/css'>
-	<script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/assets/js/vendor/modernizr-2.6.2.min.js"></script>
-     
+    <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/assets/js/vendor/modernizr-2.6.2.min.js"></script>
      
 </head>
 
@@ -114,8 +114,13 @@ $doc->addStyleSheet('templates/'.$this->template.'/css/picker.date.css');*/
         <footer>
             <div class="inner">
                 <div class="copyright"><p>Guanacaste viajes © 2013</p></div>
-                <div class="phone-numbers"><p><strong>USA Phone Number:</strong> +1-404-963-9097 </p><p><strong>Costa Rica:</strong> +011-506-2697-1818 | +011-506-8704-3690</p><br /><span id="siteseal"><script type="text/javascript" src="https://seal.starfieldtech.com/getSeal?sealID=mq6QnWtPXw00suNUVWLlYvccgxIy24zeNuwFeLjlIohOjHUEuppZUj"></script></span></div>
+                <div class="phone-numbers">
+                <p><strong>USA Phone Number:</strong> +1-404-963-9097 </p><p><strong>Costa Rica:</strong> +011-506-2697-1818 | +011-506-8704-3690</p><br />
+                <div id="TA_certificateOfExcellence501" class="TA_certificateOfExcellence"><ul id="IpwE3XUB1lOP" class="TA_links jM54Pmu8W"><li id="WpGhLhOy4" class="udUMqg"><a target="_blank" href="http://www.tripadvisor.com/Attraction_Review-g309240-d2102243-Reviews-Guanacaste_Viajes_Tours-Liberia_Province_of_Guanacaste.html"><img src="http://www.tripadvisor.com/img/cdsi/img2/awards/CoE2015_WidgetAsset-14348-2.png" alt="TripAdvisor" class="widCOEImg" id="CDSWIDCOELOGO"/></a></li></ul></div><script src="http://www.jscache.com/wejs?wtype=certificateOfExcellence&uniq=501&locationId=2102243&lang=en_US&year=2015&display_version=2"></script>    
+                <span id="siteseal"><script type="text/javascript" src="https://seal.starfieldtech.com/getSeal?sealID=mq6QnWtPXw00suNUVWLlYvccgxIy24zeNuwFeLjlIohOjHUEuppZUj"></script></span>
+                </div>
                 <div class="redes"><a href="https://www.facebook.com/GuanacasteViaje" target="_blank">Facebook</a> • <a href="https://twitter.com/guanacasteviaje" target="_blank">Twitter</a></div>
+                
             </div>
             <em class="border-colors"></em>
         </footer>

@@ -1903,6 +1903,10 @@ footer .phone-numbers {
 .pagination li.active a {
   color: #eeae11;
 }
+.TA_certificateOfExcellence {
+  width: 170px;
+  margin: 0 auto;
+}
 .hidden {
   display: none;
 }
