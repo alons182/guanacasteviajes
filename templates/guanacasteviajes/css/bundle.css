@@ -310,6 +310,9 @@ footer{background:#9c6;padding-bottom:20px;position:relative;padding-top:30px;te
 footer em{position:absolute;top:0;left:0;right:0;height:8px;background:url(../img/circulos.png) 0 top repeat-x}
 footer p{margin:0;font:14px Arial,Helvetica,sans-serif;line-height:20px;color:#fff;text-transform:uppercase}
 footer .copyright{float:none}
+footer .copyright .avotz{font-size:.6rem}
+footer .copyright .avotz a{color:#fff;margin-left:.2rem}
+footer .copyright .avotz i{font-size:2.5rem;vertical-align:middle}
 footer .redes{float:none;color:#fff}
 footer .redes a{text-transform:uppercase;color:#fff}
 footer .redes a:hover{color:#695c3e;-webkit-transition:all .35s ease;-moz-transition:all .35s ease;-o-transition:all .35s ease;-ms-transition:all .35s ease;transition:all .35s ease}

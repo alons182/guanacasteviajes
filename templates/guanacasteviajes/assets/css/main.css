@@ -1775,6 +1775,17 @@ footer p {
 footer .copyright {
   float: none;
 }
+footer .copyright .avotz {
+  font-size: 0.6rem;
+}
+footer .copyright .avotz a {
+  color: #fff;
+  margin-left: 0.2rem;
+}
+footer .copyright .avotz i {
+  font-size: 2.5rem;
+  vertical-align: middle;
+}
 footer .redes {
   float: none;
   color: #fff;
