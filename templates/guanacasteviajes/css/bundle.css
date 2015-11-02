@@ -147,8 +147,6 @@ header #menu{height:auto;display:none}
 header #menu .parent .nav-child .parent:after,header #menu .parent .sub-menu .parent:after{content:'°';position:absolute;right:-10px;top:15px}
 header #menu ul{position:absolute;background:#fff;left:0;right:0;top:172px;display:block;margin:0;padding:0;z-index:199;border-bottom:5px solid #9c6}
 header #menu ul li{position:relative;display:block;margin:0;zoom:1;padding:10px;line-height:11px!important;border-right:1px solid #dbdbdb;text-align:center}
-header #menu ul li.item-143 .nav-child{display:none!important}
-header #menu ul li.item-143:after{content:''!important}
 header #menu ul li .nav-header,header #menu ul li a{position:relative;padding:0;-webkit-border-radius:0;border-radius:0;margin:0;color:#4a4a4a;-webkit-box-shadow:none!important;box-shadow:none!important;font:14px/14px Arial,Helvetica,sans-serif;text-shadow:none;display:inline-block;background:0 0;text-transform:uppercase;-webkit-transition:all .35s ease;-moz-transition:all .35s ease;-o-transition:all .35s ease;-ms-transition:all .35s ease;transition:all .35s ease;cursor:pointer}
 header #menu ul li:first-child+li+li+li+li+li+li+li{margin-right:0;padding-right:0;border-right:none}
 header #menu ul li:hover .nav-header,header #menu ul li:hover a{color:#9c6}
